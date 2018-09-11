@@ -22,13 +22,13 @@ module.exports = {
         name: 'src',
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/posts`,
-        name: 'src',
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/posts`,
+    //     name: 'src',
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
