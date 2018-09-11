@@ -24,19 +24,19 @@ covering some es6 features also in this tutorial.
 
 ## Table of contents
 
-- [Node and npm](/reactjs/nodeandnpm/)
-  - [What is nodejs](/reactjs/nodeandnpm/#what-is--nodejs-)
-  - [What is npm](/reactjs/nodeandnpm/#what-is-npm-)
-- [What is React and who uses react ?](/reactjs/whatisreact/)
-- [Setting up development environment](/reactjs/developmentenvironment/)
-   - [Create react app](/reactjs/developmentenvironment/#create-react-app)
-   - [Default Imports and exports](/reactjs/developmentenvironment/#default-imports-and-exports)
-   - [Named imports and exports](/reactjs/developmentenvironment/#named-imports-and-exports)
-- [Jsx and virtual Dom](/reactjs/jsxandvirtualdom/)
-  - [What is JSX](/reactjs/jsxandvirtualdom/#what-is-jsx-)
-  - [Virtual Dom](reactjs/jsxandvirtualdom/#virtual-dom)
-- [Components and props](/reactjs/componentsandprops/)
-- [Event handling and state](/reactjs/eventhandlingandstate/)
-- [Styling and animation](/reactjs/stylingandanimation/)
+- [Node and npm](/react/nodeandnpm/)
+  - [What is nodejs](/react/nodeandnpm/#what-is--nodejs-)
+  - [What is npm](/react/nodeandnpm/#what-is-npm-)
+- [What is React and who uses react ?](/react/whatisreact/)
+- [Setting up development environment](/react/developmentenvironment/)
+   - [Create react app](/react/developmentenvironment/#create-react-app)
+   - [Default Imports and exports](/react/developmentenvironment/#default-imports-and-exports)
+   - [Named imports and exports](/react/developmentenvironment/#named-imports-and-exports)
+- [Jsx and virtual Dom](/react/jsxandvirtualdom/)
+  - [What is JSX](/react/jsxandvirtualdom/#what-is-jsx-)
+  - [Virtual Dom](react/jsxandvirtualdom/#virtual-dom)
+- [Components and props](/react/componentsandprops/)
+- [Event handling and state](/react/eventhandlingandstate/)
+- [Styling and animation](/react/stylingandanimation/)
 
 
