@@ -19,20 +19,20 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content`,
-        name: 'content',
+        name: 'src',
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/posts`,
-        name: 'posts',
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/posts`,
+    //     name: 'src',
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: ``,
+        trackingId: `444222`,
       },
     },
     `gatsby-transformer-remark`,
