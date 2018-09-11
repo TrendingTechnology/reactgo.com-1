@@ -52,7 +52,7 @@ module.exports = async ({ graphql, boundActionCreators }) => {
         })
 
         //articles
-        // generatePosts('/a', allPosts, './src/templates/post.js', createPage)
+        generatePosts('/a', allPosts, './src/templates/post.js', createPage)
 
         //tags
         let tags = []
