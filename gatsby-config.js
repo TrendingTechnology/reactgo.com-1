@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title:
-      'Reactgo - a place to learn basics of the react & javascript skills',
+    title: 'Reactgo - a place to learn basics of the react & javascript skills',
     description:
       'It provides  tutorials & articles about modern open source web technologies such as react for beginners ',
     url: 'https://reactgo.com',
@@ -32,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `444222`,
+        trackingId: `UA-125559599-1`,
       },
     },
     `gatsby-transformer-remark`,
@@ -144,6 +143,5 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     // `gatsby-plugin-netlify-cache`,
-
   ],
 }
