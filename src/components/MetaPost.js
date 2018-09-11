@@ -4,7 +4,7 @@ import icon from '../img/favicon.ico'
 
 const MetaPost = props => (
   <Helmet
-    defaultTitle={`${props.title} ${!props.no ? "| Reactgo" : ''} `}
+    defaultTitle={`${props.title} ${!props.no ? '| Reactgo' : ''} `}
     meta={[
       { name: 'title', content: props.title },
 
@@ -75,7 +75,7 @@ const MetaPost = props => (
 
       {
         name: 'google-site-verification',
-        content: '',
+        content: 'aoVLvxvcxyHnZQ9-0SvbqQsYwvselU4t0am93cGzGKk',
       },
     ]}
   >
