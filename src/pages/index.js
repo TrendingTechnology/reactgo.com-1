@@ -1,54 +1,38 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import './main.css'
+import reactLogo from '../img/reactlogo.svg'
+import js from '../img/jslogo.png'
+import vue from '../img/vuelogo.png'
+import ang from '../img/anglogo.png'
+import gats from '../img/gatsbylogo.jpeg'
+import MainUi from '../components/mainui/mainui'
 
-import Bio from '../components/Bio'
-import Layout from '../components/layout'
-
-
-class BlogIndex extends React.Component {
+class Index extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    )
-
-
     return (
-      <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-        />
+      <div>
+          <MainUi course={`react`}  data={this.props.data} />
 
-      </Layout>
+      </div>
     )
   }
 }
+export default Index
 
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+export const query = graphql`
+  query Evry {
+    allMarkdownRemark(
+      # filter: { fields: { slug: { regex: "*/javascript/" } } }
+      sort: { fields: [frontmatter___myid], order: ASC }
+    ) {
       edges {
         node {
-          excerpt
+          frontmatter {
+            title
+            logo
+          }
           fields {
             slug
-          }
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
           }
         }
       }

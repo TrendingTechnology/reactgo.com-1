@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://reactgo.com/sitemap.xml

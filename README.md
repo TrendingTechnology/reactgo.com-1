@@ -1,9 +1,27 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# What is Reactgo?
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+[Reactgo](https://reactgo.com) is a website related to  tutorials and articles about the react & Web development.
 
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
 
-## Running in development
-`gatsby develop`
+[![](https://i.imgur.com/VZ0Dr4n.png)](https://reactgo.com)
+
+## Install
+
+Make sure that you have the Gatsby CLI program installed:
+
+```sh
+npm install --global gatsby-cli
+```
+
+And run from your CLI:
+
+```sh
+git clone git@github.com:saigowthamr/reactgo.com.git
+```
+
+Then you can run it by:
+
+```sh
+cd reactgo.com
+gatsby develop
+```
