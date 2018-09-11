@@ -1,5 +1,5 @@
 {
-  "name": "jshype",
+  "name": "reactgo",
   "description": "Js hype website",
   "version": "1.0.0",
   "author": {
@@ -58,6 +58,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/saigowthamr/jshype.com"
+    "url": "https://github.com/saigowthamr/reactgo.com"
   }
 }
