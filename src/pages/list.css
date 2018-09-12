@@ -78,7 +78,7 @@
 @media  only screen and (max-width:870px){
     .post-items{
    width: 100%;
-       padding: 2rem  1rem;
+       padding: 1rem .5rem;
        font-size: 1rem;
    }
 
