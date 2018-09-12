@@ -10,7 +10,7 @@ tags: ['react']
 
 In normal HTML5 we are using an onclick but in react we need to use the camelCase notation onClick.
 
-We need to attach the onclick event handler to the li question element so that we only show the answer when a user clicks on the question at the end this tutorial we need to implement this feature to our accordion app.
+We need to attach the onClick event handler to the li question element so that we only show the answer when a user clicks on the question at the end this tutorial we need to implement this feature to our accordion app.
 
 *list.js*
 
@@ -102,7 +102,7 @@ class Accordion extends React.Component {
   render() {
 
     const { handleChange } = this;
-    const { index, isActive } = this.state;
+    const { index} = this.state;
 
     return (
       <div>
@@ -131,7 +131,7 @@ Now we need to update the  currentIndex property in the state to the user curren
 
 To update the state in the react we need to use the **this.setState**  method which is provided by the react.
 
-we are adding a new parameter to the arrow function which is **i**  but we didn't pass any argument to the handleChange method yet.
+we are adding a new parameter **i** to the handleChange arrow function.
 
 
 *app.js*
@@ -200,7 +200,7 @@ export default List;
 
 ### Conditional Rendering
 
-Conditional rendering is we only show the answer when a user clicks on the question otherwise we don't need to show.
+Conditional rendering means we only show the answer when a user clicks on the question otherwise we don't need to show.
 
 Now we are adding a new prop to the List component which is currentIndex.
 
@@ -271,3 +271,4 @@ export default List;
 Let's check it now
 
 ![react accordion](./gifacr.gif)
+
