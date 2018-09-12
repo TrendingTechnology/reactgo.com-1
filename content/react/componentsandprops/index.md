@@ -212,7 +212,7 @@ export default List;
 - Props help to pass the data to the child components.
 - Props are immutable.
 - we need to declare props using props.nameoftheprop.
-- In functional components react passes the props as the first parameter to the function.
+- In functional components react passes  props as the first parameter to the function.
 
 Now let's see how can we pass the data to the props.question and props.answer.
 
