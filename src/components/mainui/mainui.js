@@ -29,14 +29,15 @@ function MainUi(props) {
 
                 <div className="post-items">
 
-                  {node.frontmatter.logo && <span className="course-logo" >
+                  {node.frontmatter.logo && <span className="list-logo" >
                     <img src={node.frontmatter.logo} style={{ margin: 0 }} alt={props.course} />
                   </span>}
-                    <div className="ribbon">
+                    {/* <div className="ribbon">
                       <span>{props.course}</span>
-                    </div>
+                    </div> */}
 
                   <h2>{node.frontmatter.title}</h2>
+                  <p>{node.excerpt}</p>
                 </div>
               </Link>
             ))}

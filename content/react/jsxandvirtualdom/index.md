@@ -10,7 +10,7 @@ tags: ['react']
 
 ## What is  JSX?
 
-JSX means JavaScript XML which is used in the react to write the HTML like syntax inside the
+JSX means JavaScript XML which is used in  react to write the HTML like syntax inside the
 javascript it's just an preprocessor.The jsx we write later converts into the JavaScript with the
 help of Babel.
 
