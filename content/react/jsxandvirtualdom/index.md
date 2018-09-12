@@ -10,7 +10,7 @@ tags: ['react']
 
 ## What is  JSX?
 
-JSX is JavaScript XML which is used inside the react to write the HTML like syntax inside the
+JSX means JavaScript XML which is used in the react to write the HTML like syntax inside the
 javascript it's just an preprocessor.The jsx we write later converts into the JavaScript with the
 help of Babel.
 
@@ -32,8 +32,7 @@ var hello = React.createElement(
 
 ## Virtual Dom
 
-- Virtual means, not real Dom means document object model. If you combine both the definition looks
-like this not real dom.
+- Virtual dom means, not a real dom.
 
 - React uses the Virtual dom behind the scenes to create and mutate the real dom elements based on the virtual dom object.
 

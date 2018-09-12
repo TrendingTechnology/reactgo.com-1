@@ -8,7 +8,7 @@ thumbnail: /img/reactjs.png
 tags: ['react']
 ---
 
-This tutorial is a full project-based approach. In this tutorial, you will learn about fundamental concepts of reactjs by building an Accordion project using React.
+In this tutorial, you will learn about fundamental concepts of reactjs by building an Accordion using React.
 
 The final app we are building.
 
