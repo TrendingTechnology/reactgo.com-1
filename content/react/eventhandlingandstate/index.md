@@ -8,6 +8,9 @@ thumbnail: /img/reactjs.png
 tags: ['react']
 ---
 
+
+## Event handling
+
 In normal HTML5 we are using an onclick but in react we need to use the camelCase notation onClick.
 
 We need to attach the onClick event handler to the li question element so that we only show the answer when a user clicks on the question at the end this tutorial we need to implement this feature to our accordion app.

@@ -8,6 +8,8 @@ thumbnail: /img/reactjs.png
 tags: ['react']
 ---
 
+## Styling
+
 So far we didn't add any styles to our app now it's time to add some styles
 so it feels and looks good.
 
