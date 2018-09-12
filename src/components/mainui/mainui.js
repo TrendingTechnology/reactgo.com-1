@@ -32,11 +32,12 @@ function MainUi(props) {
                   {node.frontmatter.logo && <span className="course-logo" >
                     <img src={node.frontmatter.logo} style={{ margin: 0 }} alt={props.course} />
                   </span>}
-                    <div className="ribbon">
+                    {/* <div className="ribbon">
                       <span>{props.course}</span>
-                    </div>
+                    </div> */}
 
                   <h2>{node.frontmatter.title}</h2>
+                  <p>{node.excerpt}</p>
                 </div>
               </Link>
             ))}

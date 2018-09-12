@@ -11,8 +11,7 @@ class Index extends React.Component {
   render() {
     return (
       <div>
-          <MainUi course={`react`}  data={this.props.data} />
-
+        <MainUi course={`react`} data={this.props.data} />
       </div>
     )
   }
@@ -27,6 +26,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          excerpt(pruneLength:100)
           frontmatter {
             title
             logo

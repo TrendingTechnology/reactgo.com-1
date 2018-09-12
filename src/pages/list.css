@@ -12,6 +12,14 @@
     margin-bottom: 0;
 }
 
+.post-list p{
+        font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    margin-top: 9px;
+}
+
 .post-list a{
     text-decoration: none;
     color: inherit;
@@ -42,10 +50,6 @@
     background-color: rgba(252, 252, 252, 0.781)
 }
 
-.post-logo{
-        top: 0;
-    left: 0;
-}
 
 
 .slim{
@@ -67,7 +71,7 @@
    }
 
    .post-list h2{
-     margin-left: 1rem;
+     /* margin-left: 1rem; */
     font-size: 1.2rem
 }
 
