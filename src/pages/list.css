@@ -50,7 +50,19 @@
     background-color: rgba(252, 252, 252, 0.781)
 }
 
-
+.list-logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    box-shadow: 0px 1px 20px 8px hsla(0, 0%, 0%, .04);
+    border-radius: 10%;
+    padding: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right:0;
+    top:0;
+}
 
 .slim{
        font-weight: 300;
@@ -66,7 +78,7 @@
 @media  only screen and (max-width:870px){
     .post-items{
    width: 100%;
-       padding: 3.3rem 0 2rem 0;
+       padding: 2rem  1rem;
        font-size: 1rem;
    }
 
@@ -75,9 +87,14 @@
     font-size: 1.2rem
 }
 
-.post-logo{
-   width: 30px;
-   height: 30px;
+.post-list p{
+        font-size: 1rem;
+}
+
+
+.list-logo{
+   width: 31px;
+   height: 31px;
 }
 
 }

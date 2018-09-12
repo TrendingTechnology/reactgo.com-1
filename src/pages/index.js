@@ -26,7 +26,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength:100)
+          excerpt(pruneLength:70)
           frontmatter {
             title
             logo
