@@ -29,6 +29,7 @@ export const query = graphql`
         date(formatString: "MMM Do")
         logo
         thumbnail
+        tags
       }
       fields {
         slug
@@ -47,6 +48,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
+            tags
           }
           fields {
             slug

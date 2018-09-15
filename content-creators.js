@@ -39,6 +39,7 @@ module.exports = async ({ graphql, boundActionCreators }) => {
 
         const tutorial = [
           '/react',
+          '/reactrouter'
         ]
 
         //tutorials
@@ -64,6 +65,10 @@ module.exports = async ({ graphql, boundActionCreators }) => {
         })
         // Eliminate duplicate tags
         tags = _.uniq(tags)
+
+
+
+
 
         // Make separate pages for each tag
         tags.forEach(tag => {
