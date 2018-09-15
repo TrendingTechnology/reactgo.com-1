@@ -24,15 +24,20 @@ const Tags = props => {
       <div className="post-list auto ">
         <div className="padding-top5">
           <div className="post-setup">
-            <h1 className=" slim">{`Trending posts in ${tag}`}</h1>
+            <h1 className=" slim">{`Tutorials in ${tag}`}</h1>
             {props.data.allMarkdownRemark.edges.map(({ node }, i) => (
               <Link to={node.fields.slug} key={i}>
                 <div className="post-items">
-                  {
-                    <div className="ribbon">
-                      <span>{tag}</span>
-                    </div>
-                  }
+
+                  {node.frontmatter.logo && (
+                    <span className="list-logo">
+                      <img
+                        src={node.frontmatter.logo}
+                        style={{ margin: 0 }}
+                        alt={tag}
+                      />
+                    </span>
+                  )}
                   <h2>{node.frontmatter.title}</h2>
                 </div>
               </Link>
@@ -50,13 +55,14 @@ export const pageQuery = graphql`
   query TagPage2($tag: String) {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___myid], order: ASC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       edges {
         node {
           frontmatter {
             title
+            logo
           }
           fields {
             slug
