@@ -3,8 +3,8 @@ myid: 5
 date: '2018-09-11'
 title: Jsx and Virtual Dom
 description: "JSX means JavaScript XML which is used in  react to write the HTML like syntax inside the javascript it's just an preprocessor.The jsx we write later converts into the JavaScript with the help of Babel"
-logo: '/img/reactlogo.svg'
-thumbnail: /img/reactjs.png
+logo: "/img/reactlogo.svg"
+thumbnail: "/img/reactjs.png"
 tags: ['react']
 ---
 

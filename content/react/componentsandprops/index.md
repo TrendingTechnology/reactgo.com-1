@@ -2,9 +2,9 @@
 myid: 6
 date: '2018-09-10'
 title: Components and props
-description: 'Components are the reusable pieces of code which often you can easily composable with other components.In react they are two approaches to write components one is functional components other is es6 class based components.'
-logo: /img/reactlogo.svg
-thumbnail: /img/reactjs.png
+description: "Components are the reusable pieces of code which often you can easily composable with other components.In react they are two approaches to write components one is functional components other is es6 class based components."
+logo: "/img/reactlogo.svg"
+thumbnail: "/img/reactjs.png"
 tags: ['react']
 ---
 

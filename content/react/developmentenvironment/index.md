@@ -2,9 +2,9 @@
 myid: 4
 date: '2018-09-10'
 title: Setup the development environment
-description: 'To set up the dev environment we need to install the command line tool called create-react-app which is  used to generate the react boilerplates with the best practices it is created by the facebook to overcome the confusion of setting up'
-logo: /img/reactlogo.svg
-thumbnail: /img/reactjs.png
+description: "To set up the dev environment we need to install the command line tool called create-react-app which is  used to generate the react boilerplates with the best practices it is created by the facebook to overcome the confusion of setting up"
+logo: "/img/reactlogo.svg"
+thumbnail: "/img/reactjs.png"
 tags: ['react']
 ---
 

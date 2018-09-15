@@ -2,9 +2,9 @@
 myid: 3
 date: '2018-09-10'
 title: What is React
-description: 'React is JavaScript library used to build websites and user interfaces, progressive web apps it is a just view in MVC model'
-logo: /img/reactlogo.svg
-thumbnail: /img/reactjs.png
+description: "React is JavaScript library used to build websites and user interfaces, progressive web apps it is a just view in MVC model"
+logo: "/img/reactlogo.svg"
+thumbnail: "/img/reactjs.png"
 tags: ['react']
 ---
 

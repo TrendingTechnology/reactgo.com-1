@@ -2,9 +2,9 @@
 myid: 1
 date: '2018-09-10'
 title: Introduction
-description: 'Basics about reactjs How to use and build production-ready single page apps by learning reactjs tutorial step by step interactive approach for beginners'
-logo: /img/reactlogo.svg
-thumbnail: /img/reactjs.png
+description: "Basics about reactjs How to use and build production-ready single page apps by learning reactjs tutorial step by step interactive approach for beginners"
+logo: "/img/reactlogo.svg"
+thumbnail: "/img/reactjs.png"
 tags: ['react']
 ---
 
@@ -36,7 +36,7 @@ covering some es6 features also in this tutorial.
    - [Named imports and exports](/react/developmentenvironment/#named-imports-and-exports)
 - [Jsx and virtual Dom](/react/jsxandvirtualdom/)
   - [What is JSX](/react/jsxandvirtualdom/#what-is-jsx-)
-  - [Virtual Dom](react/jsxandvirtualdom/#virtual-dom)
+  - [Virtual Dom](/react/jsxandvirtualdom/#virtual-dom)
 - [Components and props](/react/componentsandprops/)
 - [Event handling and state](/react/eventhandlingandstate/)
 - [Styling and animation](/react/stylingandanimation/)
