@@ -35,13 +35,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-react-next`,

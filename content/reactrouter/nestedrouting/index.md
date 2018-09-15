@@ -2,7 +2,7 @@
 myid: 6
 date: '2018-09-14'
 title: Nested Routes
-description: 'Nested routing helps us to render the sub-routes like users/1, users/2 etc. Url parameters helps us to render the same component based on its dynamic url like  in our Users  component assume that they are different users with id 1,2,3.'
+description: 'Nested routing helps us to render the sub-routes like users/1, users/2 etc. Url parameters helps us to render the same component based on its dynamic url like  in our Users  component assume that they are different users with id 1,2,3'
 logo: /img/routerlogo.png
 thumbnail: /img/reactrouter.png
 tags: ['reactrouter']

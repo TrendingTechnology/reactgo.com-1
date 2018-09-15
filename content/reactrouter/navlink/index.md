@@ -1,8 +1,8 @@
 ---
 myid: 7
-date: '2018-09-15'
+date: '2018-09-14'
 title: active styles using NavLink
-description: 'Link is used to navigating the different routes on the site. But NavLink is used to add the style attributes to the active routes. In our routing app, we have three routes which are [home,/users,/contact] Let's style them using NavLink.'
+description: 'Link is used to navigating the different routes on the site. But NavLink is used to add the style attributes to the active routes. In our routing app, we have three routes which are home'
 logo: /img/routerlogo.png
 thumbnail: /img/reactrouter.png
 tags: ['reactrouter']
