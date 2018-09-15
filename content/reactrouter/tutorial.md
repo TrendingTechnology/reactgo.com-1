@@ -2,13 +2,13 @@
 myid: 1
 date: '2018-09-14'
 title: Tutorial
-description: "In this tutorial series you will learn about react router 4 which is a currently stable version  used in most react projects"
+description: "In this tutorial series, you will learn about react router  v4 which is a  stable version currently used in most react projects."
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
 ---
 
-In this tutorial series, you will learn about react router 4 which is a currently stable version used in react projects.
+In this tutorial series, you will learn about react router  v4 which is a  stable version currently used in most react projects.
 
 If you don't know about react first go through the [react tutorials](/react/tutorial)
 
