@@ -4,7 +4,7 @@ date: '2018-09-14'
 title: Adding 404 Pages
 description: "A 404 page is also called not found the page it means when a user navigates to the wrong path that doesn't present in the website we need to show the not found page.we need to import another component called Switch which is provided by the react router"
 logo: '/img/routerlogo.png'
-thumbnail: /img/reactrouter.png
+thumbnail: '/img/reactrouter.png'
 tags: ['reactrouter']
 ---
 
