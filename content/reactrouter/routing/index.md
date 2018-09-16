@@ -8,7 +8,7 @@ thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
 ---
 
-open index.js file and import the three components we created in the last tutorial
+open index.js file and import the three components (App,Users,Contact) we created in the last tutorial
 
 _index.js_
 
@@ -23,7 +23,7 @@ import Contact from './contact'
 ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
-React router gives us three components which help us to implement the routing.
+React router gives us three components [Route,Link,BrowserRouter] which help us to implement the routing.
 
 _index.js_
 

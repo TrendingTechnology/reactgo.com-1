@@ -23,10 +23,15 @@ class commonMarkDown extends React.Component {
     var height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight
-    var scrolled = (winScroll / height) * 100
+    var scrolled = (winScroll / height) * 100;
     this.setState({
       scrollHeight: scrolled,
     })
+    if (this.state.scrollHeight > 95) {
+      this.setState({
+        scrollHeight: 100,
+      })
+    }
   }
 
   componentWillUnmount() {
@@ -83,22 +88,22 @@ class commonMarkDown extends React.Component {
           }}
         >
 
-            <article className="content-bar">
-              <h1>{title}</h1>
-              <div
-                style={{ marginTop: '1rem' }}
-                dangerouslySetInnerHTML={{ __html: post.html }}
-              />
+          <article className="content-bar">
+            <h1>{title}</h1>
+            <div
+              style={{ marginTop: '1rem' }}
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
 
-              <Share
-                title={`${title} - ${
-                  this.props.course ? this.props.course : 'Jshype'
+            <Share
+              title={`${title} - ${
+                this.props.course ? this.props.course : 'Jshype'
                 }`}
-                url={url}
-                pathname={pathname}
-              />
-              <NextPost prev={prev} next={next} />
-            </article>
+              url={url}
+              pathname={pathname}
+            />
+            <NextPost prev={prev} next={next} />
+          </article>
         </main>
       </div>
     )
