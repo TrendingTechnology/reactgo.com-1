@@ -3,7 +3,7 @@
 [Reactgo](https://reactgo.com) is a website related to  tutorials and articles about the react & Web development.
 
 
-[![](https://i.imgur.com/VZ0Dr4n.png)](https://reactgo.com)
+[![reactgo.com](https://i.imgur.com/Yq2xuba.png)](https://reactgo.com)
 
 ## Install
 
