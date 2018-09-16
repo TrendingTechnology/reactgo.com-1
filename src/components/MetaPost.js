@@ -76,7 +76,8 @@ const MetaPost = props => (
       {
         name: 'google-site-verification',
         content: 'aoVLvxvcxyHnZQ9-0SvbqQsYwvselU4t0am93cGzGKk'
-      },
+      }
+
     ]}
   >
     <html lang="en" />
