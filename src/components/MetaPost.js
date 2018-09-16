@@ -71,12 +71,7 @@ const MetaPost = props => (
       //     content: props.date,
       // },
       { name: 'twitter:creator', content: '@saigowthamr' },
-      { property: 'og:site_name', content: 'Reactgo' },
-
-      {
-        name: 'google-site-verification',
-        content: 'aoVLvxvcxyHnZQ9-0SvbqQsYwvselU4t0am93cGzGKk'
-      }
+      { property: 'og:site_name', content: 'Reactgo' }
 
     ]}
   >
