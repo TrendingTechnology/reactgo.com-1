@@ -11,23 +11,16 @@ function Footer({ siteTitle }) {
       <hr />
 
       <section className="footer-start">
-        <Link to="/" className="footer-title logostyle">
-          {siteTitle}
-        </Link>
-        <a
-          href="https://twitter.com/saigowthamr"
-          title="twitter"
-          style={{ color: '#3DA9F5' }}
-          target="_blank"
-          rel="noopener"
-          className="footer-title logostyle"
-        >
-          <TwitterIcon />
-        </a>
-        <Link to="/rss.xml" style={{ color: "orange" }} target="_blank"
-          rel="noopener" title="rss feed" className="footer-title logostyle">
-          <Rss />
-        </Link>
+        <div className="socials">
+          <Link to="/" className="footer-title logostyle">
+            {siteTitle}
+          </Link>
+
+          <Link to="/rss.xml" style={{ color: "orange" }} target="_blank"
+            rel="noopener" title="rss feed" className="footer-title logostyle">
+            <Rss />
+          </Link>
+        </div>
         <nav className="footer-links">
           <Link to={'/react/tutorial/'}>React</Link>
           <a href='https://jshype.com/angular/tutorial/'>Angular</a>
@@ -52,6 +45,9 @@ function Footer({ siteTitle }) {
             <input type="submit" className="subs" value="Subscribe" />
           </form>
         </nav>
+        <a href="https://twitter.com/intent/follow?screen_name=saigowthamr" rel="noopener" title="twitter follow" className="twitter-style">
+          <TwitterIcon /> follow @saigowthamr
+</a>
       </section>
     </footer>
   )

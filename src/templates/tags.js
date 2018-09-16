@@ -21,7 +21,7 @@ const Tags = props => {
         pathname={pathname}
         stop
       />
-      <div className="post-list auto ">
+      <div className="post-list auto bglight ">
         <div className="padding-top5">
           <div className="post-setup">
             <h1 className=" slim">{`Tutorials in ${tag}`}</h1>

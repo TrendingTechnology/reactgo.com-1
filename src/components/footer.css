@@ -49,6 +49,17 @@
 .label{
     margin:.4rem;
 }
+.twitter-style{
+    text-decoration: none;
+        position: relative;
+    height: 20px;
+    padding: 1px 8px 1px 6px;
+    background-color: #1b95e0;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 
 .subs{
@@ -59,6 +70,29 @@
     color:whitesmoke;
     font-weight: 600;
 }
+.socials{
+  display: flex;
+}
+.f-logostyle {
+  color: #000000d6;
+  background: #dfdfd500;
+  padding: 0.3rem;
+  margin-left: 0.8rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: unset;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 1px 0px white;
+  transition: all 0.3s ease-in;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.f-logostyle:hover {
+  box-shadow: -1px 0px 0px 2px #f5f5f5;
+}
+
 
 @media only screen and (max-width:870px){
 
