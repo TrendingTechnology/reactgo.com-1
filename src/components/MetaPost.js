@@ -4,7 +4,7 @@ import icon from '../img/favicon.ico'
 
 const MetaPost = props => (
   <Helmet
-    defaultTitle={`${props.title} ${!props.no ? "| Reactgo" : ''} `}
+    defaultTitle={`${props.title} ${!props.no ? '| Reactgo' : ''} `}
     meta={[
       { name: 'title', content: props.title },
 
@@ -72,7 +72,6 @@ const MetaPost = props => (
       // },
       { name: 'twitter:creator', content: '@saigowthamr' },
       { property: 'og:site_name', content: 'Reactgo' }
-
     ]}
   >
     <html lang="en" />
