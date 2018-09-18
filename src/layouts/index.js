@@ -1,6 +1,6 @@
 import React from 'react'
 import Metapost from '../components/MetaPost'
-require('../themes/duo-tone.css');
+require('../themes/code-color.css');
 import Header from '../components/header';
 import Jsimg from '../img/js.jpg'
 import Footer from '../components/footer'
@@ -12,14 +12,14 @@ const Layout = ({ children, data, location }) => (
       title={data.site.siteMetadata.title}
       description={data.site.siteMetadata.description}
       url={data.site.siteMetadata.siteUrl}
-      thumbnail={data.site.siteMetadata.siteUrl+Jsimg}
+      thumbnail={data.site.siteMetadata.siteUrl + Jsimg}
       stop
       no
     />
 
     <Header siteTitle={'Reactgo'} location={location} />
     <div>
-      {children ? children(): <strong>Loading</strong>}
+      {children ? children() : <strong>Loading</strong>}
     </div>
 
     <Footer siteTitle={'Reactgo'} />

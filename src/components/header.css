@@ -104,13 +104,12 @@
   padding: 0.2rem 0.4rem;
   font-size: 0.9rem;
   background-color: #ffffff7a;
-  box-shadow: inset 1px 1px 1px whitesmoke;
   transition: all 0.3s ease-in;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .nav a:hover {
-  box-shadow: inset 1px 41px 0px 0px #f5f5f5;
+  font-weight: 500;
 }
 
 .github {
