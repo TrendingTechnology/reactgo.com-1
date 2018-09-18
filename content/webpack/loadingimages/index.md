@@ -1,6 +1,6 @@
 ---
 myid: 8
-date: '2018-09-17'
+date: '2018-09-18'
 title: Loading images
 description: "To load images we need to use url-loader and file-loader."
 logo: "/img/webpacklogo.png"

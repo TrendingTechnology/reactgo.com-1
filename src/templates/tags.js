@@ -13,8 +13,8 @@ const Tags = props => {
   return (
     <div>
       <MetaPost
-        title={`Trending Posts - ${tag}`}
-        description={`How to ${tag} explains about the modern  web development technologies with step by step tutorials
+        title={`Tutorials - ${tag}`}
+        description={`How to ${tag} explains about the ${tag}  with step by step interactive tutorials
         and articles`}
         thumbnail={jsimg}
         url={url}
