@@ -2,7 +2,7 @@
 myid: 8
 date: '2018-09-17'
 title: Loading images
-description: "The whole part of webpack is built with plugins a plugin is just an instance where it has a apply method so that we can access the entire compilation life cycle of the webpack."
+description: "To load images we need to use url-loader and file-loader."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']

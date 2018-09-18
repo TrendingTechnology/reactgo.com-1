@@ -2,7 +2,7 @@
 myid: 7
 date: '2018-09-17'
 title: Style Loaders
-description: "The whole part of webpack is built with plugins a plugin is just an instance where it has a apply method so that we can access the entire compilation life cycle of the webpack."
+description: "In this tutorial, you learn about how to import styles as a module with the help of css-loader and style loader."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']

@@ -2,7 +2,7 @@
 myid: 4
 date: '2018-09-17'
 title: Dev server
-description: "In this tutorial series, you will learn about webpack  which is module bundler used in most projects such as react,vuejs and angular"
+description: "Webpack dev server is used to spin up a server so that we can develop our app in the local environment."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']

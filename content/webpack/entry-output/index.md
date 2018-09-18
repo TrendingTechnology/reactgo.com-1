@@ -2,7 +2,7 @@
 myid: 3
 date: '2018-09-17'
 title: Entry and Output
-description: "In this tutorial series, you will learn about webpack  which is module bundler used in most projects such as react,vuejs and angular"
+description: "we need to tell the webpack a starting point so that webpack can figure out its dependencies and start bundling."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
