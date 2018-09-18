@@ -23,24 +23,27 @@ function Footer({ siteTitle }) {
         </div>
         <nav className="footer-links">
           <Link to={'/react/tutorial/'}>React</Link>
-          <a href='https://jshype.com/angular/tutorial/'>Angular</a>
-          <a href='https://jshype.com/vuejs/tutorial/'>Vue</a>
-          <a href='https://jshype.com/javascript'>JavaScript</a>
+          <Link to={'/webpack/tutorial/'}>Webpack</Link>
+
           <form
             className="form"
-            action="https://buttondown.email/api/emails/embed-subscribe/saigowthamr"
+            action="https://tinyletter.com/reactgo"
             method="post"
             target="popupwindow"
-            onSubmit={e => {
-              e.preventDefault()
-              window.open('https://buttondown.email/saigowthamr', 'popupwindow')
+            onSubmit={() => {
+              window.open(
+                "https://tinyletter.com/reactgo",
+                "popupwindow",
+                "scrollbars=yes,width=800,height=600"
+              )
+              return true
             }}
           >
             <h4>Want to update with latest tutorials</h4>
-            <label htmlFor="bd-email" className="label">
+            <label htmlFor="tlemail" className="label">
               Email
             </label>
-            <input type="email" name="email" id="bd-email" className="email" />
+            <input type="email" name="email" id="tlemail" className="email" />
             <input type="hidden" value="1" name="embed" />
             <input type="submit" className="subs" value="Subscribe" />
           </form>
