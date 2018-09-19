@@ -37,6 +37,14 @@ class MobileSidebar extends React.Component {
             className="mob-start"
             aria-hidden={!this.state.open ? false : true}
           >
+            <span style={{
+              marginBottom: '17px',
+              textAlign: 'CENTER'
+            }}>
+              {
+                this.props.course.charAt(0).toUpperCase() +
+                this.props.course.slice(1) + ' tutorials'}
+            </span>
             {searchedCourse.map(({ node }, i) => (
               <CreateLink
                 node={node}
