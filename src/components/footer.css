@@ -131,7 +131,10 @@
     margin-left: 0rem;
   margin-top:1rem;
    box-shadow: none;
+    padding: .4rem
+
 }
+
 
 
 .email{
@@ -145,4 +148,11 @@
     .footer-start{
     margin-left: 0;
    }
+   .form{
+
+    margin-left: 0rem;
+  margin-top:1rem;
+   box-shadow: none;
+}
+
 }
