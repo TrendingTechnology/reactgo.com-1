@@ -21,16 +21,16 @@ Add a new rule to the  array
 
 ```js
  {
-                test: /\.(png|jpg|gif|jpeg|ttf)$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 8000
-                        }
-                    }
-                ]
-            }
+  test: /\.(png|jpg|gif|jpeg|ttf)$/,
+    use: [
+    {
+        loader: 'url-loader',
+        options: {
+            limit: 8000
+        }
+      }
+    ]
+}
 ```
 
 Url-loader helps us to the load images as a base64 format if the image size is more than 8kb it will add an image instead of inlining it as a base64.
