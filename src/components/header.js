@@ -43,7 +43,7 @@ class Header extends React.Component {
               to={'/reactrouter/tutorial/'}
               activeStyle={{ backgroundColor: '#f5f5f5' }}
             >
-              React router
+              Reactrouter
             </Link>
             <Link to={'/webpack/tutorial/'}
               activeStyle={{ backgroundColor: '#f5f5f5' }}
