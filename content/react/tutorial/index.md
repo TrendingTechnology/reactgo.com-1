@@ -10,13 +10,12 @@ tags: ['react']
 
 In this tutorial, you will learn about fundamental concepts of reactjs by building an Accordion using React.
 
-This tutorial is often breakdown into parts.
 
 The final app we are building.
 
 ![accordion react](./finalapp.gif)
 
-<a href="https://github.com/saigowthamr/reactaccordion" target="_black" rel="noopener">Final code repository</a>.
+<a href="https://github.com/saigowthamr/reactaccordion" target="_black" rel="noopener">Final code repository</a>
 
 <a href="https://saigowthamr.github.io/reactaccordion/" target="_black" rel="noopener">Live Accordion</a>
 
