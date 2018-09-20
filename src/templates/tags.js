@@ -4,12 +4,15 @@ import js from '../img/jslogo.png'
 import MetaPost from '../components/MetaPost'
 import jsimg from '../img/js.jpg'
 import '../pages/list.css'
+import Times from 'react-icons/lib/io/clock'
 
 const Tags = props => {
   const { tag } = props.pathContext
   const { edges, totalCount } = props.data.allMarkdownRemark
   const url = props.data.site.siteMetadata.url
-  const pathname = props.location.pathname
+  const pathname = props.location.pathname;
+  let totalMin = edges.map(({ node }, i) => node.timeToRead).reduce((a, c) => a + c);
+
   return (
     <div>
       <MetaPost
@@ -24,8 +27,10 @@ const Tags = props => {
       <div className="post-list auto bglight ">
         <div className="padding-top5">
           <div className="post-setup">
-            <h1 className=" slim">{`Tutorials in ${tag}`}</h1>
-            {props.data.allMarkdownRemark.edges.map(({ node }, i) => (
+            <h1 className=" slim">{`Tutorials in ${tag}`}
+            </h1>
+            <strong className="center"><Times className="clock" /> {totalMin + 'min read'}</strong>
+            {edges.map(({ node }, i) => (
               <Link to={node.fields.slug} key={i}>
                 <div className="post-items">
 
@@ -39,6 +44,7 @@ const Tags = props => {
                     </span>
                   )}
                   <h2>{node.frontmatter.title}</h2>
+                  <p>{node.excerpt}</p>
                 </div>
               </Link>
             ))}
@@ -60,6 +66,8 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          excerpt(pruneLength:70)
+             timeToRead
           frontmatter {
             title
             logo
