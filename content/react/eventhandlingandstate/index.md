@@ -252,7 +252,7 @@ export default Accordion;
 
 ```
 
-We added a `{props.currentIndex === props.index && <li>{props.answer}</li>}` so that the answer element only
+We added a {props.currentIndex === props.index && <li>{props.answer}</li>} so that the answer element only
 shows in the browser when this condition is true.
 
 *list.js*
