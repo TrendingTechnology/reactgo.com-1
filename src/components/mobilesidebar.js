@@ -3,7 +3,7 @@ import CreateLink from './Links'
 import { searchStringInArray } from '../../helper'
 import AlignJustify from 'react-icons/lib/fa/align-justify'
 import Asterisk from 'react-icons/lib/fa/asterisk'
-
+import Link from 'gatsby-link';
 import '../pages/commonMarkdown.css'
 
 class MobileSidebar extends React.Component {
@@ -18,7 +18,7 @@ class MobileSidebar extends React.Component {
   render() {
     let { open } = this.state
     const { allMarkdownRemark } = this.props.data
-
+    const { course } = this.props
     const searchedCourse = searchStringInArray(
       `/${this.props.course.toLowerCase()}`,
       allMarkdownRemark.edges
@@ -41,9 +41,9 @@ class MobileSidebar extends React.Component {
               marginBottom: '17px',
               textAlign: 'CENTER'
             }}>
-              {
-                this.props.course.charAt(0).toUpperCase() +
-                this.props.course.slice(1) + ' tutorials'}
+              <Link to={'/' + course}>
+                {`#${course.charAt(0).toUpperCase()}${course.slice(1)} tutorials`}
+              </Link>
             </span>
             {searchedCourse.map(({ node }, i) => (
               <CreateLink

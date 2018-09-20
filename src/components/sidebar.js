@@ -32,11 +32,9 @@ class Sidebar extends React.Component {
     )
     return (
       <div className={`sidebar ${this.props.right && 'rightbar'} `}>
-        <span>
-          {
-            course.charAt(0).toUpperCase() +
-            course.slice(1) +' tutorials'}
-        </span>
+        <Link to={'/' + course} style={{ marginLeft: "-1rem" }}>
+          {`#${course.charAt(0).toUpperCase()}${course.slice(1)} tutorials`}
+        </Link>
         <span className="course-logo" style={{ right: 0, opacity: 0.2 }}>
           <img src={clogo} alt={course} />
         </span>
