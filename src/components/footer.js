@@ -23,8 +23,8 @@ function Footer({ siteTitle }) {
           </Link>
         </div>
         <nav className="footer-links">
-          <Link to={'/react/tutorial/'}>React</Link>
-          <Link to={'/webpack/tutorial/'}>Webpack</Link>
+          <Link to={'/react/'}>React</Link>
+          <Link to={'/webpack/'}>Webpack</Link>
 
           <form
             className="form"

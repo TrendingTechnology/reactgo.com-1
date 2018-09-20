@@ -65,6 +65,41 @@
   top: 0;
 }
 
+
+.clock{
+      font-size: 2rem;
+    box-shadow: inset -2px 2px 0px 0px #3c0303f7;
+    border-radius: 122%;
+    animation: rotateClock 3s ease-in;
+    animation-iteration-count: infinite;
+        background: rgb(215, 236, 255);
+}
+
+@keyframes rotateClock{
+
+  0%{
+    box-shadow: inset -2px 2px 1px 1px rgba(60, 3, 3, 0.9);
+  }
+  20%{
+    box-shadow: inset -4px 1px 0px 0px rgba(255, 2, 14, 0.9);
+
+  }
+
+   50%{
+           box-shadow: inset 1px 0px 0px 1px rgba(0, 26, 255, 0.969);
+
+  }
+   90%{
+        box-shadow: inset -3px -1px 0px 0px rgba(0, 89, 255, 0.969);
+
+  }
+   100%{
+    box-shadow: inset -2px 2px 0px 0px #0bdd3ff7;
+
+  }
+
+}
+
 .slim {
   font-weight: 300;
   position: relative;

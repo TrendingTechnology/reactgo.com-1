@@ -37,21 +37,7 @@ module.exports = async ({ graphql, boundActionCreators }) => {
           const allPosts = result.data.allMarkdownRemark.edges
 
 
-          const tutorial = [
-            '/react',
-            '/reactrouter',
-            '/webpack'
-          ]
 
-          //tutorials
-          tutorial.forEach(tut => {
-            return generatePosts(
-              tut,
-              allPosts,
-              './src/templates/eachTutorials.js',
-              createPage
-            )
-          })
 
           //articles
           // generatePosts('/a', allPosts, './src/templates/post.js', createPage)
@@ -82,7 +68,17 @@ module.exports = async ({ graphql, boundActionCreators }) => {
             })
           })
 
+          const tutorial = tags
 
+          //tutorials
+          tutorial.forEach(tut => {
+            return generatePosts(
+              `/${tut}`,
+              allPosts,
+              './src/templates/eachTutorials.js',
+              createPage
+            )
+          })
 
           return
         })
