@@ -6,6 +6,7 @@ description: "we need to tell the webpack a starting point so that webpack can f
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 Let's create a webpack.config.js file.

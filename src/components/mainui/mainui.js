@@ -1,6 +1,7 @@
 import React from 'react'
 import { searchStringInArray } from '../../../helper'
 import Link from 'gatsby-link'
+import _ from 'lodash'
 
 // function capitalizeFirstLetter(str) {
 //   return str.charAt(0).toUpperCase() + str.slice(1)
@@ -9,9 +10,7 @@ import Link from 'gatsby-link'
 class MainUi extends React.Component {
   render() {
     const { allMarkdownRemark } = this.props.data
-    const heading = allMarkdownRemark.edges.map(
-      ({ node }) => node.frontmatter.tags[0]
-    )
+
 
     return (
       <div>
@@ -20,7 +19,7 @@ class MainUi extends React.Component {
             <div className="post-setup">
               <h1 className=" slim">{`Learn React tutorials for beginners`}</h1>
               {allMarkdownRemark.edges.map(({ node }, i) => (
-                <Link to={node.fields.slug} key={i}>
+                < Link to={node.fields.slug} key={i} >
                   <div className="post-items">
                     {node.frontmatter.logo && (
                       <span className="list-logo">

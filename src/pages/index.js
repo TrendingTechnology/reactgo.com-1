@@ -6,7 +6,7 @@ class Index extends React.Component {
   render() {
     return (
       <div>
-        <MainUi  data={this.props.data} />
+        <MainUi data={this.props.data} />
       </div>
     )
   }
@@ -26,6 +26,8 @@ export const query = graphql`
             title
             logo
             tags
+            course
+            thumbnail
           }
           fields {
             slug

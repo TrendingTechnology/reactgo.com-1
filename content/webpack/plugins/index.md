@@ -6,6 +6,7 @@ description: "The whole part of webpack is built with plugins a plugin is just a
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 The whole part of webpack is built with plugins a plugin is just an instance where it has an apply method so that we can access the entire compilation life cycle of the webpack.

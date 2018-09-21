@@ -6,6 +6,7 @@ description: "React router is  built on top of the react which is  used to creat
 logo: '/img/routerlogo.png'
 thumbnail: '/img/reactrouter.png'
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 ## What is react router?

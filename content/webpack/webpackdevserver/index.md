@@ -6,6 +6,7 @@ description: "Webpack dev server is used to spin up a server so that we can deve
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 ## Webpack dev server

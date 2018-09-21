@@ -73,7 +73,7 @@ module.exports = async ({ graphql, boundActionCreators }) => {
           //tutorials
           tutorial.forEach(tut => {
             return generatePosts(
-              `/${tut}`,
+              `/${tut.length > 9 ? tut : tut.slice(0, 9)}`,
               allPosts,
               './src/templates/eachTutorials.js',
               createPage

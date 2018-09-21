@@ -6,6 +6,7 @@ description: "In this tutorial, you learn about how to import styles as a module
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 In this tutorial, you learn about how to import styles as a module with the help of css-loader and style loader.

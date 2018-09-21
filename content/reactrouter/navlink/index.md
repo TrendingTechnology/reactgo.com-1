@@ -6,6 +6,7 @@ description: "Link is used to navigating the different routes on the site. But N
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 ## NavLink

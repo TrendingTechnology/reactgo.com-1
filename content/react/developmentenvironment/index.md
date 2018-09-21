@@ -6,6 +6,7 @@ description: "To set up the dev environment we need to install the command line 
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']
+course: React Basics
 ---
 
 ## Create react app

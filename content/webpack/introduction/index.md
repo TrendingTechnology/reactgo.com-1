@@ -6,6 +6,7 @@ description: "Webpack is a module bundler  if you know about create-react-app or
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 ## What is the Webpack?

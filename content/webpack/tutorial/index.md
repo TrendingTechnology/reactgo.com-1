@@ -6,6 +6,7 @@ description: "In this tutorial series, you will learn about webpack  which is mo
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 In this tutorial series, you will learn about webpack which is a static module bundler. It can do more than module bundling such as code splitting, asset optimization, bundle analyzer, hot module replacement.

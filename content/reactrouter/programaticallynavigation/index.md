@@ -6,6 +6,7 @@ description: "It means we need to redirect the user when an event happens on tha
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 ## What is Programmatic navigation?

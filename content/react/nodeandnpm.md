@@ -6,6 +6,7 @@ description: "In this tutorial, we will be set up our development environment fo
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']
+course: React Basics
 ---
 
 # What is Nodejs?
