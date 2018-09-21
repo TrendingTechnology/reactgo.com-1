@@ -30,6 +30,7 @@ export const query = graphql`
         logo
         thumbnail
         tags
+        course
       }
       fields {
         slug

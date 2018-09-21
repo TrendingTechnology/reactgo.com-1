@@ -42,11 +42,10 @@ class commonMarkDown extends React.Component {
     const post = this.props.data.markdownRemark
     const url = this.props.data.site.siteMetadata.url
     const pathname = this.props.location.pathname
-    const { title, description, date, thumbnail, logo } = post.frontmatter
+    const { title, description, date, thumbnail, logo, course } = post.frontmatter
     const { next, prev, slug } = this.props.pathContext
     const author = this.props.data.site.siteMetadata.author
-    const seoTitle = `${title} - ${this.props.course &&
-      this.props.course.charAt(0).toUpperCase() + this.props.course.slice(1)}`
+    const seoTitle = `${title} - ${course && course}`
 
     return (
       <div className="main">
