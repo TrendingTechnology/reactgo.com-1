@@ -6,6 +6,7 @@ description: "In normal HTML5 we are using an onclick but in react we need to us
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']
+course: React Basics
 ---
 
 

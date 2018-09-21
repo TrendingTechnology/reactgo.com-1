@@ -6,6 +6,7 @@ description: "React router is  built on top of the react which is  used to creat
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 open index.js file and import the three components (App,Users,Contact) we created in the last tutorial

@@ -6,6 +6,7 @@ description: "Loaders help us to take the particular source code and returns bac
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 ## What is Loaders?

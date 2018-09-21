@@ -1,25 +1,26 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import js from '../img/jslogo.png'
 import MetaPost from '../components/MetaPost'
-import jsimg from '../img/js.jpg'
 import '../pages/list.css'
 import Times from 'react-icons/lib/io/clock'
+import _ from 'lodash'
 
 const Tags = props => {
   const { tag } = props.pathContext
   const { edges, totalCount } = props.data.allMarkdownRemark
   const url = props.data.site.siteMetadata.url
   const pathname = props.location.pathname;
+  const courseTitle = _.get(edges[0], 'node.frontmatter.course');
+  const courseDescription = _.get(edges[0], 'node.frontmatter.description');
+  const thumbnail = _.get(edges[0], 'node.frontmatter.thumbnail');
   let totalMin = edges.map(({ node }, i) => node.timeToRead).reduce((a, c) => a + c);
 
   return (
     <div>
       <MetaPost
-        title={`Tutorials - ${tag}`}
-        description={`How to ${tag} explains about the ${tag}  with step by step interactive tutorials
-        and articles`}
-        thumbnail={jsimg}
+        title={courseTitle ? courseTitle : `Tutorials in ${tag}`}
+        description={courseDescription}
+        thumbnail={url + thumbnail}
         url={url}
         pathname={pathname}
         stop
@@ -27,13 +28,13 @@ const Tags = props => {
       <div className="post-list auto bglight ">
         <div className="padding-top5">
           <div className="post-setup">
-            <h1 className=" slim">{`Tutorials in ${tag}`}
+            <h1 className=" slim">{courseTitle ? courseTitle : `Tutorials in ${tag}`}
             </h1>
             <strong className="center"><Times className="clock" /> {totalMin + 'min read'}</strong>
             {edges.map(({ node }, i) => (
               <Link to={node.fields.slug} key={i}>
-                <div className="post-items">
 
+                <div className="post-items">
                   {node.frontmatter.logo && (
                     <span className="list-logo">
                       <img
@@ -71,6 +72,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             logo
+            course
+            description
+            thumbnail
           }
           fields {
             slug

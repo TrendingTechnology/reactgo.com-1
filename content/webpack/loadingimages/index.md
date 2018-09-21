@@ -6,6 +6,7 @@ description: "To load images we need to use url-loader and file-loader."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
 tags: ['webpack']
+course: Intro to the Webpack
 ---
 
 

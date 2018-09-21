@@ -6,6 +6,7 @@ description: "Nested routing helps us to render the sub-routes like users/1, use
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 Nested routing helps us to render the sub-routes like users/1, users/2 etc.

@@ -6,6 +6,7 @@ description: "Basics about reactjs How to use and build production-ready single 
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']
+course: React Basics
 ---
 
 In this tutorial, you will learn about fundamental concepts of reactjs by building an Accordion using React.

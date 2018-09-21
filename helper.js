@@ -1,14 +1,14 @@
 const path = require('path')
-
+var slugify = require('slugify')
 let arr
 let createPage
 
 function searchStringInArray(str, arr, lim) {
   if (lim) {
-    const items = arr.filter(({ node }) => '/'+node.frontmatter.tags[0] === str)
+    const items = arr.filter(({ node }) => '/' + node.frontmatter.tags[0] === str)
     return items.slice(0, lim)
   }
-  return arr.filter(({ node }) => '/'+node.frontmatter.tags[0] === str)
+  return arr.filter(({ node }) => '/' + node.frontmatter.tags[0] === str)
 }
 
 function getPageandPosts(posts, page) {
@@ -21,6 +21,7 @@ function generatePosts(str, arr, url, createPage) {
   const eachTutorial = searchStringInArray(str, arr)
 
   return eachTutorial.forEach(({ node }, index) => {
+    console.log(slugify(node.fields.slug))
     return createPage({
       path: node.fields.slug,
       component: path.resolve(url),

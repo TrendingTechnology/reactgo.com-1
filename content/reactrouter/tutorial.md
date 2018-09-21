@@ -6,6 +6,7 @@ description: "In this tutorial series, you will learn about react router  v4 whi
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 In this tutorial series, you will learn about react router  v4 which is a  stable version currently used in most react projects.

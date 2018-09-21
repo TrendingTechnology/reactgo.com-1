@@ -6,6 +6,7 @@ description: "Url parameters helps us to render the same component based on its 
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 Url parameters helps us to render the same component based on its dynamic url like in our Users component assume that they are different users with id 1,2,3.

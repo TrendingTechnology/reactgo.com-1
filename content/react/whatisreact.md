@@ -6,6 +6,7 @@ description: "React is JavaScript library used to build websites and user interf
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']
+course: React Basics
 ---
 
 

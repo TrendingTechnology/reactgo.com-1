@@ -6,6 +6,7 @@ description: "JSX means JavaScript XML which is used in  react to write the HTML
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']
+course: React Basics
 ---
 
 ## What is JSX?

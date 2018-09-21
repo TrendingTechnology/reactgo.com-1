@@ -6,6 +6,7 @@ description: "Components are the reusable pieces of code which often you can eas
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']
+course: React Basics
 ---
 
 

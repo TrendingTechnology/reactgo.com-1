@@ -6,6 +6,7 @@ description: "A 404 page is also called not found the page it means when a user 
 logo: '/img/routerlogo.png'
 thumbnail: '/img/reactrouter.png'
 tags: ['reactrouter']
+course: React router beginners guide
 ---
 
 ## What is a 404 page?
