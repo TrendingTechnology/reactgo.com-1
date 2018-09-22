@@ -1,5 +1,4 @@
 const path = require('path')
-var slugify = require('slugify')
 let arr
 let createPage
 
@@ -21,7 +20,6 @@ function generatePosts(str, arr, url, createPage) {
   const eachTutorial = searchStringInArray(str, arr)
 
   return eachTutorial.forEach(({ node }, index) => {
-    console.log(slugify(node.fields.slug))
     return createPage({
       path: node.fields.slug,
       component: path.resolve(url),

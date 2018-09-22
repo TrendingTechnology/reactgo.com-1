@@ -27,16 +27,9 @@ covering some es6 features also in this tutorial.
 ## Table of contents
 
 - [Node and npm](/react/nodeandnpm/)
-  - [What is nodejs](/react/nodeandnpm/#what-is--nodejs-)
-  - [What is npm](/react/nodeandnpm/#what-is-npm-)
 - [What is React and who uses react ?](/react/whatisreact/)
 - [Setting up development environment](/react/developmentenvironment/)
-   - [Create react app](/react/developmentenvironment/#create-react-app)
-   - [Default Imports and exports](/react/developmentenvironment/#default-imports-and-exports)
-   - [Named imports and exports](/react/developmentenvironment/#named-imports-and-exports)
 - [Jsx and virtual Dom](/react/jsxandvirtualdom/)
-  - [What is JSX](/react/jsxandvirtualdom/#what-is-jsx-)
-  - [Virtual Dom](/react/jsxandvirtualdom/#virtual-dom)
 - [Components and props](/react/componentsandprops/)
 - [Event handling and state](/react/eventhandlingandstate/)
 - [Styling and animation](/react/stylingandanimation/)
