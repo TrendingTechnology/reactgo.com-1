@@ -4,8 +4,8 @@ const { generatePosts } = require('./helper')
 
 const path = require('path')
 
-module.exports = async ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+module.exports = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     resolve(

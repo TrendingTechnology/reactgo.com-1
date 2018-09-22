@@ -2,7 +2,7 @@
 myid: 8
 date: '2018-09-10'
 title: Styling and animation
-description: "In normal HTML5 we are using an onclick but in react we need to use the camelCase notation onClick.We need to attach the onclick event handler to the li question element so that we only show the answer when a user clicks on the question at the end this tutorial we need to implement this feature to our accordion app."
+description: "In react we need to import the CSS just like how we imported js.We need to use a className attribute instead of the class attribute in react."
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
 tags: ['react']

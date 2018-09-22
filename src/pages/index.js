@@ -1,13 +1,19 @@
 import React from 'react'
 import './main.css'
 import MainUi from '../components/mainui/mainui'
+import { graphql } from "gatsby"
+import Layout from '../components/layout';
+import './list.css';
+import Footer from '../components/footer';
 
 class Index extends React.Component {
   render() {
     return (
-      <div>
+      <Layout location={this.props.location} >
+
         <MainUi data={this.props.data} />
-      </div>
+        <Footer siteTitle={'Reactgo'} />
+      </Layout>
     )
   }
 }

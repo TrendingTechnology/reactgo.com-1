@@ -2,7 +2,10 @@ import React from 'react'
 import CommonMarkdown from '../components/commonmarkdown'
 
 import { searchStringInArray } from '../../helper'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby';
+import { graphql } from "gatsby"
+import '../components/index.css'
+
 
 class Post extends React.Component {
   render() {
@@ -25,7 +28,7 @@ class Post extends React.Component {
           thumbnail={url + thumbnail}
           data={this.props.data}
           location={this.props.location}
-          pathContext={this.props.pathContext}
+          context={this.props.pageContext}
         />
 
         <div className="post-list auto">
@@ -50,8 +53,6 @@ export const pageQuery = graphql`
   query Post4Query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      birthTime
-      modifiedTime
       frontmatter {
         title
         tags

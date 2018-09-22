@@ -1,13 +1,14 @@
-const path = require('path')
+const path = require('path');
+const _ = require('lodash');
 let arr
 let createPage
 
 function searchStringInArray(str, arr, lim) {
   if (lim) {
-    const items = arr.filter(({ node }) => '/' + node.frontmatter.tags[0] === str)
+    const items = _.filter(arr, ({ node }) => '/' + node.frontmatter.tags[0] === str)
     return items.slice(0, lim)
   }
-  return arr.filter(({ node }) => '/' + node.frontmatter.tags[0] === str)
+  return _.filter(arr, ({ node }) => '/' + node.frontmatter.tags[0] === str)
 }
 
 function getPageandPosts(posts, page) {

@@ -1,4 +1,3 @@
-
 code[class*="language-"],
 pre[class*="language-"] {
   font-family:  Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -72,7 +71,7 @@ pre[class*="language-"] {
 
 .token.property {
 
-     color: #051a36;
+       color: #292b30cc;
 }
 
 .token.tag {
@@ -84,7 +83,7 @@ pre[class*="language-"] {
 }
 
 .token.selector {
-   color: #941809;
+  color: #821507c7;
 
 }
 

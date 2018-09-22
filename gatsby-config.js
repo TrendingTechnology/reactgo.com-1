@@ -36,8 +36,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-react-next`,
-
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {

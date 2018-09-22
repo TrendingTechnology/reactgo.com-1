@@ -1,16 +1,20 @@
 import React from 'react'
 import '../pages/list.css'
 import MainUi from '../components/mainui/mainui'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby';
 import MetaPost from '../components/MetaPost';
 import thumbnail from '../img/js.jpg';
+import { graphql } from "gatsby"
+import '../components/index.css'
+
+
 
 class EachCourse extends React.Component {
   render() {
     const url = this.props.data.site.siteMetadata.url
     const pathname = this.props.location.pathname
     const { data } = this.props
-    const { cs } = this.props.pathContext
+    const { cs } = this.props.pageContext
     // console.log(this.props)
 
     return (

@@ -3,7 +3,8 @@ import CreateLink from './Links'
 import { searchStringInArray } from '../../helper'
 import AlignJustify from 'react-icons/lib/fa/align-justify'
 import Asterisk from 'react-icons/lib/fa/asterisk'
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
+
 import '../pages/commonMarkdown.css'
 
 class MobileSidebar extends React.Component {

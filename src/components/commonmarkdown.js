@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import MetaPost from './MetaPost'
 import '../templates/blog-post.css'
 import '../pages/commonMarkdown.css'
@@ -43,7 +42,7 @@ class commonMarkDown extends React.Component {
     const url = this.props.data.site.siteMetadata.url
     const pathname = this.props.location.pathname
     const { title, description, date, thumbnail, logo, course } = post.frontmatter
-    const { next, prev, slug } = this.props.pathContext
+    const { next, prev } = this.props.context
     const author = this.props.data.site.siteMetadata.author
     const seoTitle = `${title} - ${course && course}`
 
@@ -56,8 +55,6 @@ class commonMarkDown extends React.Component {
           url={url}
           pathname={pathname}
           thumbnail={this.props.thumbnail || (thumbnail && url + thumbnail)}
-          dateMod={post.modifiedTime}
-          datePub={post.birthTime}
         />
         <div className="progress-bar">
           <span

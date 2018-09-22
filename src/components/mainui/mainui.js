@@ -1,7 +1,6 @@
 import React from 'react'
-import { searchStringInArray } from '../../../helper'
-import Link from 'gatsby-link'
-import _ from 'lodash'
+// import { searchStringInArray } from '../../../helper'
+import { Link } from 'gatsby'
 
 // function capitalizeFirstLetter(str) {
 //   return str.charAt(0).toUpperCase() + str.slice(1)
