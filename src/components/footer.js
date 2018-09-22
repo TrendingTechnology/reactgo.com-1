@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Link from 'gatsby-link';
 import TwitterIcon from 'react-icons/lib/fa/twitter'
 import Magic from 'react-icons/lib/fa/magic'
 import Rss from 'react-icons/lib/fa/rss-square'
@@ -25,34 +25,34 @@ function Footer({ siteTitle }) {
         <nav className="footer-links">
           <Link to={'/react/'}>React</Link>
           <Link to={'/webpack/'}>Webpack</Link>
-
-          <form
-            className="form"
-            action="https://tinyletter.com/reactgo"
-            method="post"
-            target="popupwindow"
-            onSubmit={() => {
-              window.open(
-                "https://tinyletter.com/reactgo",
-                "popupwindow",
-                "scrollbars=yes,width=800,height=600"
-              )
-              return true
-            }}
-          >
-            <section className="form-box">
-              <Magic style={{ color: 'red' }} />  <h4>get the
-               weekly <span style={{ fontFamily: "cursive" }}>newsletter</span>
-                <Magic style={{ color: 'red' }} /></h4>
-              <label htmlFor="tlemail" className="label">
-                Email
-            </label>
-              <input type="email" name="email" id="tlemail" className="email" />
-              <input type="hidden" value="1" name="embed" />
-              <input type="submit" className="subs" value="Subscribe" />
-            </section>
-          </form>
         </nav>
+
+        <form
+          className="form"
+          action="https://tinyletter.com/reactgo"
+          method="post"
+          target="popupwindow"
+          onSubmit={() => {
+            window.open(
+              "https://tinyletter.com/reactgo",
+              "popupwindow",
+              "scrollbars=yes,width=800,height=600"
+            )
+            return true
+          }}
+        >
+          <section className="form-box">
+            <Magic style={{ color: 'red' }} />  <h4>get the
+               weekly <span style={{ fontFamily: "cursive" }}>newsletter</span>
+              <Magic style={{ color: 'red' }} /></h4>
+            <label htmlFor="tlemail" className="label">
+              Email
+            </label>
+            <input type="email" name="email" id="tlemail" className="email" />
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" className="subs" value="Subscribe" />
+          </section>
+        </form>
         <a href="https://twitter.com/intent/follow?screen_name=saigowthamr" rel="noopener" title="twitter follow" className="twitter-style">
           <TwitterIcon /> follow @saigowthamr
 </a>
