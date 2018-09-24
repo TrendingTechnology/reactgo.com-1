@@ -1,7 +1,7 @@
-const { generatePosts, getPageandPosts } = require('./helper')
+// const { generatePosts, getPageandPosts } = require('./helper')
 
-function generator(allPosts, createPage) {
-  getPageandPosts(allPosts, createPage)
-}
+// function generator(allPosts, createPage) {
+//   getPageandPosts(allPosts, createPage)
+// }
 
-module.exports = { generator }
+// module.exports = { generator }

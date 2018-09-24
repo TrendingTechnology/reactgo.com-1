@@ -68,12 +68,14 @@ module.exports = async ({ graphql, boundActionCreators }) => {
             })
           })
 
+
+
           const tutorial = tags
 
-          //tutorials
+          //creating tutorials
           tutorial.forEach(tut => {
             return generatePosts(
-              `/${tut.length > 9 ? tut : tut.slice(0, 9)}`,
+              tut,
               allPosts,
               './src/templates/eachTutorials.js',
               createPage

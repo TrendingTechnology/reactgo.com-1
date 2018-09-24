@@ -37,7 +37,7 @@ class Contact extends React.Component {
     return (
       <form>
         <input placeholder="name" type="name" />
-        <input placeholder="name" type="email" />
+        <input placeholder="email" type="email" />
         <button onClick={this.onSubmit}>Submit</button>
       </form>
     )

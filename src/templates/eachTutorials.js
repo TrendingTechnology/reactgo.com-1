@@ -3,11 +3,11 @@ import React from 'react'
 import CommonMarkdown from '../components/commonmarkdown'
 
 function EachTutorial(props) {
-  const { course } = props.pathContext
+  const { tag } = props.pathContext
   return (
     <CommonMarkdown
       data={props.data}
-      course={course.slice(1)}
+      tag={tag}
       location={props.location}
       pathContext={props.pathContext}
     />
