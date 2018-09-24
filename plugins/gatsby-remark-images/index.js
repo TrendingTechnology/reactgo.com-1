@@ -16,7 +16,7 @@ var isRelativeUrl = require(`is-relative-url`);
 var _ = require(`lodash`);
 
 var _require = require(`gatsby-plugin-sharp`),
-    sizes = _require.sizes;
+  sizes = _require.sizes;
 
 var Promise = require(`bluebird`);
 var cheerio = require(`cheerio`);
@@ -30,11 +30,11 @@ var slash = require(`slash`);
 // 5. Set the html w/ aspect ratio helper.
 module.exports = function (_ref, pluginOptions) {
   var files = _ref.files,
-      markdownNode = _ref.markdownNode,
-      markdownAST = _ref.markdownAST,
-      pathPrefix = _ref.pathPrefix,
-      getNode = _ref.getNode,
-      reporter = _ref.reporter;
+    markdownNode = _ref.markdownNode,
+    markdownAST = _ref.markdownAST,
+    pathPrefix = _ref.pathPrefix,
+    getNode = _ref.getNode,
+    reporter = _ref.reporter;
 
   var defaults = {
     maxWidth: 650,
@@ -163,7 +163,7 @@ module.exports = function (_ref, pluginOptions) {
   <a
     class="gatsby-resp-image-link"
     href="${originalImg}"
-    style="display: block"
+    style="display: block;margin-top:2.1rem;margin-bottom:2.1rem"
     target="_blank"
     rel="noopener"
   >
@@ -199,201 +199,201 @@ module.exports = function (_ref, pluginOptions) {
   }();
 
   return Promise.all(
-  // Simple because there is no nesting in markdown
-  markdownImageNodes.map(function (node) {
-    return new Promise(function () {
-      var _ref3 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee2(resolve, reject) {
-        var fileType, rawHTML;
-        return _regenerator2.default.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                fileType = node.url.slice(-3);
+    // Simple because there is no nesting in markdown
+    markdownImageNodes.map(function (node) {
+      return new Promise(function () {
+        var _ref3 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee2(resolve, reject) {
+          var fileType, rawHTML;
+          return _regenerator2.default.wrap(function _callee2$(_context2) {
+            while (1) {
+              switch (_context2.prev = _context2.next) {
+                case 0:
+                  fileType = node.url.slice(-3);
 
-                // Ignore gifs as we can't process them,
-                // svgs as they are already responsive by definition
+                  // Ignore gifs as we can't process them,
+                  // svgs as they are already responsive by definition
 
-                if (!(isRelativeUrl(node.url) && fileType !== `gif` && fileType !== `svg`)) {
-                  _context2.next = 9;
-                  break;
-                }
-
-                _context2.next = 4;
-                return generateImagesAndUpdateNode(node, resolve);
-
-              case 4:
-                rawHTML = _context2.sent;
-
-
-                if (rawHTML) {
-                  // Replace the image node with an inline HTML node.
-                  node.type = `html`;
-                  node.value = rawHTML;
-                }
-                return _context2.abrupt("return", resolve(node));
-
-              case 9:
-                return _context2.abrupt("return", resolve());
-
-              case 10:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2, undefined);
-      }));
-
-      return function (_x3, _x4) {
-        return _ref3.apply(this, arguments);
-      };
-    }());
-  })).then(function (markdownImageNodes) {
-    return (
-      // HTML image node stuff
-      Promise.all(
-      // Complex because HTML nodes can contain multiple images
-      rawHtmlNodes.map(function (node) {
-        return new Promise(function () {
-          var _ref4 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee3(resolve, reject) {
-            var $, imageRefs, _iterator, _isArray, _i, _ref5, thisImg, formattedImgTag, fileType, rawHTML;
-
-            return _regenerator2.default.wrap(function _callee3$(_context3) {
-              while (1) {
-                switch (_context3.prev = _context3.next) {
-                  case 0:
-                    if (node.value) {
-                      _context3.next = 2;
-                      break;
-                    }
-
-                    return _context3.abrupt("return", resolve());
-
-                  case 2:
-                    $ = cheerio.load(node.value);
-
-                    if (!($(`img`).length === 0)) {
-                      _context3.next = 5;
-                      break;
-                    }
-
-                    return _context3.abrupt("return", resolve());
-
-                  case 5:
-                    imageRefs = [];
-
-                    $(`img`).each(function () {
-                      imageRefs.push($(this));
-                    });
-
-                    _iterator = imageRefs, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();
-
-                  case 8:
-                    if (!_isArray) {
-                      _context3.next = 14;
-                      break;
-                    }
-
-                    if (!(_i >= _iterator.length)) {
-                      _context3.next = 11;
-                      break;
-                    }
-
-                    return _context3.abrupt("break", 37);
-
-                  case 11:
-                    _ref5 = _iterator[_i++];
-                    _context3.next = 18;
+                  if (!(isRelativeUrl(node.url) && fileType !== `gif` && fileType !== `svg`)) {
+                    _context2.next = 9;
                     break;
+                  }
 
-                  case 14:
-                    _i = _iterator.next();
+                  _context2.next = 4;
+                  return generateImagesAndUpdateNode(node, resolve);
 
-                    if (!_i.done) {
-                      _context3.next = 17;
-                      break;
-                    }
+                case 4:
+                  rawHTML = _context2.sent;
 
-                    return _context3.abrupt("break", 37);
 
-                  case 17:
-                    _ref5 = _i.value;
-
-                  case 18:
-                    thisImg = _ref5;
-
-                    // Get the details we need.
-                    formattedImgTag = {};
-
-                    formattedImgTag.url = thisImg.attr(`src`);
-                    formattedImgTag.title = thisImg.attr(`title`);
-                    formattedImgTag.alt = thisImg.attr(`alt`);
-
-                    if (formattedImgTag.url) {
-                      _context3.next = 25;
-                      break;
-                    }
-
-                    return _context3.abrupt("return", resolve());
-
-                  case 25:
-                    fileType = formattedImgTag.url.slice(-3);
-
-                    // Ignore gifs as we can't process them,
-                    // svgs as they are already responsive by definition
-
-                    if (!(isRelativeUrl(formattedImgTag.url) && fileType !== `gif` && fileType !== `svg`)) {
-                      _context3.next = 35;
-                      break;
-                    }
-
-                    _context3.next = 29;
-                    return generateImagesAndUpdateNode(formattedImgTag, resolve);
-
-                  case 29:
-                    rawHTML = _context3.sent;
-
-                    if (!rawHTML) {
-                      _context3.next = 34;
-                      break;
-                    }
-
-                    // Replace the image string
-                    thisImg.replaceWith(rawHTML);
-                    _context3.next = 35;
-                    break;
-
-                  case 34:
-                    return _context3.abrupt("return", resolve());
-
-                  case 35:
-                    _context3.next = 8;
-                    break;
-
-                  case 37:
-
+                  if (rawHTML) {
                     // Replace the image node with an inline HTML node.
                     node.type = `html`;
-                    node.value = $(`body`).html(); // fix for cheerio v1
+                    node.value = rawHTML;
+                  }
+                  return _context2.abrupt("return", resolve(node));
 
-                    return _context3.abrupt("return", resolve(node));
+                case 9:
+                  return _context2.abrupt("return", resolve());
 
-                  case 40:
-                  case "end":
-                    return _context3.stop();
-                }
+                case 10:
+                case "end":
+                  return _context2.stop();
               }
-            }, _callee3, undefined);
-          }));
+            }
+          }, _callee2, undefined);
+        }));
 
-          return function (_x5, _x6) {
-            return _ref4.apply(this, arguments);
-          };
-        }());
-      })).then(function (htmlImageNodes) {
-        return markdownImageNodes.concat(htmlImageNodes).filter(function (node) {
-          return !!node;
-        });
-      })
-    );
-  });
+        return function (_x3, _x4) {
+          return _ref3.apply(this, arguments);
+        };
+      }());
+    })).then(function (markdownImageNodes) {
+      return (
+        // HTML image node stuff
+        Promise.all(
+          // Complex because HTML nodes can contain multiple images
+          rawHtmlNodes.map(function (node) {
+            return new Promise(function () {
+              var _ref4 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee3(resolve, reject) {
+                var $, imageRefs, _iterator, _isArray, _i, _ref5, thisImg, formattedImgTag, fileType, rawHTML;
+
+                return _regenerator2.default.wrap(function _callee3$(_context3) {
+                  while (1) {
+                    switch (_context3.prev = _context3.next) {
+                      case 0:
+                        if (node.value) {
+                          _context3.next = 2;
+                          break;
+                        }
+
+                        return _context3.abrupt("return", resolve());
+
+                      case 2:
+                        $ = cheerio.load(node.value);
+
+                        if (!($(`img`).length === 0)) {
+                          _context3.next = 5;
+                          break;
+                        }
+
+                        return _context3.abrupt("return", resolve());
+
+                      case 5:
+                        imageRefs = [];
+
+                        $(`img`).each(function () {
+                          imageRefs.push($(this));
+                        });
+
+                        _iterator = imageRefs, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();
+
+                      case 8:
+                        if (!_isArray) {
+                          _context3.next = 14;
+                          break;
+                        }
+
+                        if (!(_i >= _iterator.length)) {
+                          _context3.next = 11;
+                          break;
+                        }
+
+                        return _context3.abrupt("break", 37);
+
+                      case 11:
+                        _ref5 = _iterator[_i++];
+                        _context3.next = 18;
+                        break;
+
+                      case 14:
+                        _i = _iterator.next();
+
+                        if (!_i.done) {
+                          _context3.next = 17;
+                          break;
+                        }
+
+                        return _context3.abrupt("break", 37);
+
+                      case 17:
+                        _ref5 = _i.value;
+
+                      case 18:
+                        thisImg = _ref5;
+
+                        // Get the details we need.
+                        formattedImgTag = {};
+
+                        formattedImgTag.url = thisImg.attr(`src`);
+                        formattedImgTag.title = thisImg.attr(`title`);
+                        formattedImgTag.alt = thisImg.attr(`alt`);
+
+                        if (formattedImgTag.url) {
+                          _context3.next = 25;
+                          break;
+                        }
+
+                        return _context3.abrupt("return", resolve());
+
+                      case 25:
+                        fileType = formattedImgTag.url.slice(-3);
+
+                        // Ignore gifs as we can't process them,
+                        // svgs as they are already responsive by definition
+
+                        if (!(isRelativeUrl(formattedImgTag.url) && fileType !== `gif` && fileType !== `svg`)) {
+                          _context3.next = 35;
+                          break;
+                        }
+
+                        _context3.next = 29;
+                        return generateImagesAndUpdateNode(formattedImgTag, resolve);
+
+                      case 29:
+                        rawHTML = _context3.sent;
+
+                        if (!rawHTML) {
+                          _context3.next = 34;
+                          break;
+                        }
+
+                        // Replace the image string
+                        thisImg.replaceWith(rawHTML);
+                        _context3.next = 35;
+                        break;
+
+                      case 34:
+                        return _context3.abrupt("return", resolve());
+
+                      case 35:
+                        _context3.next = 8;
+                        break;
+
+                      case 37:
+
+                        // Replace the image node with an inline HTML node.
+                        node.type = `html`;
+                        node.value = $(`body`).html(); // fix for cheerio v1
+
+                        return _context3.abrupt("return", resolve(node));
+
+                      case 40:
+                      case "end":
+                        return _context3.stop();
+                    }
+                  }
+                }, _callee3, undefined);
+              }));
+
+              return function (_x5, _x6) {
+                return _ref4.apply(this, arguments);
+              };
+            }());
+          })).then(function (htmlImageNodes) {
+            return markdownImageNodes.concat(htmlImageNodes).filter(function (node) {
+              return !!node;
+            });
+          })
+      );
+    });
 };
