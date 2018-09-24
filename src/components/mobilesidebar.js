@@ -4,7 +4,7 @@ import { searchStringInArray } from '../../helper'
 import AlignJustify from 'react-icons/lib/fa/align-justify'
 import Asterisk from 'react-icons/lib/fa/asterisk'
 import Link from 'gatsby-link';
-import '../pages/commonMarkdown.css'
+import './mob.css'
 
 class MobileSidebar extends React.Component {
   state = {
@@ -37,10 +37,7 @@ class MobileSidebar extends React.Component {
             className="mob-start"
             aria-hidden={!this.state.open ? false : true}
           >
-            <span style={{
-              marginBottom: '17px',
-              textAlign: 'CENTER'
-            }}>
+            <span className="hashtag">
               <Link to={'/' + tag}>
                 {`#${tag.charAt(0).toUpperCase()}${tag.slice(1)} tutorials`}
               </Link>

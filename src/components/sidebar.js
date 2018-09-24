@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { searchStringInArray } from '../../helper'
-import '../pages/commonMarkdown.css'
+import './sidebar.css'
 
 function CreateLink(props) {
   return (
@@ -10,11 +10,14 @@ function CreateLink(props) {
       <Link
         to={props.node.fields.slug}
         aria-current="page"
-        activeStyle={{ fontWeight: '700', color: 'black' }}
+        activeClassName="active"
       >
         <span
           className="dotted"
-          style={{ backgroundColor: `${props.active && '#fbd84a'}` }}
+          style={{ backgroundColor: `${props.active && '#7ED438'}` }}
+        />
+        <span
+          className="dottedline"
         />
         {props.node.frontmatter.title || 'no title found'}
       </Link>
@@ -35,7 +38,7 @@ class Sidebar extends React.Component {
         <Link to={'/' + tag} style={{ marginLeft: "-1rem" }}>
           {`#${tag.charAt(0).toUpperCase()}${tag.slice(1)} tutorials`}
         </Link>
-        <span className="course-logo" style={{ right: 0, opacity: 0.2 }}>
+        <span className="course-logonav">
           <img src={clogo} alt={tag} />
         </span>
         <nav className="start-bar">
