@@ -18,9 +18,9 @@ class MobileSidebar extends React.Component {
   render() {
     let { open } = this.state
     const { allMarkdownRemark } = this.props.data
-    const { course } = this.props
+    const { tag } = this.props
     const searchedCourse = searchStringInArray(
-      `/${this.props.course.toLowerCase()}`,
+      `${tag.toLowerCase()}`,
       allMarkdownRemark.edges
     )
     return (
@@ -41,8 +41,8 @@ class MobileSidebar extends React.Component {
               marginBottom: '17px',
               textAlign: 'CENTER'
             }}>
-              <Link to={'/' + course}>
-                {`#${course.charAt(0).toUpperCase()}${course.slice(1)} tutorials`}
+              <Link to={'/' + tag}>
+                {`#${tag.charAt(0).toUpperCase()}${tag.slice(1)} tutorials`}
               </Link>
             </span>
             {searchedCourse.map(({ node }, i) => (

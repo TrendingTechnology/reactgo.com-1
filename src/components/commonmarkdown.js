@@ -27,7 +27,7 @@ class commonMarkDown extends React.Component {
     this.setState({
       scrollHeight: scrolled,
     })
-    if (this.state.scrollHeight > 95) {
+    if (this.state.scrollHeight > 94) {
       this.setState({
         scrollHeight: 100,
       })
@@ -50,7 +50,7 @@ class commonMarkDown extends React.Component {
     return (
       <div className="main">
         <MetaPost
-          title={this.props.course ? seoTitle : title}
+          title={this.props.tag ? seoTitle : title}
           description={description}
           date={date}
           url={url}
@@ -69,14 +69,14 @@ class commonMarkDown extends React.Component {
         {!this.props.nosidebar && (
           <Sidebar
             data={this.props.data}
-            course={this.props.course}
+            tag={this.props.tag}
             clogo={logo}
             right={this.props.right}
             pathname={pathname}
           />
         )}
         {!this.props.nomobilebar && (
-          <Mobilebar data={this.props.data} course={this.props.course} />
+          <Mobilebar data={this.props.data} tag={this.props.tag} />
         )}
 
         <main
@@ -96,7 +96,7 @@ class commonMarkDown extends React.Component {
 
             <Share
               title={`${title} - ${
-                this.props.course ? this.props.course : 'Jshype'
+                course ? course : 'Reactgo'
                 }`}
               url={url}
               pathname={pathname}

@@ -24,19 +24,19 @@ function CreateLink(props) {
 
 class Sidebar extends React.Component {
   render() {
-    const { course, clogo, pathname } = this.props
+    const { tag, clogo, pathname } = this.props
     const { allMarkdownRemark } = this.props.data
     const searchedCourse = searchStringInArray(
-      `/${course.toLowerCase()}`,
+      `${tag.toLowerCase()}`,
       allMarkdownRemark.edges
     )
     return (
       <div className={`sidebar ${this.props.right && 'rightbar'} `}>
-        <Link to={'/' + course} style={{ marginLeft: "-1rem" }}>
-          {`#${course.charAt(0).toUpperCase()}${course.slice(1)} tutorials`}
+        <Link to={'/' + tag} style={{ marginLeft: "-1rem" }}>
+          {`#${tag.charAt(0).toUpperCase()}${tag.slice(1)} tutorials`}
         </Link>
         <span className="course-logo" style={{ right: 0, opacity: 0.2 }}>
-          <img src={clogo} alt={course} />
+          <img src={clogo} alt={tag} />
         </span>
         <nav className="start-bar">
           {searchedCourse.map(({ node }, i) => (

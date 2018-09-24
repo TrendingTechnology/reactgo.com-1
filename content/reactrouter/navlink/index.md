@@ -21,6 +21,15 @@ In our routing app, we have three routes which are [home,/users,/contact] Let's 
 
 We need to add a new prop called activeClassName to the NavLink component so that it applies that class whenever the route it is active.
 
+_index.css_
+
+```css
+.active{
+  color:red;
+}
+```
+
+
 _index.js_
 
 ```js
