@@ -1,0 +1,86 @@
+.sidebar {
+  font-size: .9rem;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  top: 4rem;
+  left: 0;
+  margin-top: -1rem;
+  padding:1rem 2rem 2rem 1rem;
+ background-color: #ffffff;
+border-right: 3px solid #f5f5f5;
+  will-change: transform;
+}
+
+
+.start-bar{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.sidebar a{
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+  color: rgba(0, 0, 0, 0.74);
+  transition: all .2s ease-in;
+      padding-left: 1rem;
+      text-decoration: none;
+      display: flex;
+}
+
+.sidebar a:hover{
+  color: rgba(0, 0, 0, 0.767);
+  font-weight: 700;
+}
+
+.dottedline{
+  width: 1px;
+    background-color: #c7c3c3;
+    position: absolute;
+    left: 3px;
+    top: 15px;
+    height: calc(100% - 132px);
+}
+
+.dotted{
+   width: 14px;
+    height: 14px;
+    background: white;
+    border: 1px solid rgba(143, 143, 143, 0.658);
+    left: -3px;
+    position: ABSOLUTE;
+    border-radius: 50%;
+    z-index: 77;
+    margin-top: 6px;
+}
+.course-logonav{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    box-shadow: 0px 1px 20px 8px hsla(0, 0%, 0%, .04);
+    border-radius: 10%;
+    padding: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    opacity: 0.2;
+}
+
+
+.active{
+  font-weight: 700;
+   color: #0000000d;
+}
+@media only screen and  (max-width:800px){
+
+  .sidebar{
+    display: none;
+  }
+
+}
