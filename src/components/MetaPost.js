@@ -9,7 +9,6 @@ const MetaPost = props => (
       { name: 'title', content: props.title },
 
       { name: 'description', content: props.description },
-      ,
       {
         property: 'og:title',
         content: props.title,

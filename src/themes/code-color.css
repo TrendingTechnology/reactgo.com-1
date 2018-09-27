@@ -16,7 +16,7 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background:#F5F2F0;
+  /* background:#F5F2F0; */
     color: #6f3f0f;
 }
 
