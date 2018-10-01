@@ -10,7 +10,8 @@ course: Build a blog using Gatsby.js & React
 ---
 
 
-In this tutorial, we are adding some blog posts to our blog by using markdown format.
+In this tutorial, we are adding some blog posts to our blog with the help of markdown
+which is most commonly used format to write the posts.
 
 Now create a `my-firstpost/index.md` folder inside the pages directory.
 
@@ -223,7 +224,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 ```
 
-we need to tell the gatsby to use the particular template for the blog posts so that gatsby reuses this same template for every blog post.
+we need to tell the gatsby to use the particular template for the blog posts so
+that gatsby reuses this template for every blog post we write.
 
 
 Let's create a blog post template now.

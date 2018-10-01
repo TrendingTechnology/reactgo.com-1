@@ -9,7 +9,7 @@ tags: ['gatsbyblog']
 course: Build a blog using Gatsby.js & React
 ---
 
-In this tutorial series, we are building a blazing speed blog with SEO and offline support using gatsby.js which is a static site generator built on top of the react.
+In this tutorial series, we are building a blazing speed blog with SEO, offline support and free hosting using gatsby.js which is a static site generator built on top of the react.
 
 ![gatsby performance](perf.png)
 
