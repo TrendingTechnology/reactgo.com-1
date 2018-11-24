@@ -57,6 +57,10 @@ const MetaPost = props => (
         name: 'twitter:image',
         content: props.thumbnail && props.thumbnail,
       },
+      {
+        name: 'twitter:image:src',
+        content: props.thumbnail && props.thumbnail,
+      },
       { property: 'og:type', content: 'website' },
 
       // {

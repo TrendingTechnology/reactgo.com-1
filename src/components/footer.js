@@ -42,8 +42,8 @@ function Footer({ siteTitle }) {
           }}
         >
           <section className="form-box">
-            <Magic style={{ color: 'red' }} />  <h4>get the
-               weekly <span style={{ fontFamily: "cursive" }}>newsletter</span>
+            <Magic style={{ color: 'red' }} />  <h4>stay
+               update with latest tutorials
               <Magic style={{ color: 'red' }} /></h4>
             <label htmlFor="tlemail" className="label">
               Email
