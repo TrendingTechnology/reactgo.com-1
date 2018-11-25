@@ -1,11 +1,10 @@
 ---
-myid: 2
+id: 2
 date: '2018-09-25'
 title: Introduction to Gatsby
-description: "Gatsby.js is a static site generator for the react by using Gatsby we can build any type of modern  web apps the sites built with Gatsby are high performant and blazing speed."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

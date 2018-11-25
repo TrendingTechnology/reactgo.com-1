@@ -3,10 +3,10 @@ import twitterIcon from '../img/twitter.png'
 import fbIcon from '../img/facebook.png'
 
 const Share = props => (
-    <div>
-        {/* <h4 style={{textAlign:"center",margin:"30px 0 0 0",}}>Share Me</h4> */}
+  <div>
+    {/* <h4 style={{textAlign:"center",margin:"30px 0 0 0",}}>Share Me</h4> */}
     <ul className="social">
-      <li style={{ margin:"0 10px 0 0" }}>
+      <li style={{ margin: '0 10px 0 0' }}>
         <a
           href={`https://www.facebook.com/sharer/sharer.php?u=${props.url +
             props.pathname}`}

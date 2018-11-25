@@ -1,11 +1,10 @@
 ---
-myid: 5
+id: 5
 date: '2018-09-25'
 title: Adding blog posts
-description: "In this tutorial, we are adding some blog posts to our blog by using markdown format."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

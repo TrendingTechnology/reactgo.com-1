@@ -1,11 +1,10 @@
 ---
-myid: 8
+id: 8
 date: '2018-09-26'
 title: Syntax highlighting to the code blocks
-description: "In this tutorial, we are going to learn how to add a syntax highlighting to the code blocks in markdown files with the help of prismjs plugin."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

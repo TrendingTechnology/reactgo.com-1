@@ -74,7 +74,7 @@ const MetaPost = props => (
       //     content: props.date,
       // },
       { name: 'twitter:creator', content: '@saigowthamr' },
-      { property: 'og:site_name', content: 'Reactgo' }
+      { property: 'og:site_name', content: 'Reactgo' },
     ]}
   >
     <html lang="en" />

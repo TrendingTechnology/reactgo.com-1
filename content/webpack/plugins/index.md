@@ -1,11 +1,10 @@
 ---
-myid: 6
+id: 6
 date: '2018-09-17'
 title: Plugins
-description: "The whole part of webpack is built with plugins a plugin is just an instance where it has a apply method so that we can access the entire compilation life cycle of the webpack."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
-tags: ['webpack']
+courseurl: webpack
 course: Intro to the Webpack
 ---
 

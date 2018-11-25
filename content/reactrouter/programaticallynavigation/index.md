@@ -1,11 +1,10 @@
 ---
-myid: 8
+id: 8
 date: '2018-09-15'
 title: Programmatically navigate
-description: "It means we need to redirect the user when an event happens on that route. For example when a user login in the facebook that user will be redirected to the home page"
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
-tags: ['reactrouter']
+courseurl: reactrouter
 course: React router beginners guide
 ---
 
@@ -46,3 +45,6 @@ class Contact extends React.Component {
 
 export default Contact
 ```
+---
+
+### [Code repository](https://github.com/saigowthamr/Reactrouter-tutorials)

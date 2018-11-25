@@ -1,11 +1,3 @@
-exports.onClientEntry = () => {
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function (registrations) {
-            for (let registration of registrations) {
-                registration.unregister();
-            }
-        });
-    }
-}
+require('./src/themes/code-color.css');
 
 

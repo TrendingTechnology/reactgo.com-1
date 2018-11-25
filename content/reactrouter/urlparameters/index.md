@@ -1,11 +1,10 @@
 ---
-myid: 5
+id: 5
 date: '2018-09-14'
 title: Url Parameters
-description: "Url parameters helps us to render the same component based on its dynamic url like  in our Users  component assume that they are different users"
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
-tags: ['reactrouter']
+courseurl: reactrouter
 course: React router beginners guide
 ---
 

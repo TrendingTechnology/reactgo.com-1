@@ -1,11 +1,10 @@
 ---
-myid: 7
+id: 7
 date: '2018-09-10'
 title: Event handling and state
-description: "In normal HTML5 we are using an onclick but in react we need to use the camelCase notation onClick.We need to attach the onclick event handler to the li question element so that we only show the answer when a user clicks on the question at the end this tutorial we need to implement this feature to our accordion app."
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
-tags: ['react']
+courseurl: react
 course: React Basics
 ---
 
@@ -252,13 +251,14 @@ class Accordion extends React.Component {
 export default Accordion;
 
 ```
+---
 
 ```js
 {props.currentIndex === props.index && <li>{props.answer}</li>}
 ```
 
-We have added a above condition to the List component so that the answer element only
-render when this condition is true.
+The above condition is added to the below `List` component so that the answer
+element can only render when this condition is true.
 
 
 *list.js*

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link';
+import { Link } from 'gatsby'
 import TwitterIcon from 'react-icons/lib/fa/twitter'
 import Magic from 'react-icons/lib/fa/magic'
 import Rss from 'react-icons/lib/fa/rss-square'
@@ -10,15 +10,28 @@ function Footer({ siteTitle }) {
   return (
     <footer className="footer-g">
       <hr />
-
+      <a
+        href="https://twitter.com/intent/follow?screen_name=saigowthamr"
+        rel="noopener"
+        title="twitter follow"
+        className="twitter-style"
+      >
+        <TwitterIcon /> follow @saigowthamr
+      </a>
       <section className="footer-start">
         <div className="socials">
           <Link to="/" className="footer-title logostyle">
             {siteTitle}
           </Link>
 
-          <Link to="/rss.xml" style={{ color: "orange" }} target="_blank"
-            rel="noopener" title="rss feed" className="footer-title logostyle">
+          <Link
+            to="/rss.xml"
+            style={{ color: 'orange' }}
+            target="_blank"
+            rel="noopener"
+            title="rss feed"
+            className="footer-title logostyle"
+          >
             <Rss />
           </Link>
         </div>
@@ -34,17 +47,20 @@ function Footer({ siteTitle }) {
           target="popupwindow"
           onSubmit={() => {
             window.open(
-              "https://tinyletter.com/reactgo",
-              "popupwindow",
-              "scrollbars=yes,width=800,height=600"
+              'https://tinyletter.com/reactgo',
+              'popupwindow',
+              'scrollbars=yes,width=800,height=600'
             )
             return true
           }}
         >
           <section className="form-box">
-            <Magic style={{ color: 'red' }} />  <h4>stay
-               update with latest tutorials
-              <Magic style={{ color: 'red' }} /></h4>
+            <Magic style={{ color: 'red' }} />{' '}
+            <h4>
+              get the weekly{' '}
+              <span style={{ fontFamily: 'cursive' }}>newsletter</span>
+              <Magic style={{ color: 'red' }} />
+            </h4>
             <label htmlFor="tlemail" className="label">
               Email
             </label>
@@ -53,9 +69,6 @@ function Footer({ siteTitle }) {
             <input type="submit" className="subs" value="Subscribe" />
           </section>
         </form>
-        <a href="https://twitter.com/intent/follow?screen_name=saigowthamr" rel="noopener" title="twitter follow" className="twitter-style">
-          <TwitterIcon /> follow @saigowthamr
-</a>
       </section>
     </footer>
   )

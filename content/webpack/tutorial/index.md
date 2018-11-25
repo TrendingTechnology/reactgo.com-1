@@ -1,11 +1,10 @@
 ---
-myid: 1
+id: 1
 date: '2018-09-17'
 title: Webpack Tutorial
-description: "In this tutorial series, you will learn about webpack  which is module bundler used in most projects such as react,vuejs and angular"
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
-tags: ['webpack']
+courseurl: webpack
 course: Intro to the Webpack
 ---
 

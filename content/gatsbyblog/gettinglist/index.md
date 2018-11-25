@@ -1,11 +1,10 @@
 ---
-myid: 6
+id: 6
 date: '2018-09-26'
 title: Getting the Posts List
-description: "So far we didn't display any posts on the index page in this tutorial we are going to display the posts list in the index page."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import './header.css'
 import GithubIcon from 'react-icons/lib/go/mark-github'
 
@@ -15,7 +15,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const { location, siteTitle } = this.props
+    const { siteTitle } = this.props
     return (
       <div className="main-nav">
         <button onClick={this.openUp} className="navbtn">
@@ -45,17 +45,19 @@ class Header extends React.Component {
             >
               Reactrouter
             </Link>
-            <Link to={'/webpack/tutorial/'}
+            <Link
+              to={'/webpack/tutorial/'}
               activeStyle={{ backgroundColor: '#f5f5f5' }}
-            >Webpack</Link>
-
+            >
+              Webpack
+            </Link>
           </nav>
 
           <a
             className="github"
             href="https://github.com/saigowthamr/reactgo.com"
             target="_blank"
-            rel="noopener noreferer"
+            rel="noopener noreferrer"
             style={{ color: 'black' }}
             title="GitHub"
           >

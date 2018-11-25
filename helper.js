@@ -1,12 +1,12 @@
 const path = require('path')
 
-//filtering by tags
+//filtering by courseUrl
 function searchStringInArray(str, arr, lim) {
   if (lim) {
-    const items = arr.filter(({ node }) => node.frontmatter.tags[0] === str)
+    const items = arr.filter(({ node }) => node.frontmatter.courseurl === str)
     return items.slice(0, lim)
   }
-  return arr.filter(({ node }) => node.frontmatter.tags[0] === str)
+  return arr.filter(({ node }) => node.frontmatter.courseurl === str)
 }
 
 
@@ -19,7 +19,7 @@ function generatePosts(str, arr, url, createPage) {
       path: node.fields.slug,
       component: path.resolve(url),
       context: {
-        tag: str,
+        courseurl: str,
         // Data passed to context is available in page queries as GraphQL variables.
         slug: node.fields.slug,
         prev: index === 0 ? null : eachTutorial[index - 1].node,

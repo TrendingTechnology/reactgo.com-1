@@ -1,11 +1,10 @@
 ---
-myid: 7
+id: 7
 date: '2018-09-26'
 title: Adding images to the post
-description: "Gatsby offers us the different type of plugins to lazy load the images by adding a blur effect  and also crop the images for the different device sizes."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

@@ -1,11 +1,10 @@
 ---
-myid: 1
+id: 1
 date: '2018-09-25'
 title: Gatsby Tutorial
-description: "In this tutorial series we are building a blazing speed blog with SEO and offline support using gatsby.js which is a static site generator built on top of the react."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

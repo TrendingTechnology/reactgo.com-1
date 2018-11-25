@@ -1,11 +1,10 @@
 ---
-myid: 2
+id: 2
 date: '2018-09-10'
 title: Node and npm
-description: "In this tutorial, we will be set up our development environment for that we need to install nodejs and npm so that we can install external packages from the package manager"
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
-tags: ['react']
+courseurl: react
 course: React Basics
 ---
 
