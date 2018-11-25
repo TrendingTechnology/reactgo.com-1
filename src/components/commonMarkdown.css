@@ -82,6 +82,11 @@ margin: 0 auto;
    .main .rightbar {
    display: none;
 }
+
+.content .gatsby-resp-image-link {
+  box-shadow: 1px 1px #ffff;
+  margin: auto;
+ }
 }
 
  .gatsby-highlight{
