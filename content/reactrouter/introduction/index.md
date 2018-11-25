@@ -1,11 +1,10 @@
 ---
-myid: 2
+id: 2
 date: '2018-09-14'
 title: Introduction
-description: "React router is  built on top of the react which is  used to create routing in react apps because by using only react library you don't get the routing functionality in your app"
 logo: '/img/routerlogo.png'
 thumbnail: '/img/reactrouter.png'
-tags: ['reactrouter']
+courseurl: reactrouter
 course: React router beginners guide
 ---
 
@@ -22,6 +21,8 @@ In single page apps, there is only single html page.we are reusing the same html
 But in multipage apps, you will get an entirely new page when you navigate.
 
 ## Getting started
+
+> Note : if you stuck anywhere in this tutorial, then please refer to the [code repository](https://github.com/saigowthamr/Reactrouter-tutorials)
 
 ### How to install the react router?
 

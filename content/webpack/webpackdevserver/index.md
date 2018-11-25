@@ -1,11 +1,10 @@
 ---
-myid: 4
+id: 4
 date: '2018-09-17'
 title: Dev server
-description: "Webpack dev server is used to spin up a server so that we can develop our app in the local environment."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
-tags: ['webpack']
+courseurl: webpack
 course: Intro to the Webpack
 ---
 

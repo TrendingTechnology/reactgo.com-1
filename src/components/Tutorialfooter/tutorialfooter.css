@@ -1,0 +1,159 @@
+.footer-tut{
+    background-color: rgb(252, 252, 252);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-on{
+    margin-left: 16rem;
+   padding:1rem;
+   display: inline-flex;
+   margin-bottom: 2rem;
+
+}
+
+.footer-links2{
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.footer-links2 a:first-child{
+    margin-left: 9rem;
+
+}
+
+.footer-links2 a{
+    text-decoration: none;
+    margin-left: 1rem;
+     color: inherit;
+
+}
+.form2{
+    margin-left: 3rem;
+
+}
+
+
+.label{
+    margin:.4rem;
+}
+.twitter-color{
+    text-decoration: none;
+    position: relative;
+    height: 28px;
+    padding: 1px 8px 1px 6px;
+    background-color: #1b95e0;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.email-box{
+    border:1px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 1px 1px #fff
+}
+
+
+.sub{
+            margin: .4rem;
+    background: #f6fa0af7;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #0d0d0d;
+    font-weight: 500;
+
+    border: 1px solid #4d4d4d;
+    box-shadow: 0 1px 1px black;
+    transition: all .2s ease-in-out;
+}
+
+.sub:hover{
+    box-shadow:none;
+}
+.socials{
+  display: flex;
+}
+
+@media only screen and (max-width:790px){
+.footer-on{
+    border:1px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 1px 1px
+}
+.label{
+    text-align: center
+}
+input{
+    padding: 3px;
+}
+
+
+.footer-tut{
+    margin-bottom: 10px;
+}
+.twitter-color{
+    margin: -10px;
+}
+}
+@media only screen and (max-width:920px){
+.footer-on{
+    display: block;
+    margin-left: 0;
+   }
+
+.twitter-color{
+   margin: 0 calc(19%);
+}
+
+.footer-links2 a{
+   padding-top:1rem;
+
+}
+
+
+.footer-on .form2{
+
+    margin-top: 1rem;
+    padding: 1rem;
+
+    width:100%;
+    margin: 0 auto;
+}
+
+.form2{
+    margin-top: 2rem;
+}
+
+.sub{
+    margin: 1rem
+}
+
+
+
+.email-box{
+    border:1px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 1px 1px
+}
+
+}
+
+
+@media only screen and (max-width:980px){
+
+   .form2{
+
+    margin-left: 0rem;
+  margin-top:1rem;
+   box-shadow: none;
+}
+.sub{
+    display: flex;
+}
+
+.form-box{
+    margin-left: 28px;
+}
+
+
+}

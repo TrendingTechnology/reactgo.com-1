@@ -4,15 +4,15 @@ const { generatePosts } = require('./helper')
 
 const path = require('path')
 
-module.exports = async ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+module.exports = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     resolve(
       graphql(`
         query {
           allMarkdownRemark(
-            sort: { fields: [frontmatter___myid], order: ASC }
+            sort: { fields: [frontmatter___id], order: ASC }
             limit: 10000
           ) {
             edges {
@@ -22,7 +22,7 @@ module.exports = async ({ graphql, boundActionCreators }) => {
                 }
                 frontmatter {
                   title
-                  tags
+                  courseurl
                 }
               }
             }
@@ -33,44 +33,41 @@ module.exports = async ({ graphql, boundActionCreators }) => {
             console.log(result.errors)
             reject(result.errors)
           }
-          const tagTemplate = path.resolve('src/templates/tags.js')
+          const courseDisplay = path.resolve('src/templates/courseDisplay.js')
           const allPosts = result.data.allMarkdownRemark.edges
 
 
 
 
-          //articles
-          // generatePosts('/a', allPosts, './src/templates/post.js', createPage)
-
-          //tags
-          let tags = []
-          // Iterate through each post, putting all found tags into `tags`
+          //course names
+          let allCourses = []
+          // Iterate through each post, putting all found courses into `allCourses array`
           _.each(allPosts, edge => {
-            if (_.get(edge, 'node.frontmatter.tags')) {
-              tags = tags.concat(edge.node.frontmatter.tags)
+            if (_.get(edge, 'node.frontmatter.courseurl')) {
+              allCourses = allCourses.concat(edge.node.frontmatter.courseurl)
             }
           })
           // Eliminate duplicate tags
-          tags = _.uniq(tags)
+          allCourses = _.uniq(allCourses)
 
 
 
 
 
-          // Make separate pages for each tag
-          tags.forEach(tag => {
+          // Creating each Course display page
+          allCourses.forEach(courseurl => {
             createPage({
-              path: `/${_.kebabCase(tag)}/`,
-              component: tagTemplate,
+              path: `/${_.kebabCase(courseurl)}/`,
+              component: courseDisplay,
               context: {
-                tag,
+                courseurl,
               },
             })
           })
 
 
-
-          const tutorial = tags
+          // creating tutorials for all courses
+          const tutorial = allCourses
 
           //creating tutorials
           tutorial.forEach(tut => {
@@ -87,3 +84,30 @@ module.exports = async ({ graphql, boundActionCreators }) => {
     )
   })
 }
+
+
+
+              // Blog currently disabled
+          // const blog = allPosts.filter(({ node }) => {
+
+          //   return node.frontmatter.tags
+
+          // })
+
+          // blog.forEach(({ node }, index) => {
+          //   let next = index === 0 ? null : blog[index - 1].node
+
+
+          //   const prev =
+          //     index === blog.length - 1 ? null : blog[index + 1].node
+          //   createPage({
+          //     path: node.fields.slug,
+          //     component: path.resolve('src/templates/post.js'),
+          //     context: {
+          //       slug: node.fields.slug,
+          //       prev,
+          //       next
+          //     },
+          //   })
+          //   console.log(blog[index + 1])
+          // })

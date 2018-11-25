@@ -6,8 +6,6 @@
 
 .footer-start{
     display: inline-flex;
-        margin-left: 16rem;
-        position: relative;
 }
 
 .footer-title{
@@ -26,6 +24,7 @@
 .footer-links{
     display: flex;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 
 
@@ -56,18 +55,14 @@ margin: -30px;
 }
 .twitter-style{
     text-decoration: none;
-    height: 28px;
+        position: relative;
+    height: 20px;
     padding: 1px 8px 1px 6px;
     background-color: #1b95e0;
     color: #fff;
     border-radius: 3px;
     font-weight: 500;
     cursor: pointer;
-    position: absolute;
-    top: 9rem;
-    left: 1rem;
-    bottom: 0;
-    margin-bottom: .5rem;
 }
 .email{
 
@@ -113,7 +108,7 @@ margin: -30px;
 }
 
 
-@media only screen and (max-width:1070px){
+@media only screen and (max-width:870px){
 
 .footer-links a:first-child{
     margin-left: 0rem;
@@ -127,9 +122,6 @@ margin: -30px;
 
 .twitter-style{
    margin: 0 calc(19%);
-       position: relative;
-    margin: 0;
-    top: 0;
 }
 
 .footer-links a{

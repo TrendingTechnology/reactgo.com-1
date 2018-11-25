@@ -1,11 +1,10 @@
 ---
-myid: 1
+id: 1
 date: '2018-09-10'
 title: Introduction
-description: "Basics about reactjs How to use and build production-ready single page apps by learning reactjs tutorial step by step interactive approach for beginners"
 logo: "/img/reactlogo.svg"
 thumbnail: "/img/reactjs.png"
-tags: ['react']
+courseurl: react
 course: React Basics
 ---
 

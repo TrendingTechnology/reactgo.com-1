@@ -1,11 +1,10 @@
 ---
-myid: 9
+id: 9
 date: '2018-09-26'
 title: Seo in Gatsby
-description: "Search engine optimization is very important to every site it's bad behavior if we show the same title and description on every page of our site."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

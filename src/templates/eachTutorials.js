@@ -1,16 +1,23 @@
 import React from 'react'
-
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 import CommonMarkdown from '../components/commonmarkdown'
+import Header from '../components/header'
+import Footer from '../components/Tutorialfooter'
 
 function EachTutorial(props) {
-  const { tag } = props.pathContext
+  const { courseurl } = props.pathContext
   return (
-    <CommonMarkdown
-      data={props.data}
-      tag={tag}
-      location={props.location}
-      pathContext={props.pathContext}
-    />
+    <Layout>
+      <Header siteTitle={'Reactgo'} />
+      <CommonMarkdown
+        data={props.data}
+        tag={courseurl}
+        location={props.location}
+        pathContext={props.pathContext}
+      />
+      <Footer siteTitle={'Reactgo'} />
+    </Layout>
   )
 }
 
@@ -21,15 +28,13 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
-      birthTime
-      modifiedTime
+      excerpt
       frontmatter {
         title
-        description
         date(formatString: "MMM Do")
         logo
         thumbnail
-        tags
+        courseurl
         course
       }
       fields {
@@ -44,12 +49,12 @@ export const query = graphql`
       }
     }
 
-    allMarkdownRemark(sort: { fields: [frontmatter___myid], order: ASC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___id], order: ASC }) {
       edges {
         node {
           frontmatter {
             title
-            tags
+            courseurl
           }
           fields {
             slug

@@ -1,11 +1,10 @@
 ---
-myid: 10
+id: 10
 date: '2018-09-26'
 title: Hosting the gatsby blog
-description: "We are using the netlify to host our blog because netlify offers a free tier for the personal blogs and projects with the custom domain support, HTTPS and continuous deployment from the private or public repositories."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

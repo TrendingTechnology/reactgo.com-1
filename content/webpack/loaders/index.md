@@ -1,11 +1,10 @@
 ---
-myid: 5
+id: 5
 date: '2018-09-17'
 title: Loaders
-description: "Loaders help us to take the particular source code and returns back the new source code.If you pass a es6 code to the babel-loader it applies  some transformations and returns back es5 code."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
-tags: ['webpack']
+courseurl: webpack
 course: Intro to the Webpack
 ---
 

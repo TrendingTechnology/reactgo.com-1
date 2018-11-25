@@ -1,8 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import MetaPost from './MetaPost'
 import '../templates/blog-post.css'
-import '../pages/commonMarkdown.css'
+import './commonMarkdown.css'
 import Share from './share'
 import Sidebar from './sidebar'
 import Mobilebar from './mobilesidebar'
@@ -23,7 +22,7 @@ class commonMarkDown extends React.Component {
     var height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight
-    var scrolled = (winScroll / height) * 100;
+    var scrolled = (winScroll / height) * 100
     this.setState({
       scrollHeight: scrolled,
     })
@@ -42,7 +41,7 @@ class commonMarkDown extends React.Component {
     const post = this.props.data.markdownRemark
     const url = this.props.data.site.siteMetadata.url
     const pathname = this.props.location.pathname
-    const { title, description, date, thumbnail, logo, course } = post.frontmatter
+    const { title, date, thumbnail, logo, course } = post.frontmatter
     const { next, prev, slug } = this.props.pathContext
     const author = this.props.data.site.siteMetadata.author
     const seoTitle = `${title} - ${course && course}`
@@ -51,7 +50,7 @@ class commonMarkDown extends React.Component {
       <div className="main">
         <MetaPost
           title={this.props.tag ? seoTitle : title}
-          description={description}
+          description={post.excerpt}
           date={date}
           url={url}
           pathname={pathname}
@@ -86,18 +85,24 @@ class commonMarkDown extends React.Component {
             margin: `${this.props.center ? '0 auto' : ''}`,
           }}
         >
-
           <article className="content-bar">
             <h1>{title}</h1>
+            <strong>
+              by{' '}
+              <a
+                style={{ color: ' rgb(14, 86, 140)' }}
+                href="https://twitter.com/saigowthamr"
+              >
+                {author}
+              </a>
+            </strong>
             <div
               style={{ marginTop: '1rem' }}
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
 
             <Share
-              title={`${title} - ${
-                course ? course : 'Reactgo'
-                }`}
+              title={`${title} - ${course ? course : 'Reactgo'}`}
               url={url}
               pathname={pathname}
             />

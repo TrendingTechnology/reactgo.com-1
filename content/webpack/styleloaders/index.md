@@ -1,11 +1,10 @@
 ---
-myid: 7
+id: 7
 date: '2018-09-17'
 title: Style Loaders
-description: "In this tutorial, you learn about how to import styles as a module with the help of css-loader and style loader."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
-tags: ['webpack']
+courseurl: webpack
 course: Intro to the Webpack
 ---
 

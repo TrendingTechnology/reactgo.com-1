@@ -1,11 +1,10 @@
 ---
-myid: 3
+id: 3
 date: '2018-09-17'
 title: Entry and Output
-description: "we need to tell the webpack a starting point so that webpack can figure out its dependencies and start bundling."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
-tags: ['webpack']
+courseurl: webpack
 course: Intro to the Webpack
 ---
 

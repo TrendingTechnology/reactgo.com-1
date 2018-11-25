@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import ArrowRight from 'react-icons/lib/fa/arrow-right'
 import ArrowLeft from 'react-icons/lib/fa/arrow-left'
 function NextPost(props) {
@@ -10,7 +10,7 @@ function NextPost(props) {
       {prev && (
         <li>
           <Link to={prev.fields.slug}>
-         <ArrowLeft/> Previous
+            <ArrowLeft /> Previous
             <div className="prev">{prev.frontmatter.title}</div>
           </Link>
         </li>

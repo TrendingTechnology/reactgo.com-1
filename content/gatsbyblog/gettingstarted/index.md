@@ -1,11 +1,10 @@
 ---
-myid: 3
+id: 3
 date: '2018-09-25'
 title: Getting started  Gatsby
-description: "In this tutorial We are going to set up a development environment for the  Gatsby blog we are building."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

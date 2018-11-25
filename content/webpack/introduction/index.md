@@ -1,11 +1,10 @@
 ---
-myid: 2
+id: 2
 date: '2018-09-17'
 title: Webpack Intro
-description: "Webpack is a module bundler  if you know about create-react-app or angular  or vue apps then you are using the webpack behind the scenes."
 logo: "/img/webpacklogo.png"
 thumbnail: "/img/webpack.png"
-tags: ['webpack']
+courseurl: webpack
 course: Intro to the Webpack
 ---
 

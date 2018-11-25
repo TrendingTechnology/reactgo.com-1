@@ -1,11 +1,10 @@
 ---
-myid: 4
+id: 4
 date: '2018-09-25'
 title: Querying the data
-description: "Gatsby uses the graphql for querying the data from the different data resources if you don't about graphql don't worry we will learn something about graphql as we go."
 logo: "/img/gatsbylogo.jpeg"
 thumbnail: "/img/gatsby-thumbnail.png"
-tags: ['gatsbyblog']
+courseurl: gatsbyblog
 course: Build a blog using Gatsby.js & React
 ---
 

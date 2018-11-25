@@ -42,7 +42,7 @@ margin: 0 auto;
 }
 
 
-@media only screen and  (max-width:800px){
+@media only screen and  (max-width:920px){
  .main h1{
      font-size: larger;
 }
@@ -72,12 +72,21 @@ margin: 0 auto;
   border-bottom: 1px solid;
 }
 
+.content .gatsby-resp-image-link {
+  margin: 50px;
+}
+
 
 
 @media only screen and (max-width:1190px){
    .main .rightbar {
    display: none;
 }
+
+.content .gatsby-resp-image-link {
+  box-shadow: 1px 1px #ffff;
+  margin: auto;
+ }
 }
 
  .gatsby-highlight{

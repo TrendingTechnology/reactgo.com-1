@@ -1,11 +1,10 @@
 ---
-myid: 3
+id: 3
 date: '2018-09-14'
 title: Routing
-description: "React router is  built on top of the react which is  used to create routing in react apps because by using only react library you don't get the routing functionality in your app"
 logo: "/img/routerlogo.png"
 thumbnail: "/img/reactrouter.png"
-tags: ['reactrouter']
+courseurl: reactrouter
 course: React router beginners guide
 ---
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 function CreateLink(props) {
   return (
@@ -8,7 +8,7 @@ function CreateLink(props) {
       activeStyle={{
         borderRight: [!props.border ? '2px solid black' : 0],
         borderLeft: [props.border ? props.border : 0],
-        fontWeight:[props.border ? 800:700 ],
+        fontWeight: [props.border ? 800 : 700],
         color: 'black',
       }}
       aria-current="page"

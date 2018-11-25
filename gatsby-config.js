@@ -36,7 +36,6 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-react-next`,
 
     {
       resolve: `gatsby-plugin-nprogress`,
@@ -112,7 +111,7 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { fields: [frontmatter___myid], order: ASC }
+                sort: { fields: [frontmatter___id], order: ASC }
               ) {
                 edges {
                   node {
