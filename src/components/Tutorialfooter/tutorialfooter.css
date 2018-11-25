@@ -50,9 +50,11 @@
     cursor: pointer;
 
 }
-.email{
-
+.email-box{
+    border:1px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 1px 1px #fff
 }
+
 
 .sub{
             margin: .4rem;
@@ -76,7 +78,8 @@
 
 @media only screen and (max-width:790px){
 .footer-on{
-    border: 1px solid
+    border:1px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 1px 1px
 }
 .label{
     text-align: center
@@ -129,7 +132,8 @@ input{
 
 
 .email-box{
-    border:1px solid rgba(0, 0, 0, 0.733);
+    border:1px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 1px 1px
 }
 
 }
