@@ -7,6 +7,7 @@ import MetaPost from '../components/MetaPost'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import '../components/list.css'
+import '../components/mainui/main.css'
 
 const CourseDisplay = props => {
   const { courseurl } = props.pageContext
