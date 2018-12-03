@@ -90,7 +90,7 @@ class commonMarkDown extends React.Component {
           }}
         >
           <article className="content-bar">
-            {date && <time dateTime={date} itemProp="datePublished">{date}</time>}
+            {date && <time dateTime={date}>{date}</time>}
             <h1>{title}</h1>
             <strong>
               by{' '}
