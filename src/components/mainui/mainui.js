@@ -13,7 +13,7 @@ class MainUi extends React.Component {
 
 
     return (
-      <div style={{ paddingBottom: "5rem" }}>
+      <div>
         <div className="post-list auto bglight ">
           <div className="padding-top5">
             <div className="post-setup">

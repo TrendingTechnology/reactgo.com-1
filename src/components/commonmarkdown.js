@@ -48,8 +48,8 @@ class commonMarkDown extends React.Component {
     const seoTitle = `${title} - ${course && course}`
 
     return (
-      <div className="main"
-        style={{ paddingBottom: `${this.props.bottom ? "16rem" : ""}` }}
+      <div className={`main`}
+
       >
         <MetaPost
           title={this.props.tag ? seoTitle : title}
