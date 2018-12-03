@@ -126,13 +126,15 @@
 
 
 
-  /* .excerpt{
+  .excerpt{
     display: none;
-  } */
+  }
   .post-list h2 {
     /* margin-left: 1rem; */
     font-size: 1.2rem;
     font-weight: 400;
+    padding: 10px;
+    padding-left: 3px;
   }
 
   .list-logo{
