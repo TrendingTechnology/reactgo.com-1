@@ -23,6 +23,7 @@ module.exports = async ({ graphql, actions }) => {
                 frontmatter {
                   title
                   courseurl
+                  tags
                 }
               }
             }
@@ -38,6 +39,29 @@ module.exports = async ({ graphql, actions }) => {
 
 
 
+          const blog = allPosts.filter(({ node }) => {
+
+            return node.frontmatter.tags
+
+          })
+
+          blog.forEach(({ node }, index) => {
+            let next = index === 0 ? null : blog[index - 1].node
+
+
+            const prev =
+              index === blog.length - 1 ? null : blog[index + 1].node
+            createPage({
+              path: node.fields.slug,
+              component: path.resolve('src/templates/post.js'),
+              context: {
+                slug: node.fields.slug,
+                prev,
+                next
+              },
+            })
+
+          })
 
           //course names
           let allCourses = []
@@ -87,27 +111,3 @@ module.exports = async ({ graphql, actions }) => {
 
 
 
-              // Blog currently disabled
-          // const blog = allPosts.filter(({ node }) => {
-
-          //   return node.frontmatter.tags
-
-          // })
-
-          // blog.forEach(({ node }, index) => {
-          //   let next = index === 0 ? null : blog[index - 1].node
-
-
-          //   const prev =
-          //     index === blog.length - 1 ? null : blog[index + 1].node
-          //   createPage({
-          //     path: node.fields.slug,
-          //     component: path.resolve('src/templates/post.js'),
-          //     context: {
-          //       slug: node.fields.slug,
-          //       prev,
-          //       next
-          //     },
-          //   })
-          //   console.log(blog[index + 1])
-          // })

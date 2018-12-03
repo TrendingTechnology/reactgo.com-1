@@ -1,17 +1,26 @@
+const URL =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:8000'
+    : 'https://reactgo.com'
+
+
 module.exports = {
   siteMetadata: {
     title: 'Reactgo - a place to learn basics of the react & javascript skills',
     description:
       'It provides  tutorials & articles about modern open source web technologies such as react for beginners ',
-    url: 'https://reactgo.com',
-    siteUrl: 'https://reactgo.com',
+    url: URL,
+    siteUrl: URL,
     author: 'Sai gowtham',
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://reactgo.com`,
+        siteUrl: URL,
       },
     },
     {
@@ -21,13 +30,13 @@ module.exports = {
         name: 'src',
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/posts`,
-    //     name: 'src',
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/blog`,
+        name: 'src',
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -71,6 +80,7 @@ module.exports = {
               maxWidth: 740,
             },
           },
+          `gatsby-remark-code-titles`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-copy-linked-files`,
@@ -111,7 +121,7 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { fields: [frontmatter___id], order: ASC }
+                sort: { fields: [frontmatter___date], order: DESC }
               ) {
                 edges {
                   node {

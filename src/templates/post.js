@@ -1,48 +1,69 @@
-// import React from 'react'
-// import CommonMarkdown from '../components/commonmarkdown'
-// import Link from 'gatsby-link'
+import React from 'react'
+import CommonMarkdown from '../components/commonmarkdown'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import Jsimg from '../img/js.jpg';
 
-// class Post extends React.Component {
-//   render() {
-//     console.log(this.props)
-//     const post = this.props.data.markdownRemark
-//     const { title } = post.frontmatter
-//     const { url } = this.props.data.site.siteMetadata
-//     return (
-//       <div>
-//         <CommonMarkdown
-//           nosidebar
-//           nomobilebar
-//           center
-//           thumbnail={url}
-//           data={this.props.data}
-//           location={this.props.location}
-//           pathContext={this.props.pathContext}
-//         />
-//       </div>
-//     )
-//   }
-// }
+class Post extends React.Component {
+  render() {
+    const post = this.props.data.markdownRemark
+    const { title } = post.frontmatter
+    const { url } = this.props.data.site.siteMetadata
+    const thumbnail =
+      this.props.data.markdownRemark.frontmatter.image &&
+      this.props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
+    return (
+      <Layout>
+        <Header siteTitle={'Reactgo'} />
+        <CommonMarkdown
+          nosidebar
+          nomobilebar
+          center
+          bottom
+          thumbnail={thumbnail ? url + thumbnail : Jsimg}
+          data={this.props.data}
+          location={this.props.location}
+          pathContext={this.props.pathContext}
+        />
+        <Footer siteTitle={'Reactgo'} />
+      </Layout>
+    )
+  }
+}
 
-// export default Post
-// export const pageQuery = graphql`
-//   query Post4Query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       excerpt
-//       frontmatter {
-//         title
-//         tags
-//       }
-//       fields {
-//         slug
-//       }
-//     }
-//     site {
-//       siteMetadata {
-//         url
-//         author
-//       }
-//     }
-//   }
-// `
+export default Post
+export const pageQuery = graphql`
+  query BlogPostQuery($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      excerpt
+      timeToRead
+      frontmatter {
+        title
+        date(formatString: "MMMM Do YYYY")
+        tags
+        image {
+          childImageSharp {
+            resize(width: 1000, height: 420) {
+              src
+            }
+            fluid(maxWidth: 786) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+      fields {
+        slug
+      }
+    }
+    site {
+      siteMetadata {
+        url
+        author
+      }
+    }
+  }
+`

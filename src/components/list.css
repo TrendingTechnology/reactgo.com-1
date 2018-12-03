@@ -28,8 +28,8 @@
 .post-setup {
   list-style: none;
   width: 100%;
-  margin: 0;
   margin: 0 auto;
+  margin-bottom: 13rem;
 }
 
 .post-items {
@@ -125,9 +125,22 @@
 
   }
 
+  .post-setup{
+       padding-bottom: 1.3rem;
+        margin-bottom: 15rem;
+  }
+
+  .excerpt{
+    display: none;
+  }
   .post-list h2 {
     /* margin-left: 1rem; */
     font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .list-logo{
+    display: none;
   }
 
   .post-list p {

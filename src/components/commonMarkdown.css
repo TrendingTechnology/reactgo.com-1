@@ -104,17 +104,22 @@ background-color: rgb(10, 9, 9);
 background: rgba(221, 221, 221, 0.18);
 } */
 
+.readtime{
+  float: right;
+}
 
-
-
-
+.gatsby-code-title{
+      background: bisque;
+    padding: 2px;
+    margin-bottom: -19px;
+}
 
 
 blockquote {
-  background: #e6ffd3;
-    border-left: 7px solid #727070;
+  background: #fff4321a;
+    border-left: 3px solid #727070;
   margin: 1.5em 0;
-  padding: 0.5em 10px;
+padding: 0.5em 10px !important;
   font-size: initial;
   color: #000000ee;
 }
