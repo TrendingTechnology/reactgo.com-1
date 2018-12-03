@@ -28,7 +28,6 @@
 .post-setup {
   list-style: none;
   width: 100%;
-  margin: 0;
   margin: 0 auto;
 }
 
@@ -125,9 +124,21 @@
 
   }
 
+
+
+  .excerpt{
+    display: none;
+  }
   .post-list h2 {
     /* margin-left: 1rem; */
     font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px;
+    padding-left: 3px;
+  }
+
+  .list-logo{
+    display: none;
   }
 
   .post-list p {

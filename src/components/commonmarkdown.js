@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import MetaPost from './MetaPost'
 import '../templates/blog-post.css'
 import './commonMarkdown.css'
@@ -41,13 +42,15 @@ class commonMarkDown extends React.Component {
     const post = this.props.data.markdownRemark
     const url = this.props.data.site.siteMetadata.url
     const pathname = this.props.location.pathname
-    const { title, date, thumbnail, logo, course } = post.frontmatter
+    const { title, date, thumbnail, image, logo, course } = post.frontmatter
     const { next, prev, slug } = this.props.pathContext
     const author = this.props.data.site.siteMetadata.author
     const seoTitle = `${title} - ${course && course}`
 
     return (
-      <div className="main">
+      <div className={`main`}
+
+      >
         <MetaPost
           title={this.props.tag ? seoTitle : title}
           description={post.excerpt}
@@ -83,9 +86,11 @@ class commonMarkDown extends React.Component {
           style={{
             marginLeft: `${this.props.right ? 0 : ''}`,
             margin: `${this.props.center ? '0 auto' : ''}`,
+
           }}
         >
           <article className="content-bar">
+            {date && <time dateTime={date} itemProp="datePublished">{date}</time>}
             <h1>{title}</h1>
             <strong>
               by{' '}
@@ -95,9 +100,11 @@ class commonMarkDown extends React.Component {
               >
                 {author}
               </a>
+              <span className="readtime">{post.timeToRead && post.timeToRead + "min read"}</span>
             </strong>
+            {image && <Img fluid={image.childImageSharp.fluid} />}
             <div
-              style={{ marginTop: '1rem' }}
+              style={{ marginTop: '3rem' }}
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
 

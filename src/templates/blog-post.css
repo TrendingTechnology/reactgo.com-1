@@ -63,6 +63,7 @@
   list-style: none;
   margin: -3px 0 0 0;
   transition: all .2s ease-in;
+      margin-bottom: 1rem;
 }
 
 .social img:hover{

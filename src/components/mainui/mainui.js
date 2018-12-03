@@ -2,14 +2,15 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './main.css'
 import '../list.css'
+import getUnique from '../new';
 
-// function capitalizeFirstLetter(str) {
-//   return str.charAt(0).toUpperCase() + str.slice(1)
-// }
 
 class MainUi extends React.Component {
   render() {
     const { allMarkdownRemark } = this.props.data
+
+    const finalData = getUnique(allMarkdownRemark);
+
 
     return (
       <div>
@@ -17,24 +18,20 @@ class MainUi extends React.Component {
           <div className="padding-top5">
             <div className="post-setup">
               <h1 className=" slim">{`Learn React tutorials for beginners`}</h1>
-              {allMarkdownRemark.edges.map(({ node }, i) => (
-                <Link to={node.fields.slug} key={i}>
+              {finalData.map((post, i) => (
+                <Link to={post.slug} key={i}>
                   <div className="post-items">
-                    {node.frontmatter.logo && (
+                    {post.logo && (
                       <span className="list-logo">
                         <img
-                          src={node.frontmatter.logo}
+                          src={post.logo}
                           style={{ margin: 0 }}
-                          alt={node.frontmatter.courseurl}
+                          alt={post.courseurl}
                         />
                       </span>
                     )}
-                    {/* <div className="ribbon">
-                      <span>{props.course}</span>
-                    </div> */}
-
-                    <h2>{node.frontmatter.title}</h2>
-                    <p>{node.excerpt}</p>
+                    <h2>{post.title}</h2>
+                    <p className="excerpt">{post.excerpt}</p>
                   </div>
                 </Link>
               ))}
