@@ -1381,12 +1381,15 @@ export const query = graphql`
 }
 `
 ```
-
+Now you can see tags are rendered below on each post.
 
 ![gatsby post tags](./post-tag.png)
 
+---
+
 - [How to host a gatsby blog](https://reactgo.com/gatsbyblog/hostinggatsbysite/)
-
-
 - [Code repository](https://github.com/saigowthamr/gatsby-advanced-starter)
 - [View Demo ](http://gatsby-advanced-blog.surge.sh/)
+
+
+Happy coding...
