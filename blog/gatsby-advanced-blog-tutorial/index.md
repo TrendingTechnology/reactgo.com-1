@@ -55,7 +55,7 @@ any type of modern web apps.
 >Nodejs is required for this project if you don't have nodejs then go to nodejs.org and download the version which suits for your operating system. Once you installed then open your terminal and run node --v if the version number is shown then you are successfully installed.
 
 
-*Note: If you stuck in the middle of this tutorial please refer to the [Code repository](https://github.com/saigowthamr/gatsby-advanced-starter)*.
+*Note: If you stuck in the middle of this tutorial, please refer to the [Code repository](https://github.com/saigowthamr/gatsby-advanced-starter)*.
 
 
 Open your terminal and run below commands
@@ -76,7 +76,7 @@ Once you successfully completed the above steps; now run the below command to do
 gatsby new myblog
 ```
 
-![gatsbycli](https://thepracticaldev.s3.amazonaws.com/i/qggjauoclgvk548abxtz.png)
+![gatsbycli](cmd.png)
 
 
 change your current folder to the `myblog` folder by using below commands.
@@ -89,7 +89,7 @@ gatsby develop
 
 Now open your browser and type `localhost:8000` you will see a gatsby index page.
 
-![gatsby.js default](https://thepracticaldev.s3.amazonaws.com/i/202hfrdwwswx6gp4h71z.png)
+![gatsby.js default](gatsbydefault.png)
 
 
 Open the `myblog` folder in your favorite code editor.
@@ -566,7 +566,7 @@ Gatsby transformer sharp and plugin sharp are used to processing the images and 
 
 restart your development server you will see an image with the blur effect and faster load timing.
 
-![lazyloading images](https://thepracticaldev.s3.amazonaws.com/i/gc3kj7nyokhnqplvuyt2.gif)
+![lazyloading gatsby images](./lazy-loading.gif)
 
 
 ### Prev and Next Links
@@ -1114,7 +1114,7 @@ export const query = graphql`
 
 Let's test it now by using Mozilla dev tools.
 
-![seogatsby](https://thepracticaldev.s3.amazonaws.com/i/15390ed8s8q6pk2hr0m3.png)
+![seogatsby](seogatsby.png)
 
 
 
@@ -1385,7 +1385,7 @@ export const query = graphql`
 
 ![gatsby post tags](./post-tag.png)
 
-- [How to host a gatsby blog](http://localhost:8000/gatsbyblog/hostinggatsbysite/)
+- [How to host a gatsby blog](https://reactgo.com/gatsbyblog/hostinggatsbysite/)
 
 
 - [Code repository](https://github.com/saigowthamr/gatsby-advanced-starter)
