@@ -170,9 +170,5 @@ pre > code.highlight {
 }
 
 @media only screen and  (max-width:900px){
-  code[class*="language-"],
-pre[class*="language-"] {
-  font-size: 15px;
-  white-space: pre;
-}
+
 }

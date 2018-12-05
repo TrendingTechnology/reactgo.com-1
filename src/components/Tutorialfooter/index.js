@@ -10,7 +10,7 @@ function TutorialFooter({ siteTitle }) {
     <footer className="footer-tut">
       <hr />
 
-      <section className="footer-on">
+      {/* <section className="footer-on">
         <form
           className="form2"
           action="https://tinyletter.com/reactgo"
@@ -44,7 +44,7 @@ function TutorialFooter({ siteTitle }) {
             <input type="submit" className="sub" value="Send my tip" />
           </section>
         </form>
-      </section>
+      </section>*/}
       <a
         href="https://twitter.com/intent/follow?screen_name=saigowthamr"
         rel="noopener"
