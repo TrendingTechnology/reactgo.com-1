@@ -83,6 +83,17 @@ margin: 0 auto;
    .main .rightbar {
    display: none;
 }
+blockquote{
+
+   margin-left: 0 !important;
+  margin-right:0 !important;
+}
+
+blockquote p {
+  line-height: 1.7 !important;
+
+}
+
 
 .content .gatsby-resp-image-link {
   box-shadow: 1px 1px #ffff;

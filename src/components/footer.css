@@ -3,10 +3,16 @@
     padding: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+    width: 100%;
 }
 
 .footer-start{
-    display: inline-flex;
+    /* padding: 1rem; */
+    margin-left: 16rem;
+}
+
+.center{
+    margin: 0 auto;
 }
 
 .footer-title{
@@ -14,7 +20,7 @@
     text-decoration: none;
     color: #141414;
     font-size: 1.3rem;
-  height: 3rem;
+    display: inline
 }
 
 .logostyle{
@@ -41,96 +47,33 @@
 
 }
 .form{
-        padding: 2.4rem;
+        background: rgb(255, 255, 255);
+    padding: .4rem;
     margin-left: 3rem;
-    border-radius: 2%;
-
-
 }
-.form-box{
-margin: -30px;
-}
-
 .label{
     margin:.4rem;
 }
-.twitter-style{
-    text-decoration: none;
-        position: relative;
-    height: 20px;
-    padding: 1px 8px 1px 6px;
-    background-color: #1b95e0;
-    color: #fff;
-    border-radius: 3px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.email{
 
-}
 
 .subs{
-            margin: .4rem;
-    background: #f6fa0af7;
+        margin: .4rem;
+    background: #131a00;
     font-size: 0.9rem;
     cursor: pointer;
-    color: #0d0d0d;
-    font-weight: 500;
-
-    border: 1px solid #4d4d4d;
-    box-shadow: 0 1px 1px black;
-    transition: all .2s ease-in-out;
+    color:whitesmoke;
+    font-weight: 600;
 }
-
-.subs:hover{
-    box-shadow:none;
-}
-.socials{
-  display: flex;
-}
-.f-logostyle {
-  color: #000000d6;
-  background: #dfdfd500;
-  padding: 0.3rem;
-  margin-left: 0.8rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-family: unset;
-  letter-spacing: 0.2rem;
-  text-shadow: 0px 1px 0px white;
-  transition: all 0.3s ease-in;
-  font-weight: 100;
-  font-size: 1.2rem;
-}
-
-.f-logostyle:hover {
-  box-shadow: -1px 0px 0px 2px #f5f5f5;
-}
-
 
 @media only screen and (max-width:870px){
 
 .footer-links a:first-child{
     margin-left: 0rem;
-}
 
-.footer-links{
-
-    margin-left: 0;
-    margin-top:-.2rem;
-}
-
-.twitter-style{
-   margin: 0 calc(19%);
 }
 
 .footer-links a{
    padding-top:1rem;
-
-}
-.footer-start{
-  display: block;
 
 }
 
@@ -138,16 +81,7 @@ margin: -30px;
 
     margin-left: 0rem;
   margin-top:1rem;
-   box-shadow: none;
-    padding: .4rem;
-    text-align: center;
-
 }
-.form-box{
-margin: auto;
-}
-
-
 .email{
     border:1px solid rgba(0, 0, 0, 0.733);
 }
@@ -159,17 +93,50 @@ margin: auto;
     .footer-start{
     margin-left: 0;
    }
-   .form{
 
-    margin-left: 0rem;
-  margin-top:1rem;
-   box-shadow: none;
+   .form.dark{
+    background: rgb(25, 29, 35);
+    color: #42bebe;
+   padding: 1px;
+}
 }
 
+
+/*dark colors*/
+
+.footer-g.dark{
+  background-color:   #252932
 }
 
-@media only screen and (max-width:400px){
-    .twitter-style{
-    margin: auto;
+.footer-title.dark{
+     background-color: none ;
+  color:#C0CCDA;
+  font-weight: 500 !important;
 }
+
+.footer-title.dark{
+     background-color: none ;
+  color:#C0CCDA;
+  font-weight: 500 !important;
+}
+.footer-title.name{
+     background-color: none ;
+  color:#d2d80d;
+  border-bottom: 1px dotted;
+  font-weight: 500 !important;
+}
+.form.dark{
+    background: rgb(25, 29, 35);
+    color: #42bebe;
+    padding: 2rem;
+}
+
+@media only screen and (max-width:800px){
+
+   .form.dark{
+    background: rgb(25, 29, 35);
+    color: #42bebe;
+   padding: 10px;
+   padding-top: 15px;
+  }
 }

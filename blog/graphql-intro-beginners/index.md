@@ -53,7 +53,7 @@ We can also create the group of persons must look like Person type.
 ```gql
 
 type Person{
-    name: String,
+    name: String
     age: String
 }
 
@@ -129,7 +129,7 @@ In this below example we ask for both the name and age.
 query {
 
  getPerson{
-     name,
+     name
      age
  }
 
