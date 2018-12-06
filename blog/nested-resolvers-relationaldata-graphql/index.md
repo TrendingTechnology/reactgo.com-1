@@ -1,6 +1,6 @@
 ---
 title: Nested resolvers and relational data in graphql
-date: 2018-12-06
+date: '2018-12-06'
 tags: ['graphql','javascript']
 image: "nested-graphql.png"
 ---

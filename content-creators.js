@@ -24,6 +24,7 @@ module.exports = async ({ graphql, actions }) => {
                   title
                   courseurl
                   tags
+                  date
                 }
               }
             }
@@ -45,7 +46,9 @@ module.exports = async ({ graphql, actions }) => {
 
           })
 
-
+          blog.sort(function (a, b) {
+            return new Date(a.node.frontmatter.date) - new Date(b.node.frontmatter.date);
+          })
 
 
           blog.forEach(({ node }, index) => {
@@ -54,6 +57,7 @@ module.exports = async ({ graphql, actions }) => {
 
             const prev =
               index === blog.length - 1 ? null : blog[index + 1].node
+
             createPage({
               path: node.fields.slug,
               component: path.resolve('src/templates/post.js'),
