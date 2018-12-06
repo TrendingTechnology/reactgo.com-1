@@ -41,9 +41,12 @@ module.exports = async ({ graphql, actions }) => {
 
           const blog = allPosts.filter(({ node }) => {
 
-            return node.frontmatter.tags
+            return !node.frontmatter.courseurl
 
           })
+
+
+
 
           blog.forEach(({ node }, index) => {
             let next = index === 0 ? null : blog[index - 1].node
