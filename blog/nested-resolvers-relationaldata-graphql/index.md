@@ -8,7 +8,7 @@ image: "nested-graphql.png"
 In this tutorial, we are going to learn about how to create relational data and nested resolvers in graphql.
 
 
-*Note: If you don't about GraphQL then refer to my previous tutorials [GraphQL intro for the beginners](http://localhost:8000/graphql-intro-beginners/)*
+*Note: If you don't about GraphQL then refer to my previous tutorials [GraphQL intro for the beginners](/graphql-intro-beginners/)*
 
 
 
