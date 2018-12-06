@@ -641,7 +641,13 @@ pre[class*="language-"]{
   border: 0 !important;
 }
 
-
+.md-btn{
+  background-color: #333333;
+}
+.md-btn a{
+text-decoration: none;
+color: rgb(247, 241, 241);
+}
 
 @media only screen and (min-width:1000px){
 
