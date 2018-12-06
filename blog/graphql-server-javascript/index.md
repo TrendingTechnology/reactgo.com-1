@@ -1,6 +1,6 @@
 ---
 title: How to build a simple GraphQL api using graphql-yoga and Nodejs
-date: 2018-12-05
+date: '2018-12-05'
 tags: ['javascript','nodejs','graphql']
 image: graphql-api.png
 ---
