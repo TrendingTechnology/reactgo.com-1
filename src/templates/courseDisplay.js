@@ -54,7 +54,7 @@ const CourseDisplay = props => {
                     </span>
                   )}
                   <h2>{node.frontmatter.title}</h2>
-                  <p>{node.excerpt}</p>
+                  <p className="excerpt">{node.excerpt}</p>
                 </div>
               </Link>
             ))}
