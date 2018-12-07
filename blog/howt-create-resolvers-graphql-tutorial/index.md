@@ -66,7 +66,7 @@ Every **resolver function** in GraphQL has four arguments.
 
 GraphQL first matches the query with the type system if this query is valid then only GraphQL invokes the resolver functions otherwise graphql returns error without invoking the resolver function.
 
-*Inavlid query*
+*Invalid query*
 
 ![error graphql resolver](./error-query.png)
 
