@@ -8,7 +8,7 @@ image: "graphql-queries-mutations.png"
 In this tutorial, we are going to learn about how to create queries and mutations in the graphql server.
 
 
-**Queries** in the graphql are used to get the data from the graphql endpoint like `get` method in the
+**Queries**  are used to get the data from the graphql endpoint like `get` method in the
 `Rest API`
 
 
@@ -19,7 +19,7 @@ Let's learn how to create a query in graphql if you don't know about Graphql the
 previous tutorial [GraphQL intro](/graphql-intro-beginners/).
 
 
-Everything in graphql starts with creating a Schema with there own strongly type system. In graphql type system, there are two special types which are Query type and Mutation type.
+Everything in graphql starts with creating a Schema.In graphql type system, there are two special types which are `Query` type and `Mutation` type.
 
 
 ### Schema
@@ -37,8 +37,8 @@ type Query{
 
 ```
 
-First, we created a `User` Object type with two fields `id,name` and also  `Query` type with one field
-called `user`.
+First, we created a `User` Object type with two fields `id,name` and also
+`Query` type with one field called `user`.
 
 >Note: ( ! ) means that field is not accepted null values.
 

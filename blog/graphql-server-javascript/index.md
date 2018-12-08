@@ -94,10 +94,11 @@ const typeDefs = `
 Here we created a `Todo` type which contains three fields `id,title, body` it means our todo data must be in this shape.
 
 
-On Query type, we created `getAlltodos` query which returns back an array of todos.
+On Query type, we created `getAlltodos` field which returns back an array of todos.
 
 
-Now we need to create the resolvers. Which helps us to resolve the particular queries
+Now we need to create the resolvers. Which helps us to resolve the particular query fields in the
+Schema.
 
 
 ```js:title=app.js
@@ -117,7 +118,7 @@ const resolvers = {
 <!-- In graphql Queries helps us to get the data to a client. Like `get` method in Rest APIs. -->
 
 
->Note: we need to use the same name for both resolvers and typedefs like how we used above `getAlltodos`.
+>The resolver function and Query field should have the same name otherwise graphql gives you an error.
 
 
 Finally, step to turn on the server.
@@ -152,7 +153,7 @@ As i said `getAlltodos` Query help us to get the array of `todos` let's test it 
 running a query on the graphql playground.
 
 
-Copy the below query and paste on the left side and hit the play button.
+Copy the below query paste on the left side and hit the play button.
 
 ```
 {
