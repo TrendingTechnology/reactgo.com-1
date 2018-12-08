@@ -91,7 +91,7 @@ We created two object types which are `Todo` & `User` and One Query Type.
 
 ### Resolvers
 
-Next, we need to tell the graphql how to resolve the `user` query.
+Next, we need to tell the graphql how to resolve the `user` field  in the query.
 
 ```js
 
