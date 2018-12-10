@@ -26,7 +26,7 @@ For example, consider in our app has `Posts`  and `Contact` page components they
 
 ```js:title=app.js
 import React from 'react';
-import Posts from './post.js';
+import Posts from './posts';
 import Contact from './contact';
 
 
