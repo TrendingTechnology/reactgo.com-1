@@ -55,7 +55,7 @@ class Header extends React.Component {
 
           <a
             className="github"
-            href="https://github.com/saigowthamr/reactgo.com"
+            href="https://github.com/saigowthamr/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: 'black' }}
