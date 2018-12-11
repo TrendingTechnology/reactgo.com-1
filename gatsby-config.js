@@ -6,7 +6,7 @@ const URL =
 
 module.exports = {
   siteMetadata: {
-    title: 'Reactgo - a place to learn basics of the react & javascript skills',
+    title: 'Reactgo - a place to improve your modern javascript skills',
     description:
       'It provides  tutorials & articles about modern open source web technologies such as react for beginners ',
     url: URL,
