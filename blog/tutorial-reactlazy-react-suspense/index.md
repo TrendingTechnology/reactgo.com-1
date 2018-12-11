@@ -61,7 +61,7 @@ In suspense, we need to specify the fallback property so that suspense can load 
 
 In below code, i specified a fallback property to the loadingGif image.
 
-```js{32-40}
+```js{8,32-40}
 import React, { Suspense, lazy, Component } from 'react';
 import axios from "axios";
 import Header from './components/header';
