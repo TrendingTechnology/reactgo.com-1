@@ -61,7 +61,7 @@ In suspense, we need to specify the fallback property so that suspense can load 
 
 In below code, i specified a fallback property to the loadingGif image.
 
-```js
+```js{32-40}
 import React, { Suspense, lazy, Component } from 'react';
 import axios from "axios";
 import Header from './components/header';
@@ -124,7 +124,7 @@ export default App;
 
 In below code, the lazy function takes the dynamic imports and returns the promise which resloves the Component.
 
-```js
+```js{6,8}
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
 import Header from './header'
