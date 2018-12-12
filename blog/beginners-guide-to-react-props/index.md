@@ -6,14 +6,14 @@ image: "react-props-beginners-guide.png"
 ---
 
 
-In this tutorial, we will learn about how to pass the data to the components(parent to child)
+In this tutorial, we will learn about how to pass the data to the components
 by using props.
 
 
 ## Props
 
-- Props are used to pass the data from parent to the child components.
-- Props are readonly
+- Props are used to pass the data from parent to  child components.
+- Props are readonly.
 
 
 Let's see in practice.
@@ -44,7 +44,7 @@ ReactDOM.render(<Button/>,document.querySelector('#target'))
 
 Have you seen in the above image an empty  Object is logged inside the console?
 
-If we pass data as an `attribute` to the components, that data is available inside the props object.
+If we pass data as an `attribute` to the components, that data is available inside the components as a `props` object.
 
 ```js{3,11}
 
@@ -67,14 +67,12 @@ In the above code, we passed `name` attribute to the Button component so that we
 ![props object react](./props-object-react.png)
 
 
-Now let's remove the name of the button and replace with `props.name` so that we can have more control over the `Button` component.
+Now let's remove the name of the button and replace with the `props.name` so that we can have more control over the `Button` component.
 
 
-```jsx{6,16-20}
+```jsx{4,14-18}
 
 function Button(props){
-
-   console.log(props) // {name:"Like" }
 
     return (
         <button>{props.name}</button>
