@@ -147,3 +147,25 @@
   border-bottom: 3px solid transparent;
   border-top: 3px solid #1e5799;
 }
+
+
+.date{
+    position: absolute;
+    top: 0;
+    padding: -1px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    left: 0;
+    border-top: 1px solid;
+}
+
+@media only screen and (max-width:1000px){
+
+     .date{
+        top:-10px;
+        border:1px solid #E5ECF2;
+        background-color: #FFF;
+        padding: 2px;
+     }
+
+}

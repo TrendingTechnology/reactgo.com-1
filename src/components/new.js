@@ -10,13 +10,15 @@ function getUnique(all) {
         const slug = node.frontmatter.courseurl ? '/' + node.frontmatter.courseurl : node.fields.slug
         const logo = node.frontmatter.logo
         const excerpt = node.excerpt
+        const date = node.frontmatter.date
 
         arr.push(
             {
                 title,
                 slug,
                 logo,
-                excerpt
+                excerpt,
+                date
             }
         )
 
