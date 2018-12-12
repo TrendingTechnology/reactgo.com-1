@@ -43,6 +43,7 @@ export const query = graphql`
           frontmatter {
             title
             logo
+            date(formatString: "MMM, Do")
             courseurl
             course
             thumbnail

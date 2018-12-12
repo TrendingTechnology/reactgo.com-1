@@ -1,15 +1,16 @@
 ---
-title: How to handle events in react apps
+title: Event handling in react apps
 date:  "2018-12-11"
 tags: ['react']
 image: "react-eventhandling.png"
 ---
 
 
-In this tutorial, we are going to learn about handling events to react and also why we bind this keyword in react).
+In this tutorial, we are going to learn about handling events in react and also why we bind this keyword in react).
 
 
 - In Jsx we need to wrap the JavaScript expressions with the curly braces `{ }`.
+
 - In normal JavaScript, we use lowercase names but in react we need to use cameCase names.
 
 
@@ -29,7 +30,7 @@ In this tutorial, we are going to learn about handling events to react and also 
 
 ```
 
-Let's learn more about, how to attach event handlers in functional and class Based components.
+Let's learn more about, how to attach event handlers in functional and class based components.
 
 
 ### Functional components
