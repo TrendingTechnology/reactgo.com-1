@@ -14,7 +14,7 @@ Graphql is an alternative to the REST APIS.
 ### GraphQL vs Rest
 
 
-- In graphql, we need only need single endpoint for the `GET`,`POST`,`PUT` etc requests.
+- In graphql, we only need single endpoint for the `GET`,`POST`,`PUT` etc requests.
 
 - In Rest API we need separate endpoints for everything.
 
