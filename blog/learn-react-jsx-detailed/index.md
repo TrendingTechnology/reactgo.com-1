@@ -5,13 +5,13 @@ image: "react-jsx-detailed.png"
 tags: ['react']
 ---
 
-Beginners to the react probably get confused about why we write HTML inside the JavaScript.In this tutorial, we will learn about jsx in detailed.
+Beginners to the react probably get confused about why we write HTML inside the JavaScript.At the end of this tutorial, you will get a better understanding of jsx.
 
 
 
 ### React without JSX
 
-Let’s write some react code without using jsx so that we can understand better , why we use jsx in react.
+Let’s write some react code without using jsx so that we can know better , why we use jsx in react.
 
 ```js{1,3,5}
 
@@ -31,11 +31,11 @@ ReactDOM.render(div,document.querySelector('#app'))
 `React.createElement(type,props,children)` method takes the three arguments.
 
 __type:__ It means the type of HTML element we need.
-example: h1,h2,p,div..etc.
+(example: h1,h2,p,div..etc.)
 
 __props:__ Any properties required for this element/not.
 
-__children:__ You can write plain text or child elements.
+__children:__ The data we need to add inside the html element.(example: plain text or child elements)
 
 
 
@@ -62,7 +62,7 @@ The jsx we write inside the react will get converted into [JavaScript](#react-wi
 
 
 
-### What is JSX ?
+### What is JSX?
 
 Jsx allows us to write HTML like syntax inside the JavaScript these is not a react specific thing. By using jsx we can make our code more readable so that react team recommends us to use jsx.
 
@@ -125,7 +125,7 @@ let h1 = <h1 style={{color:"green"}}>This is heading</h1>
 
 **External styles using classNames**
 
-We need to use `className`  instead of normal `class` atrribute we normally use in html because there is already a `class` keyword present inside the JavaScript.
+We need to use `className`  instead of the normal `class` attribute we use in HTML because there is already a `class` keyword present inside the JavaScript.
 
 ```js
 let h1 = <h1 className="header-h1">This is heading</h1>
