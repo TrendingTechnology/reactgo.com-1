@@ -5,13 +5,13 @@ tags: ['react']
 image: "virtual-dom-in-react.png"
 ---
 
-In this tutorial, we are going to learn about why react uses the virtual dom to make the real dom nodes.
+In this tutorial, we are going to learn about how react uses the virtual dom to make the real dom nodes.
 
 If you want to know about JSX then refer to previous tutorial [Learn JSX in more detailed](/learn-react-jsx-detailed/)
 
 
 
-First, let’s see how virtual dom look like so that we can have a solid understanding.
+First, let’s see how virtual dom look like so that we can have solid understanding.
 
 
 ### Simple react component
