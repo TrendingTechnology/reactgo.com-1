@@ -26,7 +26,7 @@ function Header(){
 
 This a simple `Header` component which returns `h1` dom element.
 
-### How to render a components in the browser?
+### How to render a component in the browser?
 
 To render a component in the browser we need to invoke the ReactDOM.render() method with two arguments.
 
