@@ -37,6 +37,17 @@ margin: 0 auto;
   font-weight: 400;
 }
 
+.content .language-text{
+
+  background: #eceff1;
+    color: #39515c;
+    padding: 0 3px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
 .content-bar{
   width: 90%;
 }
