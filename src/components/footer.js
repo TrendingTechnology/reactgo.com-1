@@ -12,8 +12,8 @@ function Footer({ siteTitle }) {
 
       <section className="footer-start">
         <Link to="/" className={"footer-title logostyle"}>
-          {siteTitle} -
-            </Link>
+          {siteTitle}
+        </Link>
         <a href="https://twitter.com/saigowthamr" className={"footer-title logostyle"}> @saigowthamr</a>
 
         <nav className="footer-links">

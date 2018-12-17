@@ -24,7 +24,7 @@ class Index extends React.Component {
         <div>
           <MainUi data={this.props.data} />
         </div>
-        <Footer siteTitle={'Reactgo'} />
+        <Footer siteTitle={'Home'} />
       </Layout>
     )
   }

@@ -31,7 +31,7 @@ class MainUi extends React.Component {
                       </span>
                     )}
                     <h2>{post.title}</h2>
-                    <span className="date">{post.date}</span>
+                    <time className="date">{post.date}</time>
                     <p className="excerpt">{post.excerpt}</p>
                   </div>
                 </Link>
