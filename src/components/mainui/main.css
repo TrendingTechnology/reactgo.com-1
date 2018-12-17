@@ -161,12 +161,16 @@
 }
 
 @media only screen and (max-width:800px){
+/* .bglight{
+    background: rgb(255, 255, 255);
 
+} */
      .date{
-        top:-10px;
-        border:1px solid #E5ECF2;
+        /* top:-5px; */
+        border:1px solid transparent;
         background-color: #FFF;
         padding: 2px;
+        font-size: 13px;
      }
 
 }
