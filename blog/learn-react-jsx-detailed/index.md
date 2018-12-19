@@ -58,7 +58,7 @@ ReactDOM.render(div,document.querySelector('#app'))
 
 ```
 
-The jsx we write inside the react will get converted into [JavaScript](#react-without-jsx) by using the babel transpiler.
+The jsx we write inside the react is often converted into [JavaScript](#react-without-jsx) by using the babel transpiler.
 
 
 
