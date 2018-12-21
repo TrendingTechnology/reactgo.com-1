@@ -14,11 +14,11 @@ It is used to style the active routes so that user knows on which page he or she
 
 ## What is the difference between NavLink and Link?
 
-The link is used to navigate the different routes on the site. But NavLink is used to add the style attributes to the active routes.
+The `Link` component is used to navigate the different routes on the site. But `NavLink` is used to add the style attributes to the active routes.
 
-In our routing app, we have three routes which are [home,/users,/contact] Let's style them using NavLink.
+In our routing app, we have three routes which are [home, /users, /contact] Let's style them using NavLink.
 
-We need to add a new prop called activeClassName to the NavLink component so that it applies that class whenever the route it is active.
+We need to add a new prop called `activeClassName` to the NavLink component so that it applies that class whenever the route it is active.
 
 _index.css_
 
@@ -51,17 +51,17 @@ const routing = (
     <div>
       <ul>
         <li>
-          <NavLink exact actvieClassName="active" to="/">
+          <NavLink exact activeClassName="active" to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink actvieClassName="active" to="/users">
+          <NavLink activeClassName="active" to="/users">
             Users
           </NavLink>
         </li>
         <li>
-          <NavLink actvieClassName="active" to="/contact">
+          <NavLink activeClassName="active" to="/contact">
             Contact
           </NavLink>
         </li>
