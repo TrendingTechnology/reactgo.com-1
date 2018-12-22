@@ -1,5 +1,5 @@
 ---
-title: What is JAMstack and why its so fast
+title: What is JAMstack and why is so fast
 date: "2018-12-22"
 tags: ['react','javascript']
 image: "whati-jamstack-sites.png"
@@ -17,10 +17,9 @@ __Apis__: The APIs are used to store the user data in the database or handling a
 __Markup__: Site markup can prebuilt during the build time by using a static site generator.
 
 
-### Why JAMstack is very fast ?
+### Why JAMstack sites are fast?
 
-- There is no heavy lifting behind the jamstack sites because everything is prebuilt HTML, CSS,JavaScript and stored in the content delivery network(CDN). Like a traditional stack, we need to make a request and server need to build the markup on a fly.
-
+- There is no heavy lifting behind the jamstack sites because everything is prebuilt HTML, CSS,JavaScript and served using the content delivery network(CDN).
 
 - Each time you click on a new page or blog post in the WordPress site we make a network request to the server and we need to wait until the server builds that page and sends back to the client it often sometimes server fail to build a webpage during the heavy load.
 
