@@ -59,4 +59,4 @@ arr.push(baby,raisedHand)
 console.log(arr.join('')) //"👶 ✋"
 
 ```
-`join()` method is used comibine the array of individual strings into a single string.
+`join()` method is used combine the array of individual strings into a single string.
