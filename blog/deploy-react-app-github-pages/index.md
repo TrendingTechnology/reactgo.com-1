@@ -14,7 +14,7 @@ GitHub provides us a free hosting to host our static web apps or documentation s
 *Make sure your react app code is already pushed to the github account.*
 
 
-Let's start to deploy a create react app in 5 steps.
+Let’s start deploy a create react app in 5 steps.
 
 ### 1. Add homepage
 
