@@ -14,7 +14,7 @@ GitHub provides us a free hosting to host our static web apps or documentation s
 *Make sure your react app code is already pushed to the github account.*
 
 
-Let’s start deploy a create react app in 5 steps.
+Let’s start deploy a create react app in 4 steps.
 
 ### 1. Add homepage
 
@@ -58,3 +58,6 @@ Now in your terminal run `npm run deploy `
 Once you successfully deployed open your GitHub code repository and click on settings tab if you scroll down you can see a GitHub Pages then choose a branch to gh-pages.
 
 ![react app ghpages setup](./react-ghpages-setup.png)
+
+
+That's it now you can see your react app URL like in the above image.
