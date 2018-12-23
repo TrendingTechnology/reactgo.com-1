@@ -5,7 +5,7 @@ tags: ['javascript']
 ---
 
 
-The some( ) method executes the callback function on each element present in the array and returns true immediately if at least one element passes the test condition otherwise it returns false.
+The some( ) method executes the [callback function](/callback-function-javascript/) on each element present in the array and returns true immediately if at least one element passes the test condition otherwise it returns false.
 
 
 ```js

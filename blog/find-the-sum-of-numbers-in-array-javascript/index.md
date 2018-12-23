@@ -49,7 +49,7 @@ console.log(sum) // 15
 
 In the above code on each iteration reducer function store, the numbers sum inside the `result` parameter and finally returns the result value.
 
-`reduce()` method takes the [callback function](/what-is-a-callback-function-javascript/) as its first argument and runs that callback function on each element present in the array.
+`reduce()` method takes the [callback function](/callback-function-javascript/) as its first argument and runs that callback function on each element present in the array.
 
 The callback function takes two parameters `result` and `current` element.
 
