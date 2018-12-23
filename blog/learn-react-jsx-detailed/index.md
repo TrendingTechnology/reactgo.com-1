@@ -147,7 +147,7 @@ function Button(props){
 ```
 
 
-### Loops in jsx
+### Conditionals in JSX
 
 
 ```js
