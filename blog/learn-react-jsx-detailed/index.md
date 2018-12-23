@@ -164,7 +164,7 @@ function ShowHide(props){
 ReactDOM.render(<ShowHide show="true" />,document.querySelector('#app'))
 ```
 
-We can make above component code more simpler by using teranary operator.
+We can make above component code more simpler by using  the ternary operator.
 
 ```js
 

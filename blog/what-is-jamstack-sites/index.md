@@ -19,7 +19,7 @@ __Markup__: Site markup can prebuilt during the build time by using a static sit
 
 ### Why JAMstack sites are fast?
 
-- There is no heavy lifting behind the jamstack sites because everything is prebuilt HTML, CSS,JavaScript and served using the content delivery network(CDN).
+- There is no heavy lifting servers behind the jamstack sites because everything is prebuilt HTML, CSS,JavaScript and served using the content delivery network(CDN).
 
 - Each time you click on a new page or blog post in the WordPress site we make a network request to the server and we need to wait until the server builds that page and sends back to the client it often sometimes server fail to build a webpage during the heavy load.
 
