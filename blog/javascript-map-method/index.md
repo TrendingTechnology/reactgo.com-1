@@ -7,7 +7,7 @@ tags: ['javscript']
 In es6 we got most useful array methods in JavaScript one of them is `Array.map()` method in this tutorial we will learn about how to use the map method.
 
 
-The map method takes the [callback function](/what-is-a-callback-function-javascript/) as an argument and runs on  each element present in the array, at final it returns the new array with the updated values.
+The map method takes the [callback function](/callback-function-javascript/) as an argument and runs on  each element present in the array, at final it returns the new array with the updated values.
 
 > map method doesn't mutate/change the original array.
 
