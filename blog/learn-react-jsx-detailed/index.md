@@ -1,5 +1,5 @@
 ---
-title: Learn React JSX in more detailed
+title: What is JSX in react detailed
 date: "2018-12-14"
 image: "react-jsx-detailed.png"
 tags: ['react']
