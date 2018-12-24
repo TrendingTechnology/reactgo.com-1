@@ -174,3 +174,38 @@ function ShowHide(props){
 
 }
 ```
+
+### Spread operator in jsx
+
+Suppose we need to pass a data to the User component by using props.
+
+```js
+function  User(props){
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <ul>
+        <li>{props.email}</li>
+       <li>{props.mobile }</li>
+      </ul>
+     </div>
+  )
+}
+
+<User name= "gowtham" email= "user@example.com" mobile= {11233}/>
+
+```
+
+Let's pass the same props data by using the spread operator.
+
+
+```js
+let user = {
+  name:"gowtham",
+  email:"user@gmail.com",
+  mobile:2134578
+}
+
+<User {...user} />
+
+```
