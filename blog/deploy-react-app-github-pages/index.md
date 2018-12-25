@@ -1,12 +1,12 @@
 ---
-title: How to deploy a create react app in Github pages
+title: How to deploy a create react app to Github pages
 date:  '2018-12-23'
 tags: ['react']
 image: "deploy-react-app-github-pages.png"
 ---
 
 
-In this tutorial, we will learn about deploying a react app in GitHub pages.
+In this tutorial, we will learn about deploying a react app to GitHub pages.
 
 
 GitHub provides us a free hosting to host our static web apps or documentation sites the github pages turns your code repository into a website and serves on a unique URL that ties to your username or organization name.
