@@ -1,6 +1,6 @@
 ---
 title: Getting started with GraphQL, React and apollo client
-date: "2018-12-25"
+date: "2018-12-26"
 tags: ['react','graphql']
 image: "apollo-client-react-tutorial.png"
 ---
