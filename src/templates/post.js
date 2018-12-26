@@ -22,7 +22,7 @@ class Post extends React.Component {
           nomobilebar
           center
           bottom
-          thumbnail={thumbnail ? url + thumbnail : Jsimg}
+          thumbnail={thumbnail ? url + thumbnail : url+Jsimg}
           data={this.props.data}
           location={this.props.location}
           pathContext={this.props.pathContext}
