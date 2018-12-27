@@ -46,10 +46,12 @@ class Node{
 In below code, we declared a Class Stack with three properties.
 
  **first**: First element in the stack.
- **last**: Last element  in the stack
- **size**: size of the stack
 
-### push method pseudo code
+ **last**: Last element  in the stack.
+
+ **size**: size of the stack.
+
+### push method pseudocode
 
  1. create a method which accepts data as an argument.
  2. Declare a new node with that data.
@@ -89,7 +91,7 @@ class Stack{
 
 
 
-### Pop method .
+### Pop method
 
 - It helps us to remove the first element from the stack.
 
@@ -139,6 +141,7 @@ A queue is a collection of items using the FIFO principle (First in First out) t
 
 
 **Enqueue**: Adding the elements at the end of the queue is called enqueue.
+
 **Dequeue** Removing the elements from the first is called dequeue.
 
 ### Enqueue Method
