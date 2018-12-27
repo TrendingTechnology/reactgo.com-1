@@ -5,10 +5,9 @@ tags: ['react']
 image: "external-style-sheets-react.png"
 ---
 
-In react apps we don't need to add link tags manually to the HTML files to our app.
+In react apps we don't need to add link tags manually to the HTML files.
 
-
-React is a JavaScript library used to build single page apps the term "single page" means  there is only one html file which is re-using for the every page we created in our app.
+React is a JavaScript library used to build single page apps the term "single page" means there is only one html file which is re-using for every page we created in our app.
 
 Let's see an example of adding style sheets in reactjs.
 
@@ -51,7 +50,7 @@ Now we are creating a `blog-post.css` file and defining our styles.
 ```
 Its time to add our style sheet to the `blog-post.js` file.
 
-We need to import the `blog-post.css` like how we import the components or modules.
+We need to import the `blog-post.css` file inside the `blog-post.js` file like how we import the components or modules in react.
 
 
 ```js:title=blog-post.js
@@ -89,4 +88,4 @@ The HTML we write  inside the react apps is not an HTML it is a [JSX](/learn-rea
 In JavaScript `class` is a reserved keyword so that we need to use `className`  to add styles instead of `class`.
 
 
-If you use create-react-app to bootstrap your app.At the time of development, you can see all external sheets you created but if you run `npm run build` command you can only see `index.css` file because all css files are concatenated  into a single `index.css` file.
+If you use create-react-app to bootstrap your app.At the time of development, you can see all external style sheets you created but if you run `npm run build` command you can only see `index.css` file because all css files are concatenated  into a single `index.css` file.
