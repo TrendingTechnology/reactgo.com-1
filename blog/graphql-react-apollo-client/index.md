@@ -91,35 +91,38 @@ let's test our code by running a query.
 
 
 ```js:title=index.js
-import React from 'react';
-import { render } from 'react-dom';
-import './index.css';
-import App from './App';
-import ApolloClient,{gql} from "apollo-boost";
+import React from "react";
+import { render } from "react-dom";
+import "./index.css";
+import App from "./App";
+import ApolloClient, { gql } from "apollo-boost";
 
 const client = new ApolloClient({
-    uri: "https://api.github.com/graphql",
-    request: operation => {
-        operation.setContext({
-            headers: {
-                authorization: `Bearer your-personal-access-token`
-            },
-        });
-    }
+  uri: "https://api.github.com/graphql",
+  request: operation => {
+    operation.setContext({
+      headers: {
+        authorization: `Bearer your-personal-access-token`
+      }
+    });
+  }
 });
 
-client.query({
+client
+  .query({
     query: gql`
-  query GetnameandEmail {
-     viewer{
-       email
-       name
-    }
-  }
-`
-}).then(res => console.log(res))
+      query GetnameandEmail {
+        viewer {
+          email
+          name
+        }
+      }
+    `
+  })
+  .then(res => console.log(res));
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById("root"));
+
 ```
 
 Open your console and you will see an object with your name and email id.
@@ -138,29 +141,30 @@ We need to wrap our `<App/>` component with the `ApolloProvider` component provi
 
 
 ```js:title=index.js
-import React from 'react';
-import { render } from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import { render } from "react-dom";
+import "./index.css";
+import App from "./App";
 import ApolloClient, { gql } from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 
 const client = new ApolloClient({
-    uri: "https://api.github.com/graphql",
-    request: operation => {
-        operation.setContext({
-            headers: {
-                authorization: `Bearer your-personal-access-token`
-            },
-        });
-    }
+  uri: "https://api.github.com/graphql",
+  request: operation => {
+    operation.setContext({
+      headers: {
+        authorization: `Bearer your-personal-access-token`
+      }
+    });
+  }
 });
 
 render(
-    <ApolloProvider client={client}>
-        <App />
-    </ApolloProvider>, document.getElementById('root'));
-
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById("root")
+);
 ```
 
 
@@ -182,33 +186,34 @@ A parameter is an object which contains three properties loading, error, data.
 Open your **app.js** file and add the following data.
 
 ```js:title=app.js
-import React, { Component } from 'react';
-import './App.css';
-import { Query } from 'react-apollo'
-import { gql } from 'apollo-boost';
+import React, { Component } from "react";
+import "./App.css";
+import { Query } from "react-apollo";
+import { gql } from "apollo-boost";
 
-const query = gql` {
+const query = gql`
+  {
     viewer {
-     name
-     email
-   }
-}`
+      name
+      email
+    }
+  }
+`;
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Query query={query}>
-          {(result) => {
-            if (result.loading) return <p>loading...</p>
+          {result => {
+            if (result.loading) return <p>loading...</p>;
             if (result.error) return <p>{result.error.message}</p>;
             return (
               <div>
                 <h1>Name: {result.data.viewer.name}</h1>
                 <p>Email: {result.data.viewer.email}</p>
               </div>
-            )
-
+            );
           }}
         </Query>
       </div>
@@ -246,45 +251,47 @@ We can also filter the queries by passing the arguments.
 create a new file called `my-repostiories.js` in your `src` folder and add the following code.
 
 ```js:title=my-repostiories.js
-import React, { Component } from 'react';
-import { Query } from 'react-apollo'
-import { gql } from 'apollo-boost';
+import React, { Component } from "react";
+import { Query } from "react-apollo";
+import { gql } from "apollo-boost";
 
-const reposQuery = gql` {
-   viewer {
-    repositories(first: 10) {
-      edges {
-        node {
-          name
+const reposQuery = gql`
+  {
+    viewer {
+      repositories(first: 10) {
+        edges {
+          node {
+            name
+          }
         }
       }
     }
   }
-}`
+`;
 
 class Myrepositories extends Component {
-
-    render() {
-        return (
-            <Query query={reposQuery}>
-                {({ data, loading, error }) => {
-                    if (loading) return <p>loading...</p>
-                    if (error) return <p>{error.message}</p>;
-                    return (
-                        <ul>
-                            <h2>First 10 repositories</h2>
-                            {data.viewer.repositories.
-                             edges.map(({ node }) =>
-                             <li key={node.name}>{node.name}</li>)}
-                        </ul>
-                    )
-                }}
-            </Query>
-        );
-    }
+  render() {
+    return (
+      <Query query={reposQuery}>
+        {({ data, loading, error }) => {
+          if (loading) return <p>loading...</p>;
+          if (error) return <p>{error.message}</p>;
+          return (
+            <ul>
+              <h2>First 10 repositories</h2>
+              {data.viewer.repositories.edges.map(({ node }) => (
+                <li key={node.name}>{node.name}</li>
+              ))}
+            </ul>
+          );
+        }}
+      </Query>
+    );
+  }
 }
 
 export default Myrepositories;
+
 ```
 
 In the above code, we first created a `reposQuery` by passing an argument `first:10` so that we can only get first 10 repositories.
@@ -319,50 +326,48 @@ The static value is replaced by a $first variable name so that we can pass the v
 
 
 
-
 ```js:title=my-repostiories.js
-import React, { Component } from 'react';
-import { Query } from 'react-apollo'
-import { gql } from 'apollo-boost';
+import React, { Component } from "react";
+import { Query } from "react-apollo";
+import { gql } from "apollo-boost";
 
 const reposQuery = gql`
-
-query Myrepositories($first:Int!){
-     viewer {
-    repositories(first: $first) {
-      edges {
-        node {
-          name
+  query Myrepositories($first: Int!) {
+    viewer {
+      repositories(first: $first) {
+        edges {
+          node {
+            name
+          }
         }
       }
     }
   }
-}
-
-`
+`;
 class Myrepositories extends Component {
-    render() {
-        return (
-            <Query query={reposQuery} variables={{ first: 10 }}>
-                {({ data, loading, error}) => {
-                    if (loading) return <p>loading...</p>
-                    if (error) return <p>{error.message}</p>;
-                    return (
-                        <div>
-                            <ul>
-                                <h2>First 10 repositories</h2>
-                                {data.viewer.repositories.
-                                edges.map(({ node }) =>
-                                <li key={node.name}>{node.name}</li>)}
-                            </ul>
-                        </div>
-                    )
-                }}
-            </Query>
-        );
-    }
+  render() {
+    return (
+      <Query query={reposQuery} variables={{ first: 10 }}>
+        {({ data, loading, error }) => {
+          if (loading) return <p>loading...</p>;
+          if (error) return <p>{error.message}</p>;
+          return (
+            <div>
+              <ul>
+                <h2>First 10 repositories</h2>
+                {data.viewer.repositories.edges.map(({ node }) => (
+                  <li key={node.name}>{node.name}</li>
+                ))}
+              </ul>
+            </div>
+          );
+        }}
+      </Query>
+    );
+  }
 }
 export default Myrepositories;
+
 ```
 
 The Query Component has prop `variables` object containing the variable we want to pass to our GraphQL query.
@@ -375,44 +380,41 @@ repositories from the GitHub.
 
 We are using the `fecthMore` function provided by the `Query` Component to load the more data.
 
-```js
- <Query query={reposQuery} variables={{ first: 10 }}>
-         {({ data, loading, error, fetchMore }) => {
+```jsx
+<Query query={reposQuery} variables={{ first: 10 }}>
+  {({ data, loading, error, fetchMore }) => {
+    if (loading) return <p>loading...</p>;
+    if (error) return <p>{error.message}</p>;
 
-                    if (loading) return <p>loading...</p>
-                    if (error) return <p>{error.message}</p>;
+    let current = data.viewer.repositories.edges.length;
 
-                    let current = data.
-                        viewer.repositories
-                        .edges.length;
-
-                    return (
-                        <div>
-                          <ul>
-                            <h2>First {current}repositories</h2>
-                                {data.viewer.repositories
-                                .edges.map(({ node }) =>
-                            <li key={node.name}>{node.name}</li>)}
-                         </ul>
-
-                    <button onClick={() => {
-                          fetchMore({
-                             variables: { first: current + 10 },
-                             updateQuery: (prev, { fetchMoreResult })
-                              => {
-                                   if (!fetchMoreResult) {
-                                     return prev
-                                  }
-                                  return Object.
-                                    assign(prev,fetchMoreResult);
-                                }
-                            })
-                        }}
-                            >Load more</button>
-                        </div>
-                 )
-         }}
- </Query>
+    return (
+      <div>
+        <ul>
+          <h2>First {current}repositories</h2>
+          {data.viewer.repositories.edges.map(({ node }) => (
+            <li key={node.name}>{node.name}</li>
+          ))}
+        </ul>
+        <button
+          onClick={() => {
+            fetchMore({
+              variables: { first: current + 10 },
+              updateQuery: (prev, { fetchMoreResult }) => {
+                if (!fetchMoreResult) {
+                  return prev;
+                }
+                return Object.assign(prev, fetchMoreResult);
+              }
+            });
+          }}
+        >
+          Load more
+        </button>
+      </div>
+    );
+  }}
+</Query>;
 
 ```
 The `fetchMore` function takes the object with two properties variables and updateQuery.
@@ -426,75 +428,68 @@ Let's refactor the above code by creating a `handleMore` method.
 
 
 ```js:title=my-repositories.js
-import React, { Component } from 'react';
-import { Query } from 'react-apollo'
-import { gql } from 'apollo-boost';
+import React, { Component } from "react";
+import { Query } from "react-apollo";
+import { gql } from "apollo-boost";
 
 const reposQuery = gql`
-
-query Myrepositories($first:Int!){
-     viewer {
-    repositories(first: $first) {
-      edges {
-        node {
-          name
+  query Myrepositories($first: Int!) {
+    viewer {
+      repositories(first: $first) {
+        edges {
+          node {
+            name
+          }
         }
       }
     }
   }
-}
-`
+`;
 
 class Myrepositories extends Component {
+  handleMore = (data, fetchMore, current) => {
+    fetchMore({
+      variables: { first: current + 10 },
+      updateQuery: (prev, { fetchMoreResult }) => {
+        if (!fetchMoreResult) {
+          return prev;
+        }
+        return Object.assign(prev, fetchMoreResult);
+      }
+    });
+  };
 
-    handleMore = (data, fetchMore,current) => {
-        fetchMore({
-            variables: { first: current + 10 },
-            updateQuery: (prev, { fetchMoreResult }) => {
-                if (!fetchMoreResult) {
-                    return prev
-                }
-                return Object.
-                    assign(prev, fetchMoreResult);
-            }
-        })
-    }
+  render() {
+    return (
+      <Query query={reposQuery} variables={{ first: 10 }}>
+        {({ data, loading, error, fetchMore }) => {
+          if (loading) return <p>loading...</p>;
+          if (error) return <p>{error.message}</p>;
 
-    render() {
-        return (
-            <Query query={reposQuery} variables={{ first: 10 }}>
-                {({ data, loading, error, fetchMore }) => {
+          let current = data.viewer.repositories.edges.length;
 
-                    if (loading) return <p>loading...</p>
-                    if (error) return <p>{error.message}</p>;
+          return (
+            <div>
+              <ul>
+                <h2>First {current} repositories</h2>
+                {data.viewer.repositories.edges.map(({ node }) => (
+                  <li key={node.name}>{node.name}</li>
+                ))}
+              </ul>
 
-                    let current = data.
-                        viewer.repositories.
-                        edges.length;
-
-                    return (
-                        <div>
-                            <ul>
-                                <h2>First {current} repositories</h2>
-                                {data.viewer.repositories.
-                                    edges.map(({ node }) =>
-                                        <li key={node.name}>
-                                            {node.name}</li>)}
-                            </ul>
-
-                            <button onClick={() =>
-                                this.handleMore(data, fetchMore,current)}
-                            >Load more</button>
-                        </div>
-                    )
-                }}
-            </Query>
-        );
-    }
-
+              <button onClick={() => this.handleMore(data, fetchMore, current)}>
+                Load more
+              </button>
+            </div>
+          );
+        }}
+      </Query>
+    );
+  }
 }
 
 export default Myrepositories;
+
 ```
 
 It's time to test does our `Load more` button.
@@ -551,21 +546,20 @@ import React from 'react';
 
 function Displayrepos(props) {
 
-    const { current, data, refetch } = props
+const { current, data, refetch } = props
 
-    return (
-        <div>
-            <h2>First {current} repositories</h2>
-            {data.viewer.repositories
-                .edges.map(({ node }) =>
-                    <ul className="list" key={node.id}>
-                        <li>{node.name}</li>
-                        <li>stars {node.stargazers.totalCount}</li>
-                    </ul>
-                )}
-            <button onClick={props.handleMore}
-            >Load more</button>
-        </div>
+return (
+     <div>
+        <h2>First {current} repositories</h2>
+        {data.viewer.repositories
+          .edges.map(({ node }) =>
+             <ul className="list" key={node.id}>
+                <li>{node.name}</li>
+                <li>stars {node.stargazers.totalCount}</li>
+            </ul>
+         )}
+        <button onClick={props.handleMore}>Load more</button>
+    </div>
     )
 }
 
@@ -576,54 +570,49 @@ Update the  `Myrepositories` component by adding a `Displayrepos` child componen
 
 
 ```js:title=my-repositories.js
-import React, { Component } from 'react';
-import { Query } from 'react-apollo'
-import Displayrepos from './display-repos'
-import { reposQuery } from './queries'
-
+import React, { Component } from "react";
+import { Query } from "react-apollo";
+import Displayrepos from "./display-repos";
+import { reposQuery } from "./queries";
 
 class Myrepositories extends Component {
+  handleMore = (data, fetchMore, current) => {
+    fetchMore({
+      variables: { first: current + 10 },
+      updateQuery: (prev, { fetchMoreResult }) => {
+        if (!fetchMoreResult) {
+          return prev;
+        }
+        return Object.assign(prev, fetchMoreResult);
+      }
+    });
+  };
 
-    handleMore = (data, fetchMore, current) => {
-        fetchMore({
-            variables: { first: current + 10 },
-            updateQuery: (prev, { fetchMoreResult }) => {
-                if (!fetchMoreResult) {
-                    return prev
-                }
-                return Object
-                    .assign(prev, fetchMoreResult);
-            }
-        })
-    }
+  render() {
+    return (
+      <Query query={reposQuery} variables={{ first: 10 }}>
+        {({ data, loading, error, fetchMore, refetch }) => {
+          if (loading) return <p>loading...</p>;
+          if (error) return <p>{error.message}</p>;
 
-    render() {
-        return (
-            <Query query={reposQuery} variables={{ first: 10 }}>
-                {({ data, loading, error, fetchMore, refetch }) => {
+          let current = data.viewer.repositories.edges.length;
 
-                    if (loading) return <p>loading...</p>
-                    if (error) return <p>{error.message}</p>;
-
-                    let current = data
-                        .viewer.repositories
-                        .edges.length;
-
-                    return <Displayrepos current={current}
-                        refetch={refetch}
-                        data={data}
-                        handleMore={() =>
-                       this.handleMore(data,
-                        fetchMore, current)}
-                    />
-                }}
-            </Query>
-        );
-    }
-
+          return (
+            <Displayrepos
+              current={current}
+              refetch={refetch}
+              data={data}
+              handleMore={() => this.handleMore(data, fetchMore, current)}
+            />
+          );
+        }}
+      </Query>
+    );
+  }
 }
 
 export default Myrepositories;
+
 
 ```
 
@@ -670,7 +659,7 @@ the output from the backend
 }
 ```
 
-Let's create a new called `addstar.js` file.
+Let's create a new file called `addstar.js`.
 
 Now we are implementing the `Addstar` component which helps us to add the star to your repositories.
 
@@ -682,59 +671,55 @@ same as the Queries component.
 The first parameter of the function is the mutate function and a second parameter is an object containing the data from the backend.
 
 ```js:title=addstar.js
-import React, { Component } from 'react';
-import { Mutation } from 'react-apollo'
-import { gql } from 'apollo-boost';
-
+import React, { Component } from "react";
+import { Mutation } from "react-apollo";
+import { gql } from "apollo-boost";
 
 const addStarquery = gql`
-mutation AddStar($repoid:ID!){
-   addStar(input:{starrableId:$repoid}){
-    starrable{
-      stargazers{
-        totalCount
+  mutation AddStar($repoid: ID!) {
+    addStar(input: { starrableId: $repoid }) {
+      starrable {
+        stargazers {
+          totalCount
+        }
+        viewerHasStarred
       }
-      viewerHasStarred
     }
   }
-}`
-
+`;
 
 class AddStar extends Component {
-
-
   render() {
     return (
-
-      <Mutation mutation={addStarquery} >
-
+      <Mutation mutation={addStarquery}>
         {(addStar, { data, loading, error }) => {
-
           return (
             <div>
-              <button onClick={() => {
-                addStar({ variables: { repoid: this.props.id } })
-                  .then(res => {
-                    this.props.refetch()
-                  })
-
-              }}
-              > Addstar</button>
+              <button
+                onClick={() => {
+                  addStar({ variables: { repoid: this.props.id } }).then(
+                    res => {
+                      this.props.refetch();
+                    }
+                  );
+                }}
+              >
+                {" "}
+                Addstar
+              </button>
 
               {loading && <p>loading...</p>}
               {error && <p>{error.message}</p>}
             </div>
-          )
-
+          );
         }}
-
       </Mutation>
-    )
+    );
   }
-
 }
 
 export default AddStar;
+
 ```
 
 The Mutation component takes the mutations as a `mutation` prop once the `addStar` mutation is finished we are chained it with `then` method and invoking the `refetch` method so that we can see the updated data in the UI.
@@ -742,57 +727,54 @@ The Mutation component takes the mutations as a `mutation` prop once the `addSta
 Let's create a new component called RemoveStar which is used to remove the star.
 
 ```js:title=removestar.js
-import React, { Component } from 'react';
-import { Mutation } from 'react-apollo'
-import { gql } from 'apollo-boost';
-
+import React, { Component } from "react";
+import { Mutation } from "react-apollo";
+import { gql } from "apollo-boost";
 
 const removeStarquery = gql`
-mutation RemoveStar($repoid:ID!){
-   removeStar(input:{starrableId:$repoid}){
-    starrable{
-      stargazers{
-        totalCount
+  mutation RemoveStar($repoid: ID!) {
+    removeStar(input: { starrableId: $repoid }) {
+      starrable {
+        stargazers {
+          totalCount
+        }
+        viewerHasStarred
       }
-      viewerHasStarred
     }
   }
-}`
-
+`;
 
 class RemoveStar extends Component {
-
-    render() {
-        return (
-
-            <Mutation mutation={removeStarquery} >
-                {(removeStar, { data, loading, error }) => {
-                    return (
-                        <div>
-                            <button onClick={() => {
-                                removeStar({
-                                    variables:
-                                { repoid: this.props.id }
-                                }).then(res => {
-                                    this.props.refetch();
-                                })
-                            }}
-                            > remove star</button>
-                            {loading && <p>processing...</p>}
-                            {error && <p>{error.message}</p>}
-
-                        </div>
-                    )
-
+  render() {
+    return (
+      <Mutation mutation={removeStarquery}>
+        {(removeStar, { data, loading, error }) => {
+          return (
+            <div>
+              <button
+                onClick={() => {
+                  removeStar({
+                    variables: { repoid: this.props.id }
+                  }).then(res => {
+                    this.props.refetch();
+                  });
                 }}
-
-            </Mutation>
-        )
-    }
-
+              >
+                {" "}
+                remove star
+              </button>
+              {loading && <p>processing...</p>}
+              {error && <p>{error.message}</p>}
+            </div>
+          );
+        }}
+      </Mutation>
+    );
+  }
 }
 
 export default RemoveStar;
+
 ```
 
 In the `RemoveStar` component we are invoking the  `removeStar` mutation by passing
@@ -801,37 +783,34 @@ the variables repository `id`.
 Update the `display-repos.js` file with the below code.
 
 ```js:title=display-repos.js
-import React from 'react';
-import AddStar from './addstar'
-import RemoveStar from './removestar'
+import React from "react";
+import AddStar from "./addstar";
+import RemoveStar from "./removestar";
 
 function Displayrepos(props) {
+  const { current, data, refetch } = props;
 
-    const { current, data, refetch } = props
+  return (
+    <div>
+      <h2>First {current} repositories</h2>
+      {data.viewer.repositories.edges.map(({ node }) => (
+        <ul className="list" key={node.id}>
+          <li>
+            {node.name}
 
-    return (
-        <div>
-            <h2>First {current} repositories</h2>
-            {data.viewer.repositories
-                .edges.map(({ node }) =>
-                    <ul className="list" key={node.id}>
-                        <li>{node.name}
-
-                        {node.viewerHasStarred ?
-                          <RemoveStar id={node.id} refetch={refetch} /> :
-                          <AddStar id={node.id} refetch={refetch} />
-                        }
-
-                        </li>
-                        <li>stars {node.stargazers.totalCount}</li>
-                    </ul>
-                )}
-             <button onClick={props.handleMore}
-            >Load more</button>
-        </div>
-    )
+            {node.viewerHasStarred ? (
+              <RemoveStar id={node.id} refetch={refetch} />
+            ) : (
+              <AddStar id={node.id} refetch={refetch} />
+            )}
+          </li>
+          <li>stars {node.stargazers.totalCount}</li>
+        </ul>
+      ))}
+      <button onClick={props.handleMore}>Load more</button>
+    </div>
+  );
 }
-
 
 export default Displayrepos;
 ```
@@ -843,6 +822,7 @@ Let's test it now.
 
 ![ react apollo mutations tutorial](./mutation-react-apollo-tutorial.gif)
 
+Have you seen in the above image our __UI__ is updated if we add or remove a star?
 
 ### Search bar
 
