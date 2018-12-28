@@ -1,8 +1,6 @@
 ---
-title: Introduction Big O Notation
-description: "In computer science, big O is used to analyze how their running time or the space used by an algorithm.it is invented by Paul Bachmann, Edmund Landau."
+title: Introduction to Big O Notation
 date: "2018-11-18"
-logo: ''
 image:  "bigo.png"
 tags: ['javascript']
 ---
