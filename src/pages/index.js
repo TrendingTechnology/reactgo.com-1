@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import jsimg from '../img/js.jpg'
+import siteIcon from '../img/download.png'
 import Metatags from '../components/MetaPost'
 import Layout from '../components/layout'
 import MainUi from '../components/mainui/mainui'
@@ -16,7 +16,7 @@ class Index extends React.Component {
           title={data.site.siteMetadata.title}
           description={data.site.siteMetadata.description}
           url={data.site.siteMetadata.siteUrl}
-          thumbnail={jsimg}
+          thumbnail={url + siteIcon}
           stop
           no
         />
