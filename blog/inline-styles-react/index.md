@@ -5,7 +5,7 @@ tags: ['react']
 image: "inline-styles-react.png"
 ---
 
-In react we can use the style attribute to add styles to the dom elements, but we need to pass the styles as a javascript object instead of  css string.
+In react we can use style attribute to add the inline styles to the dom elements, but we need to pass the styles as a javascript object instead of  css string.
 
 
 >Note: The JavaScript object properties should be __camelCased__.
