@@ -5,11 +5,9 @@ tags: ['react']
 image: "react-fragments.png"
 ---
 
-In this tutorial we are going to learn about usage of fragments in react apps.
+In this tutorial, we are going to learn about the usage of fragments in react apps.
 
-
-
-### What is a React Fragment?
+## What is a React Fragment?
 
  React Fragment is a react component which helps us to return the multiple child elements without using the extra dom nodes.
 
