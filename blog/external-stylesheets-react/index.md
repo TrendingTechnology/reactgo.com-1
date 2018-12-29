@@ -7,9 +7,9 @@ image: "external-style-sheets-react.png"
 
 In react apps we don't need to add link tags manually to the HTML files.
 
-React is a JavaScript library used to build single page apps the term "single page" means there is only one html file which is re-using for every page we created in our app.
+React is a JavaScript library used to build single page apps the term "single page" means there is only a single html file which is re-using for every page we created in our app.
 
-Let's see an example of adding style sheets in reactjs.
+Let's see an example of adding style sheets in react.js.
 
 Suppose our app has `blog-post.js` page and we need to add a external style sheet to that page.
 
@@ -83,7 +83,7 @@ output
 
 Beginners to the react are probably get confused what is reason to use className instead of normal `class` we use in html files.
 
-The HTML we write  inside the react apps is not an HTML it is a [JSX](/learn-react-jsx-detailed/) and it is passed to the babel compiler and converted into JavaScript at last everything we write HTML like syntax is just a JavaScript.
+The HTML we write  inside the react apps is not an HTML it is a [JSX](/learn-react-jsx-detailed/) and it is passed down to the babel compiler and converted into JavaScript at last everything we write HTML like syntax is just a JavaScript.
 
 In JavaScript `class` is a reserved keyword so that we need to use `className`  to add styles instead of `class`.
 
