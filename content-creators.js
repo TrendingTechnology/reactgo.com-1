@@ -38,8 +38,6 @@ module.exports = async ({ graphql, actions }) => {
           const courseDisplay = path.resolve('src/templates/courseDisplay.js')
           const allPosts = result.data.allMarkdownRemark.edges
 
-
-
           const blog = allPosts.filter(({ node }) => {
 
             return !node.frontmatter.courseurl
