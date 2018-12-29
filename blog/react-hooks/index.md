@@ -5,7 +5,7 @@ tags: ['react']
 image: "react-hooks-tutorial.png"
 ---
 
-In this tutorial, we are going to learn about how to use the hooks in react apps by using examples.
+In this tutorial, we are going to learn about how to use the hooks in react apps with examples.
 
 React hooks helps us to implement the stateful functional components. They’re currently in React v16.7.0-alpha.By using react hooks you can write stateful components without classes.
 
