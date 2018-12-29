@@ -210,9 +210,7 @@ By using reducer hook we can create and dispatch the actions it means we can use
 
 Let's rewrite our code by using **useReducer** hook.
 
-**reducer.js**
-
-```js
+```js:title=reducer.js
 function reducer(state, action) {
 
     switch (action.type) {
@@ -247,46 +245,57 @@ function reducer(state, action) {
     }
 }
 
-
 export { reducer };
 ```
 
-**App.js**
+Let's import the reducer in App component.
 
-```js
-import React, { useReducer, useEffect } from 'react';
-import './App.css';
-import { reducer } from './reducer';
-import Auth from './signin';
-import Counter from './counter';
+```js:title=App.js
+import React, { useReducer, useEffect } from "react";
+import "./App.css";
+import { reducer } from "./reducer";
+import Auth from "./signin";
+import Counter from "./counter";
 
 function App(props) {
+  let [state, dispatch] = useReducer(reducer, { value: 0, isSignin: false });
 
-    let [state, dispatch] = useReducer(reducer, { value: 0, isSignin: false })
-
-    return (
-        <div className="App">
-            <header className="App-header">
-                <Auth isSignin={state.isSignin}
-                    Signin={() => { dispatch({ type: "Signin" }) }}
-                    Signout={() => { dispatch({ type: "Signout" }) }}
-                />
-                <Counter
-                    isSignin={state.isSignin}
-                    value={state.value}
-                    Increment={() => { dispatch({ type: "Increment" }) }}
-                    Decrement={() => { dispatch({ type: "Decrement" }) }} />
-            </header>
-        </div>
-    );
-
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Auth
+          isSignin={state.isSignin}
+          Signin={() => {
+            dispatch({ type: "Signin" });
+          }}
+          Signout={() => {
+            dispatch({ type: "Signout" });
+          }}
+        />
+        <Counter
+          isSignin={state.isSignin}
+          value={state.value}
+          Increment={() => {
+            dispatch({ type: "Increment" });
+          }}
+          Decrement={() => {
+            dispatch({ type: "Decrement" });
+          }}
+        />
+      </header>
+    </div>
+  );
 }
 
 export default App;
 
 ```
 
+In the above, first we imported the `reducer` from the `reducer.js` file and passed it to the userReducer method.
+
  __useReducer__: The useReducer method takes the two arguments the first argument is reducer function the second argument is initial state.
+
+ The useReducer method returns the current state and dispatch method so that we can dispatch the actions.
 
 ### useEffect hook
 
