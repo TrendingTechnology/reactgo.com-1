@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import siteIcon from '../img/download.png'
 import Metatags from '../components/MetaPost'
 import Layout from '../components/layout'
 import MainUi from '../components/mainui/mainui'
@@ -10,13 +9,14 @@ import Footer from '../components/footer'
 class Index extends React.Component {
   render() {
     const data = this.props.data
+    const url = data.site.siteMetadata.siteUrl
     return (
       <Layout>
         <Metatags
           title={data.site.siteMetadata.title}
           description={data.site.siteMetadata.description}
-          url={data.site.siteMetadata.siteUrl}
-          thumbnail={url + siteIcon}
+          url={url}
+          thumbnail={'https://reactgo.com/img/download.png'}
           stop
           no
         />
