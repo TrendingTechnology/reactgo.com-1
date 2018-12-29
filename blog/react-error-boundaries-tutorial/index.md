@@ -13,13 +13,14 @@ In this tutorial, we are going to learn about error boundaries in react.
 In the past, we don't have a way to catch the errors in React components and we are seeing
 some cryptic errors in case our app breaks.
 
-React 16 introduces a new way to catch errors by using the error boundaries component
-which helps us to catch the errors anywhere in our app and renders the fallback UI.
+React 16 introduces a new way to catch errors by using the error boundaries.
+
+ Error boundaries are react components which helps us to catch the errors anywhere in our app and renders the fallback UI.
 
 Error boundaries don't break the whole App component tree instead of it only renders the fallback UI
 on an error occurred component.
 
-Error boundaries are only defined in the class-based components.
+Error boundaries are only defined in a class-based components.
 
 
 Let's see an example
@@ -94,4 +95,4 @@ fallback UI(message something went wrong) because we failed to pass the `user.na
 
 ### Where to place ErrorBoundary components?
 
-You can use it on top level of your app components or individual components to stop the breaking the whole app.
+You can use it on the top level of your app components or you can wrap it on the individual components to stop the breaking the other parts of the app.
