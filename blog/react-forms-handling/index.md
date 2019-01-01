@@ -9,11 +9,11 @@ In this tutorial, we are going to learn about how to handle the forms in react.
 
 
 In HTML form elements like `input` , `textarea` and `select` they maintain there
-own internal state in the dom but in react we are handling the state inside the components
+own internal state in the dom, but in react we are handling the state inside the components
 and updating the state using `setState()` method.
 
 
-If the form elements state is controlled by react components,they are called controlled components.
+When a form element state is controlled by react,they are called controlled components.
 
 
 Let's look into the examples.
@@ -65,7 +65,7 @@ class Login extends React.Component {
 ```
 
 There is a `Login` Component with two `input` fields username and password where we added an `onChange`
-handler to update the react state on every keystroke.
+event handler to update the react state on every keystroke.
 
 When a User clicks on a login button we are logging the data in the console or you can send a data to your backend.
 
@@ -74,7 +74,7 @@ When a User clicks on a login button we are logging the data in the console or y
 
 ### Textarea element
 
-In react we are assigning a state to the value attribute present inside the `textarea` element by using the `onChange` handler we are updating the state it is are similar to the `input` element.
+In react we are assigning a state to the value attribute present inside the `textarea` element by using the `onChange` event handler we are updating the state it is  similar to the `input` element.
 
 example:
 
@@ -107,7 +107,7 @@ class Comments extends React.Component {
   }
 }
 ```
-In the above code we have added a `onChange` event handler, to the textarea element to update the `comment` property defined inside the `state` object.
+In the above code we have added an `onChange` handler, to the textarea element to update the `comment` property defined inside the `state` object.
 
 ![textarea form element](./textarea-form-element.png)
 
