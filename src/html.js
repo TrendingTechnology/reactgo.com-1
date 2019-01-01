@@ -13,10 +13,6 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <meta name="theme-color" content="#fff" />
-          <meta
-            name="google-site-verification"
-            content="aoVLvxvcxyHnZQ9-0SvbqQsYwvselU4t0am93cGzGKk"
-          />
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
