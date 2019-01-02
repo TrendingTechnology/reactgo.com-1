@@ -17,6 +17,9 @@ function Footer({ siteTitle }) {
         <a href="https://twitter.com/saigowthamr" className={"footer-title logostyle"}> @saigowthamr</a>
 
         <nav className="footer-links">
+          <a href="https://reactgo.com/rss.xml" target="_blank"
+            style={{ margin: 0 }}
+          >Rss feed</a>
           <div className="center">
             <form
               action="https://tinyletter.com/reactgo"
