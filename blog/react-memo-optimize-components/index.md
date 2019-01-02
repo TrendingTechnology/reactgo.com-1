@@ -107,4 +107,4 @@ class App extends React.Component {
 }
 ```
 
-We first passed our `MyComponent` to React.memo function then we get back an Optimized component.
+We first passed our MyComponent as an argument to React.memo function then we get back an Optimized component.
