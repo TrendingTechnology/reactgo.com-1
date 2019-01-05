@@ -17,7 +17,7 @@ __type__: Type of the html element or component. (example : `h1,h2,p,button`..et
 
 __props__: The properties object.
 
-(example: `{style :{ color:"red"}}, className,event handlers etc` ).
+Example: {style :{ color:"red"}} or  className or event handlers etc.
 
 __children__: anything you need to pass between the dom elements.
 
