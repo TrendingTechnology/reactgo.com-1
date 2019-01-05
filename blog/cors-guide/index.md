@@ -1,5 +1,5 @@
 ---
-title: A beginners guide to CORS(cross orgin resource sharing)
+title: A beginners guide to CORS(cross origin resource sharing)
 date: "2019-01-05"
 tags: ['webdev','javascript']
 image: "cors-guide-tutorial.png"
