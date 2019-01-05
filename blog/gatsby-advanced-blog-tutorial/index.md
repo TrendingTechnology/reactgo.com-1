@@ -485,7 +485,7 @@ It helps us to load the pages fastly.
 
 **How to add images to our blog?**
 
-we need to install the three plugins which are `transformer-sharp, plugin-sharp,gatsby-image`.
+we need to install the three plugins which are 'transformer-sharp', 'plugin-sharp,gatsby-image'.
 
 Run the below commands to install the three plugins.
 
