@@ -27,7 +27,7 @@ There are two ways to write a comments in JavaScript.
 
 ```js
 
-// this is a single line comment
+// this is a single line comment in JavaScript
 
 
 ```
