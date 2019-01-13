@@ -1,5 +1,5 @@
 ---
-title: What is the History of JavaScript
+title: History of JavaScript
 date: "2019-01-13"
 tags: ['javascript']
 ---
