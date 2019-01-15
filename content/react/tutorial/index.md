@@ -13,7 +13,7 @@ In this tutorial, you will learn about fundamental concepts of reactjs by buildi
 
 The final app we are building.
 
-![accordion react](./finalapp.gif)
+![react accordion tutorial ](finalapp.gif)
 
 <a href="https://github.com/saigowthamr/reactaccordion" target="_black" rel="noopener">Final code repository</a>
 

@@ -9,7 +9,7 @@ course: React Basics
 ---
 
 
-- React is a JavaScript library used to build views which are mainly concentrated on the view part in the MVC model.
+- React is a JavaScript library used to build views(User interfaces) which are mainly concentrated on the view part in the MVC model.
 - Everything is a reusable and composable piece of code.
 - You can build any type of modern web apps such as single page apps, progressive web apps by using React.
 
