@@ -102,7 +102,7 @@ class commonMarkDown extends React.Component {
               </a>
               <span className="readtime">{post.timeToRead && post.timeToRead + "min read"}</span>
             </strong>
-            {image && <Img fluid={image.childImageSharp.fluid} />}
+            {image && <Img fluid={image.childImageSharp.fluid} alt={title} />}
             <div
               style={{ marginTop: '3rem' }}
               dangerouslySetInnerHTML={{ __html: post.html }}
