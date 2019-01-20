@@ -19,7 +19,7 @@ In react `useRef` hooks helps us to access the dom nodes or elements so that we 
 
 example:
 
-```js{2,9,13}
+```js{5,9,13}
 import React,{useRef} from 'react';
 
 function TextInput(){
