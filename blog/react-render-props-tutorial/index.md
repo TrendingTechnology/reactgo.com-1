@@ -69,6 +69,7 @@ Because we have no control over the `FetchComponent` rendering logic because we 
 
 Let's use the __renderprops__ pattern to solve our problem.
 
+### FetchData Component
 
 ```js{35-44}
 class FetchData extends React.Component {
@@ -127,7 +128,7 @@ Inside the `FetchData` component, we are extracting the state by destructuring a
 
 output:
 
-![Fetching data using render props](./render-props-demo.gif)
+![Fetching data using render props](render-props-demo.gif)
 
 
 Let's fetch data from the different API endpoint.
