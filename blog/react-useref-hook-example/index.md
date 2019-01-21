@@ -2,7 +2,7 @@
 title: How to use React useRef hook with examples
 date: "2019-01-21"
 tags: ['react']
-image: "react-use-ref-hook.png"
+image: "react-useref-hook.png"
 ---
 
 In this tutorial, we are going to learn how to get access the dom nodes or react elements that are created in react `render` method.
