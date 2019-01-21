@@ -2,7 +2,7 @@
 title: Getting started with GraphQL, React and apollo client
 date: "2018-12-26"
 tags: ['react','graphql']
-image: "apollo-client-react-tutorial.png"
+image: "react-apollo-client-tutorial.png"
 ---
 
 In this tutorial, we will learn about how to fetch and update the data from the GraphQL API in react apps by using the Apollo client.
