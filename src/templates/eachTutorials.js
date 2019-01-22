@@ -14,7 +14,7 @@ function EachTutorial(props) {
         data={props.data}
         tag={courseurl}
         location={props.location}
-        pathContext={props.pathContext}
+        pageContext={props.pathContext}
       />
       <Footer siteTitle={'Reactgo'} />
     </Layout>

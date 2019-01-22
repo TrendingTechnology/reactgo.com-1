@@ -8,8 +8,7 @@ import Jsimg from '../img/js.jpg';
 
 class Post extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const { title } = post.frontmatter
+    // const post = this.props.data.markdownRemark;
     const { url } = this.props.data.site.siteMetadata
     const thumbnail =
       this.props.data.markdownRemark.frontmatter.image &&
@@ -22,10 +21,10 @@ class Post extends React.Component {
           nomobilebar
           center
           bottom
-          thumbnail={thumbnail ? url + thumbnail : url+Jsimg}
+          thumbnail={thumbnail ? url + thumbnail : url + Jsimg}
           data={this.props.data}
           location={this.props.location}
-          pathContext={this.props.pathContext}
+          pageContext={this.props.pathContext}
         />
         <Footer siteTitle={'Reactgo'} />
       </Layout>

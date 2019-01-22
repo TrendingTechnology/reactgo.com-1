@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import TwitterIcon from 'react-icons/lib/fa/twitter'
-import Magic from 'react-icons/lib/fa/magic'
 import './tutorialfooter.css'
 import '../header.css'
 
