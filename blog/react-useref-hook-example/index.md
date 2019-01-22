@@ -5,10 +5,10 @@ tags: ['react']
 image: "react-useref-hook.png"
 ---
 
-In this tutorial, we are going to learn how to get access the dom nodes or react elements that are created in react `render` method.
+In this tutorial, we are going to learn about how to  access the dom nodes in react by using __useRef__ hook.
 
 
-React hooks are new to react which are JavaScript functions helps us to use the react features in
+React hooks are JavaScript functions which helps us to use the react features in
 functional components.
 
 
