@@ -43,7 +43,7 @@ class commonMarkDown extends React.Component {
     const url = this.props.data.site.siteMetadata.url
     const pathname = this.props.location.pathname
     const { title, date, thumbnail, image, logo, course } = post.frontmatter
-    const { next, prev, slug } = this.props.pathContext
+    const { next, prev } = this.props.pageContext
     const author = this.props.data.site.siteMetadata.author
     const seoTitle = `${title} - ${course && course}`
 
