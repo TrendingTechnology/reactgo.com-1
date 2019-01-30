@@ -2,6 +2,7 @@
 title: Typescript beginner tutorial in 8 minutes
 date: "2019-01-30"
 tags: ['typescript']
+image: "Typescript-beginner-tutorial.png"
 ---
 
 In this tutorial, we are going to learn about what is TypeScript and how to use typescript in our
