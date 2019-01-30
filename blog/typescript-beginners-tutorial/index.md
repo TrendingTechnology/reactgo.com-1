@@ -13,7 +13,6 @@ projects.
 
 A typescript is a superset of JavaScript where it compiles down into plain JavaScript.
 
->if your familiar with how `scss` is compiled into `css`.
 
 - TypeScript is developed and maintained by Microsoft.
 
