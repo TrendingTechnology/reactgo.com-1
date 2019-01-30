@@ -8,7 +8,7 @@ In es6 we got a more powerful feature which is the destructuring syntax.
 
 ## What is Destructuring ?
 
-Destructing syntax helps us extract the values from the arrays or objects into their own named variables.
+Destructuring syntax helps us extract the values from the arrays or objects into their own named variables.
 
 
 Let's see an example without using destructuring syntax.
