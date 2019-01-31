@@ -1,5 +1,5 @@
 ---
-title: Typescript beginner tutorial in 8 minutes
+title: TypeScript Guide for beginners with examples(tutorial)
 date: "2019-01-30"
 tags: ['typescript']
 image: "Typescript-beginner-tutorial.png"
