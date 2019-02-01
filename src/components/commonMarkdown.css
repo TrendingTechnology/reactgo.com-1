@@ -113,18 +113,20 @@ blockquote p {
 }
 
  .gatsby-highlight{
-  margin:1rem auto;
+  margin:.9rem auto;
+  position: relative;
 }
-/*
-.gatsby-highlight::before{
+
+/* .gatsby-highlight::before{
 content: attr(data-language);
 position: absolute;
 right: 0px;
+top:1px;
 color: #cac717;
 font-size: .7rem;
-padding: .2rem;
+padding: .6rem;
 background-color: rgb(10, 9, 9);
-background: rgba(221, 221, 221, 0.18);
+background: rgba(26, 24, 24, 0.815);
 } */
 
 .readtime{
@@ -132,9 +134,9 @@ background: rgba(221, 221, 221, 0.18);
 }
 
 .gatsby-code-title{
-      background: bisque;
+    background: bisque;
     padding: 2px;
-    margin-bottom: -19px;
+    margin-bottom: -17px;
 }
 
 
