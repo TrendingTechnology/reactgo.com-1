@@ -257,3 +257,6 @@ Now in your terminal run `npm run code:coverage`
 ![code-coverage-react-jest](code-coverage-react-jest.png)
 
 Have you seen our `App` component is tests are fully covered?
+
+
+[Code repository](https://github.com/saigowthamr/react-testing-tutorial)
