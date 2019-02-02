@@ -26,6 +26,7 @@ export default EachTutorial
 export const query = graphql`
   query EachTutorial($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      tableOfContents
       html
       timeToRead
       excerpt
