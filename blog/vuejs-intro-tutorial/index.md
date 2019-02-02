@@ -2,7 +2,7 @@
 title: Vuejs 2 intro tutorial(Vue instance,Reactivtiy)
 date: "2019-02-02"
 tags: ['vuejs']
-image: "vuejs-tutorial.png"
+image: "vuejs-tutorial-instance-reactivity.png"
 ---
 
 In this tutorial, we are going to learn about a basic introduction to vuejs and
