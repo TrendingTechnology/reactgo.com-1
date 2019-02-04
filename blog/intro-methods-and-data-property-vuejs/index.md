@@ -5,7 +5,7 @@ tags: ['vuejs']
 image: "vuejs-methods-data.png"
 ---
 
-In this tutorial, we are going to learn about how to use `data` and `methods` properties in Vue JS.
+In this tutorial, we are going to learn about how to use `methods` and  `data` properties in Vue JS.
 
 
 >For this tutorial we are using Vue cli to generate our Project.
@@ -17,7 +17,7 @@ Let's quickly create our vue project by running the following command.
 ```bash
 vue create vue-app
 ```
-This above will download required files in `vue-app` folder.
+This above command will download required files in `vue-app` folder.
 
 >Note: if you don't about how to create vue project using cli then check out my [Vue Cli 3 tutorial](/vue-cli3-tutorial-creating-project/)
 
