@@ -47,12 +47,11 @@ Currently, we are using the `object syntax` to bind the class names dynamically.
 
 In the above code, we added `:class="{red:isActive}"` to our `div` tag, it means we are telling the vuejs please add `red` class to a `div` tag if `isActive` data property is `true`.
 
-Inside template we have also added a `button` with click handler attached to it so that whenever we click on a button we are adding the `red` class; if we click the button again we are removing the `red`
-class.
+
 
 __Array syntax__
 
-Currently, we only adding our `red` class if `isActive` property is true sometimes we need to add the other class name if `isActive` property is false in such cases we need to use `Array syntax` inside the quotes instead of an object syntax.
+Currently, we are adding our `red` class if `isActive` property is true, sometimes we need to add the other class name if `isActive` property is false in such cases we need to use `Array syntax` inside the quotes.
 
 ```html{4}
 <template>
