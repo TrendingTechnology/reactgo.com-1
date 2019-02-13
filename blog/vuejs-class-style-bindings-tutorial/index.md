@@ -115,4 +115,4 @@ export default {
 </script>
 ```
 
-Here we added a `:style="{ 'background-color': color }"` to our `div` tag so that if click on a `Change to Red color` button our background color is changing to red and if we click on a `Change to Green color` button our background color is changing to `green`.
+Here we added a `:style="{ 'background-color': color }"` to our `div` tag so that if we click on a `Change to Red color` button our background color is changing to red and if we click on a `Change to Green color` button our background color is changing to `green`.
