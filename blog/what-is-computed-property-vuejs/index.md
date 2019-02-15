@@ -5,7 +5,7 @@ tags: ['vuejs']
 image: "vue-computed-properties.png"
 ---
 
-In this tutorial, we are going to learn about how to use computed properties
+In this tutorial, we are going to learn about computed properties
 in Vue with the help of examples.
 
 

@@ -5,7 +5,7 @@ tags: ['vuejs']
 image: 'vue-props-tutorial-examples.png'
 ---
 
-In this tutorial, we are going to learn about how to use props
+In this tutorial, we are going to learn about props
 in vue.js apps with the help of examples.
 
 
@@ -35,8 +35,6 @@ Let's create a new component called Button.
 In the above code, we have registered a prop called `name` inside the `props` array. The registered props can be used inside the template just like data properties.
 
 ## Passing the data to the props
-
-So far we have registered a prop inside the Button Component, let's pass the data to that prop.
 
 Now we can pass the data to that prop as a custom HTML `name` attribute.
 
@@ -79,7 +77,7 @@ export default {
 };
 </script>
 ```
-Here we registered a `handleClick` prop which is attached to the `@click` event of the button. Now we need to pass the function as a prop to the `Button` so that it handles the click event.
+Here we registered a `handleClick` prop which is attached to `@click` event to the button. Now we need to pass the function to that prop.
 
 ```html{5}:title=Post.vue
 <template>
@@ -107,15 +105,15 @@ export default {
 ```
 Inside the template we passed the `shareMe` function to our `:handleClick` prop.
 
->for dynamic values we need to use colon `:propname` instead of `propname` otherwise Vue treated it as JavaScript string.
+>for dynamic values we need to use (colon) `:propname` instead of `propname` otherwise Vue treated it as JavaScript string.
 
 ![passing-functions-as-props](passing-functions-as-props.png)
 
 ## Validating props
 
-So far we are registering props by using an array but there is a second way to register and validate props by using object syntax.
+So far we are registering props by using an array syntax but there is a second way to register and validate props by using object syntax.
 
-Let's validate props present inside our `Button` component.
+Let's validate our props present in `Button` component.
 
 ```html{7-16}:title=Button.vue
 <template>
