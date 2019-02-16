@@ -15,10 +15,12 @@ Vuejs offers us a `v-for` directive which is used to render a list of items into
 The syntax of a v-for directive.
 
 ```html
+v-for="user in users"
 <!-- user variable is iterator -->
 <!--users is data array-->
-v-for="user in users"
 ```
+---
+## Example
 
 ```html{4}
 <template>
@@ -43,18 +45,18 @@ v-for="user in users"
 </script>
 ```
 
-In the above code, we are looping through the `users` array by using `v-for` directive, so that on each iteration `user` variable is pointing to a different object present inside the array.
+In the above code, we are looping through the `users` array by using `v-for` directive, so that on each iteration `user` variable is pointing to the different object present inside the array.
 
 ![list-rendering-vuejs](list-rendering-vuejs.png)
 
 
 ## key attribute
 
-When using `v-for` directive we need to add a `key` attribute to that element because vuejs needs to keep track the list item updates based on the provided key.
+When using `v-for` directive we need to add a `key` attribute to that element because vuejs needs to keep track the list items based on the provided key.
 
 >Note: Key should be unique
 
-Let's add the key to our template.
+Let's add the key attribute to our template.
 
 ```html{3}
 <template>
@@ -79,7 +81,7 @@ Let's add the key to our template.
  }
 </script>
 ```
-In our `users` array `id` property is unique on every object.
+In our `users` array `id` property is unique on every object so that we passed it to the key attribute.
 
 
 We can also access the **index** of each item present in the array.
