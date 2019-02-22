@@ -1,9 +1,5 @@
-const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`)
-const _ = require('lodash')
-const { generator } = require('./generator')
-const { generatePosts } = require('./helper')
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const path = require('path')
 
 exports.createPages = require('./content-creators');
 
@@ -20,4 +16,3 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-console.log('hit')
