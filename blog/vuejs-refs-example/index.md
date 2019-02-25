@@ -38,6 +38,7 @@ export default {
 ```
 In the above code, we have added `ref` atrribute to `input` element so that we accessed it inside the `mounted` lifecycle hook with `this.$refs['search']`.
 
-Here we are focussing the input `placeholder` whenever a user opens our `app` like 'Google search box'.
+Whenever a user opens our `app` we are focussing the input `placeholder` like  **Google search box**.
+
 
 ![vue-refs-input-element](vue-refs-input-element.png)
