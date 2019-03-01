@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'Reactgo - a place to improve your modern javascript skills',
     description:
-      'It provides  tutorials & articles about modern open source web technologies such as react for beginners ',
+      'It provides  tutorials & articles about modern open source web technologies such as react,vuejs and gatsby ',
     url: URL,
     siteUrl: URL,
     author: 'Sai gowtham',
@@ -143,6 +143,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
-    // `gatsby-plugin-netlify-cache`,
+    `gatsby-plugin-netlify-cache`,
   ],
 }
