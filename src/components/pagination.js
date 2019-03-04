@@ -5,10 +5,10 @@ import ArrowLeft from 'react-icons/lib/fa/arrow-left'
 
 const color = { color: 'inherit' }
 
-const Pagination = ({ pathContext }) => (
+const Pagination = ({ pageContext }) => (
   <ul className="pager">
-    <li className="prev"> {pathContext.previousPagePath && <Link style={color} to={pathContext.previousPagePath} rel="prev">  <ArrowLeft /> Previous Page</Link>}</li>
-    <li className="next">{pathContext.nextPagePath && <Link style={color} to={pathContext.nextPagePath} rel="next">Next Page   <ArrowRight /></Link>}</li>
+    <li className="prev"> {pageContext.previousPagePath && <Link style={color} to={pageContext.previousPagePath} rel="prev">  <ArrowLeft /> Previous Page</Link>}</li>
+    <li className="next">{pageContext.nextPagePath && <Link style={color} to={pageContext.nextPagePath} rel="next">Next Page   <ArrowRight /></Link>}</li>
   </ul>
 )
 

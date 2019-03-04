@@ -11,7 +11,7 @@ class Index extends React.Component {
   render() {
     const data = this.props.data
     const url = data.site.siteMetadata.siteUrl;
-    const pathContext = this.props.pathContext;
+    const pageContext = this.props.pageContext;
     return (
       <Layout>
         <Metatags
@@ -25,7 +25,7 @@ class Index extends React.Component {
         <Header siteTitle={'Reactgo'} />
         <div>
           <MainUi data={this.props.data} />
-          <Pagination pathContext={pathContext} />
+          <Pagination pageContext={pageContext} />
         </div>
         <Footer siteTitle={'Home'} />
       </Layout>
