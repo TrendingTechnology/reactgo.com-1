@@ -12,7 +12,7 @@ module.exports = async ({ graphql, actions }) => {
       graphql(`
         query {
           allMarkdownRemark(
-            sort: { fields: [frontmatter___id], order: DESC }
+            sort: { fields: [frontmatter___id], order: ASC }
             limit: 10000
           ) {
             edges {
