@@ -3,13 +3,15 @@ import { graphql } from 'gatsby'
 import Metatags from '../components/MetaPost'
 import Layout from '../components/layout'
 import MainUi from '../components/mainui/mainui'
-import Header from '../components/header'
+import Header from '../components/header';
+import Pagination from '../components/pagination';
 import Footer from '../components/footer'
 
 class Index extends React.Component {
   render() {
     const data = this.props.data
-    const url = data.site.siteMetadata.siteUrl
+    const url = data.site.siteMetadata.siteUrl;
+    const pathContext = this.props.pathContext;
     return (
       <Layout>
         <Metatags
@@ -23,6 +25,7 @@ class Index extends React.Component {
         <Header siteTitle={'Reactgo'} />
         <div>
           <MainUi data={this.props.data} />
+          <Pagination pathContext={pathContext} />
         </div>
         <Footer siteTitle={'Home'} />
       </Layout>
@@ -32,10 +35,12 @@ class Index extends React.Component {
 export default Index
 
 export const query = graphql`
-  query Evry {
+  query Evry($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       # filter: { fields: { slug: { regex: "*/javascript/" } } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC },
+      skip: $skip
+      limit: $limit
     ) {
       edges {
         node {
