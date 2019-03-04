@@ -1,22 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'gatsby'
+import ArrowRight from 'react-icons/lib/fa/arrow-right'
+import ArrowLeft from 'react-icons/lib/fa/arrow-left'
 
-const Pagination = props => (
-  <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-    {props.first === false && (
-      <div className="previousLink">
-        <props.NavLink
-          test={props.first}
-          url={props.previousUrl}
-          text="Previous Page"
-        />
-      </div>
-    )}
-    {props.last === false && (
-      <div className="nextLink">
-        <props.NavLink test={props.last} url={props.nextUrl} text="Next page" />
-      </div>
-    )}
-  </div>
+const color = { color: 'inherit' }
+
+const Pagination = ({ pathContext }) => (
+  <ul className="pager">
+    <li className="prev"> {pathContext.previousPagePath && <Link style={color} to={pathContext.previousPagePath} rel="prev">  <ArrowLeft /> Previous Page</Link>}</li>
+    <li className="next">{pathContext.nextPagePath && <Link style={color} to={pathContext.nextPagePath} rel="next">Next Page   <ArrowRight /></Link>}</li>
+  </ul>
 )
 
-export default Pagination
+export default Pagination;

@@ -1,8 +1,8 @@
-const _ = require('lodash')
-const { generator } = require('./generator')
+const _ = require('lodash');
+const { generator } = require('./generator');
 const { generatePosts } = require('./helper')
-
 const path = require('path')
+const { paginate } = require('gatsby-awesome-pagination');
 
 module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -12,7 +12,7 @@ module.exports = async ({ graphql, actions }) => {
       graphql(`
         query {
           allMarkdownRemark(
-            sort: { fields: [frontmatter___id], order: ASC }
+            sort: { fields: [frontmatter___id], order: DESC }
             limit: 10000
           ) {
             edges {
@@ -37,6 +37,19 @@ module.exports = async ({ graphql, actions }) => {
         }
         const courseDisplay = path.resolve('src/templates/courseDisplay.js')
         const allPosts = result.data.allMarkdownRemark.edges
+        paginate({
+          createPage, // The Gatsby `createPage` function
+          items: allPosts, // An array of objects
+          itemsPerPage: 25, // How many items you want per page
+          pathPrefix: ({ pageNumber }) => {
+            if (pageNumber === 0) {
+              return `/`
+            } else {
+              return `/page`
+            }
+          },
+          component: path.resolve('src/templates/index.js'), // Just like `createPage()`
+        })
 
         console.log(allPosts.length)
         const blog = allPosts.filter(({ node }) => {
@@ -48,6 +61,7 @@ module.exports = async ({ graphql, actions }) => {
         blog.sort(function (a, b) {
           return new Date(a.node.frontmatter.date) - new Date(b.node.frontmatter.date);
         })
+
 
 
         blog.forEach(({ node }, index) => {
