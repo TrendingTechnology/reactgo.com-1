@@ -113,7 +113,7 @@ blockquote p {
 }
 
  .gatsby-highlight{
-  margin:.9rem auto;
+  margin:.9rem auto !important;
   position: relative;
 }
 
