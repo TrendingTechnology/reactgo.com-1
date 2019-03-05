@@ -8,14 +8,14 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family:  Menlo,Monaco,Consolas,'Operator Mono','Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
-
+   font-size: 16px;
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
@@ -202,4 +202,13 @@ pre[class*="language-"] {
   overflow: initial;
   float: left; /* 1 */
   min-width: 100%; /* 2 */
+}
+
+@media only screen and  (max-width:900px){
+
+code[class*="language-"],
+pre[class*="language-"] {
+ font-size: 14px;
+}
+
 }
