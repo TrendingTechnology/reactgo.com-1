@@ -29,7 +29,7 @@ In Vue, we can create two types of filters which are global and local filters.
 Let's create a global filter called `reverseData`  which is used to reverse the provided string.
 
 
->Note: Global filters can be created before the vue instance.
+>Note: Global filters are created before the root vue instance.
 
 ```js:title=main.js
 import Vue from "vue";
