@@ -15,7 +15,7 @@ class MainUi extends React.Component {
     return (
       <div>
         <div className="post-list auto bglight ">
-          <div className="padding-top5">
+          <div className="padding-top3">
             <div className="post-setup">
               {/* <h1 className=" slim">{`Learn React tutorials for beginners`}</h1> */}
               {finalData.map((post, i) => (

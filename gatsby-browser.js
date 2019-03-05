@@ -1,3 +1,3 @@
-require('./src/themes/code-color.css');
+require('./src/themes/dark.css');
 
 
