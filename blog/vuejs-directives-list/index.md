@@ -103,7 +103,7 @@ export default {
 </script>
 ```
 
-You can also use bind other html attributes using `v-bind` directive.
+You can also bind other html attributes using `v-bind` directive.
 
 ```html
 
