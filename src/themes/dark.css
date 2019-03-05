@@ -8,7 +8,7 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
-	font-family:  Menlo,Monaco,Consolas, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family:  Menlo,Monaco,Consolas,'Operator Mono','Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -202,4 +202,13 @@ pre[class*="language-"] {
   overflow: initial;
   float: left; /* 1 */
   min-width: 100%; /* 2 */
+}
+
+@media only screen and  (max-width:900px){
+
+code[class*="language-"],
+pre[class*="language-"] {
+ font-size: 14px;
+}
+
 }
