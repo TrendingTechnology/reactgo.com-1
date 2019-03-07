@@ -65,9 +65,9 @@ Now we can use the dynamic paths `user/1` or `user/2`.
 ![vue-url-params.png](vue-url-params.png)
 
 
-## Accessing with props
+## Accessing Dynamic segement with props
 
-We can also access the dynamic segment data inside our component by using props.
+We can also access the dynamic segment inside our component by using props.
 
 To use `props` first we need to enable the `props` in our dynamic path.
 
@@ -97,7 +97,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-In our `User` component we need to declare an `id` prop.
+Now,in our `User` component we need to declare an `id` prop.
 
 ```html{3,9}:title=User.vue
 <template>
