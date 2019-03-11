@@ -12,7 +12,7 @@
     width: 100vw;
     left: 0;
     transform: translateX(-116%);
-    transition: all .2s ease-out;
+    transition: all .4s ease-out;
     overflow-y: auto;
 }
 
