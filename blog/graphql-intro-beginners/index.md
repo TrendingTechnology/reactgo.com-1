@@ -79,7 +79,7 @@ type PersonGroup{
 Query types are used to fetch the data  Like how we used the `get` method in `REST API` world.
 
 
-```
+```gql
 type Query{
  getPerson: Person
 
