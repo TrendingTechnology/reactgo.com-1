@@ -8,13 +8,13 @@ image: "nested-graphql.png"
 In this tutorial, we are going to learn about how to create relational data and nested resolvers in graphql.
 
 
-*Note: If you don't about GraphQL then refer to my previous tutorials [GraphQL intro for the beginners](/graphql-intro-beginners/)*
+*Note: If you don't know about GraphQL then refer to my previous tutorial [GraphQL intro for the beginners](/graphql-intro-beginners/)*
 
 
 
 <button class="md-btn">[View code](https://github.com/saigowthamr/graphql-test-api/blob/nested-res/app.js)</button>
 
-Relational data  means consider we have a todos app with users and todos where each todo is
+Relational data  means consider we have a 'todo app' with users and todos where each todo is
 created by the particular user.
 
 ```js:title= sample-data
@@ -115,7 +115,7 @@ Let's test it now by using the graphql play-ground.
 ![user](user.png)
 
 
-### Nested resolvers
+### Relational data
 
 In this step, we are creating a relationship between the user and todos for this we need to add
 a new field called `todos` to the `User` type.
@@ -133,6 +133,7 @@ type User{
 if you ask for a `todos` you will get an array of todos where it's shape should look like `Todo`
 type but we don't have any resolver for the `todos` field.
 
+## Nested Resolvers
 
 Let's create a nested resolver to handle the `todos` field.
 
@@ -170,47 +171,6 @@ In the above code, we have added Nested `todos` resolver on the User object so t
 
 ![output graphql user id 2](userid2.png)
 
-Let's log the parent argument in the console.
-
-if we ask for the user with the `id: 1`
-
-```js:title=user query id-1
-{
-  user(id: 1) {
-    id
-    name
-    todos {
-      title
-      body
-    }
-  }
-}
-
-```
-the parent argument for the userid 1.
-
-![server](server.png)
-
-
-if we ask for the user with  `id: 2`
-
-
-```js:title=user query id-2
-{
-  user(id: 2) {
-    id
-    name
-    todos {
-      title
-      body
-    }
-  }
-}
-
-```
-Now, the parent argument is different
-
-![nested queries graphql](id2.png)
 
 
 >Note: Nested resolvers only run when we query for that nested field otherwise it doesn't run.
