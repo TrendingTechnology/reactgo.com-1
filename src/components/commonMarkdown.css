@@ -25,9 +25,9 @@ margin: 0 auto;
   padding:1rem 2rem 2rem 1rem;
   position: relative;
   max-width: 900px;
-  margin-left: 20rem;
-  display: flex;
-    justify-content: center;
+  margin-left: 16rem;
+  /* display: flex;
+    justify-content: center; */
 }
 
 .content p{
@@ -53,25 +53,6 @@ margin: 0 auto;
 }
 
 
-@media only screen and  (max-width:920px){
- .main h1{
-     font-size: larger;
-}
-
-
-.content{
-      margin-left: 0 !important;
-      padding:0 !important;
-  }
-  .content-bar{
-    width: 100% !important;
-  }
-
-  .content .content-bar p{
-    line-height: 1.5;
-    font-size: 17px;
-  }
-}
 
 .content ul a{
   text-decoration: none;
@@ -174,4 +155,68 @@ top: 0;
    left: 0;
    height: 100%;
    width: 0;
+}
+
+
+
+#codefund{
+    position: fixed;
+    right: 0;
+    max-width: 304px;
+    top: 222px;
+}
+
+
+@media only screen and (max-width:1420px){
+  .content-bar{
+  width: 79% !important ;
+   }
+}
+
+
+@media only screen and (max-width:1280px){
+  .content{
+   margin:0 !important;
+  }
+}
+
+@media only screen and (max-width:1125px){
+ #codefund{
+    position: initial;
+   margin:0 auto 7px auto;
+   max-width: 400px;
+  }
+
+
+
+  .content{
+     margin:0 auto !important;
+  }
+}
+
+
+
+
+
+@media only screen and  (max-width:920px){
+ .main h1{
+     font-size: larger;
+}
+
+
+.content{
+      margin-left: 0 !important;
+      padding:0 !important;
+
+  }
+  .content-bar{
+    width: 100% !important;
+  }
+
+  .content .content-bar p{
+    line-height: 1.5;
+    font-size: 17px;
+  }
+
+
 }
