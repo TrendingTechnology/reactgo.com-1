@@ -14,7 +14,13 @@ class commonMarkDown extends React.Component {
   }
 
   componentDidMount() {
-    window.onscroll = this.updateScroll
+    window.onscroll = this.updateScroll;
+    if (process.env.NODE_ENV === 'production') {
+      const script = document.createElement("script");
+      script.src = "https://codefund.app/properties/240/funder.js";
+      script.async = true;
+      this.codefund.appendChild(script)
+    }
   }
 
   updateScroll = () => {
@@ -86,10 +92,13 @@ class commonMarkDown extends React.Component {
           style={{
             marginLeft: `${this.props.right ? 0 : ''}`,
             margin: `${this.props.center ? '0 auto' : ''}`,
-
           }}
         >
+
           <article className="content-bar">
+            <div id="codefund"
+              ref={(el) => this.codefund = el}></div>
+
             {date && <time dateTime={date}>{date}</time>}
             <h1>{title}</h1>
             <strong>
