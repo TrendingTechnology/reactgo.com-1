@@ -26,8 +26,8 @@ margin: 0 auto;
   position: relative;
   max-width: 900px;
   margin-left: 16rem;
-  /* display: flex;
-    justify-content: center; */
+  display: flex;
+    justify-content: center;
 }
 
 .content p{
