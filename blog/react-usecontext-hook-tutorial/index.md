@@ -12,7 +12,7 @@ hook.
 ## React Hooks tutorial series
 
  - [useState hook](/stateful-functional-components-react-hooks/)
- - [useRef hook](/react-use-ref-hook-example/)
+ - [useRef hook](/react-useref-hook-example/)
  - [Fetch data using hooks](/ajax-requests-fetch-data-using-react-hooks/)
 
 ### What is React Context API?
