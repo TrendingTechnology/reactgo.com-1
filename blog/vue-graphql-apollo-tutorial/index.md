@@ -1,7 +1,7 @@
 ---
 title: Vue GraphQL and Apollo tutorial for the beginners
 date: "2019-04-04"
-tags: ['vuejs','graphql']
+tags: ['vuejs','graphql','apollo']
 image: vuejs-apollo-client-tutorial.png
 ---
 
@@ -13,7 +13,7 @@ In this tutorial, we are going to learn how to fetch and update the data from th
 
 ## Creating Vue app
 
->This tutorial assumes that you already installed [vue cli](/vue-cli3-tutorial-creating-project/)in your pc.
+>This tutorial assumes that you already installed [vue cli](/vue-cli3-tutorial-creating-project/) in your pc.
 
 Let's create a new vue app by running the following command in your terminal.
 
