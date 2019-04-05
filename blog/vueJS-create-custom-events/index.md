@@ -74,7 +74,7 @@ export default {
 </script>
 ```
 
-Now our `Counter` component is emitting the `handleIncrement` custom event to listen this event on App component we need to add `@handleIncrement`.
+Now our `Counter` component is emitting the `handleIncrement` custom event to listen this event in `App` component we need to add `@handleIncrement`.
 
 ```html{3-4}:title=App.vue
 <template>
@@ -99,7 +99,7 @@ export default {
 
 ## Passing arguments
 
-Somecases we need to increment our count value by 2 or 3 in such cases `this.$emit` method can also accept the value as its second argument.
+Somecases we need to increment our count value by 2 or 3 in such cases `this.$emit` method can also accept the `value` as its second argument.
 
 ```html{13}:title=Counter.vue
 <template>

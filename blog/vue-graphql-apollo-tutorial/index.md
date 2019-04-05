@@ -313,13 +313,13 @@ the output from the backend
 }
 ```
 
-Let’s create a new file called add-star.js.
+Let’s create a new file called `add-star.vue`.
 
 Now we are implementing the `Addstar` component which helps us to add the star to your repositories.
 
-Vue apollo package is also Provides the `<ApolloMutation>` component which is used to send the mutations to the graphql API.
+**Vue apollo** package  also provides us `<ApolloMutation>` component which is used to send the mutations to the graphql API.
 
-In the `<ApolloMutation>` component, we need to pass the `mutations` and `variables` as a prop and use the [vue scoped slot feature](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots) to pass down the results.
+In  `<ApolloMutation>` component, we need to pass the `mutations` and `variables` as a prop and use the [vue scoped slot feature](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots) to pass down the results.
 
 ```html{3-5,21-26}:title=add-star.vue
 <template>
@@ -362,7 +362,7 @@ export default {
 ```
 Here we passed a `addStar` `mutation`  and `vairables` as a prop to `<ApolloMutation>` component.In `scoped slot` we can access the `mutate` function ,`error` and `loading` variables.
 
-Once the mutation is completed `ApolloMutation` component is invoking the `@done` event so that we are passing the `onDone` method which helps us to call the `refetch` so that we can see the updated data in the `UI`.
+Once the mutation is completed `ApolloMutation` component is invoking the `@done` event so that we are passing the `onDone` method which helps us to call the `refetch` method so that we can see the updated data in the `UI`.
 
 Update the `my-repos.vue` file by adding a `AddStar` component.
 
