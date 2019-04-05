@@ -161,7 +161,7 @@ top: 0;
 
 #codefund{
     position: fixed;
-    right: 0;
+    right: 1.9rem;
     max-width: 304px;
     top: 222px;
 }
