@@ -37,7 +37,7 @@ const thunk = function (){
 }
 
 // we always get the same data whenever we call the thunk function
-console.log(thunk()) // 3
+console.log(thunk()) // 2
 
 ```
 
