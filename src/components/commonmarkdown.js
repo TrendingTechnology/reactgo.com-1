@@ -15,7 +15,7 @@ class commonMarkDown extends React.Component {
 
   componentDidMount() {
     window.onscroll = this.updateScroll;
-    if (process.env.NODE_ENV) {
+    if (!process.env.NODE_ENV) {
       const script = document.createElement("script");
       script.src = "https://codefund.app/properties/240/funder.js";
       script.async = true;
