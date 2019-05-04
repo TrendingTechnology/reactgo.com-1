@@ -79,15 +79,6 @@ const MetaPost = props => (
   >
     <html lang="en" />
     <link rel="icon" href={icon} />
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      {
-        `(adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5608631404114866",
-          enable_page_level_ads: true
-        })`
-      }
-    </script>
     {!props.stop && (
       <script type="application/ld+json">
         {`
