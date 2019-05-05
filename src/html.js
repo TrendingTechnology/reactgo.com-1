@@ -6,12 +6,12 @@ import PropTypes from 'prop-types'
 export default class HTML extends React.Component {
   render() {
     let ads = process.env.NODE_ENV === 'production' && (<>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-<script  dangerouslySetInnerHTML={{
-              __html:` (adsbygoogle = window.adsbygoogle || []).push({
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+      <script dangerouslySetInnerHTML={{
+        __html: ` (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "ca-pub-5608631404114866",
           enable_page_level_ads: true
-     })`}}/>
+     })`}} />
     </>)
 
     return (

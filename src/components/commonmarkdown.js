@@ -7,6 +7,7 @@ import Share from './share'
 import Sidebar from './sidebar'
 import Mobilebar from './mobilesidebar'
 import NextPost from './NextPost'
+import GoogleAd from './GoogleAd'
 
 class commonMarkDown extends React.Component {
   state = {
@@ -15,7 +16,7 @@ class commonMarkDown extends React.Component {
 
   componentDidMount() {
     window.onscroll = this.updateScroll;
-    if (!process.env.NODE_ENV) {
+    if (process.env.NODE_ENV === 'production') {
       const script = document.createElement("script");
       script.src = "https://codefund.app/properties/240/funder.js";
       script.async = true;
@@ -116,7 +117,12 @@ class commonMarkDown extends React.Component {
               style={{ marginTop: '3rem' }}
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-
+            <GoogleAd
+              client="ca-pub-5608631404114866"
+              slot="6166656906"
+              format="auto"
+              wrapperDivStyle={{ maxWidth: '1200px', minHeight: '50px', margin: 'auto', marginBottom: '15px' }}
+            />
             <Share
               title={`${title} - ${course ? course : 'Reactgo'}`}
               url={url}

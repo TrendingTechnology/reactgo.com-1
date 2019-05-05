@@ -5,7 +5,6 @@ import Layout from '../components/layout';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Jsimg from '../img/js.jpg';
-
 class Post extends React.Component {
   render() {
     // const post = this.props.data.markdownRemark;
@@ -15,6 +14,7 @@ class Post extends React.Component {
       this.props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
     return (
       <Layout>
+
         <Header siteTitle={'Reactgo'} />
         <CommonMarkdown
           nosidebar
