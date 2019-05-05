@@ -99,7 +99,12 @@ class commonMarkDown extends React.Component {
           <article className="content-bar">
             <div id="codefund"
               ref={(el) => this.codefund = el}></div>
-
+            <GoogleAd
+              client="ca-pub-5608631404114866"
+              slot="2048637861"
+              format="auto"
+              wrapperDivStyle={{ maxWidth: '1200px', minHeight: '50px', margin: 'auto', marginBottom: '20px' }}
+            />
             {date && <time dateTime={date}>{date}</time>}
             <h1>{title}</h1>
             <strong>
