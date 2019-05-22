@@ -88,3 +88,5 @@ We can also write JavaScript methods inside curly brace like `{name.toUpperCase(
 ---
 
 1. [Attribute Binding in Svelte](/attribute-binding-vuejs/)
+
+2. [Event handling in Svelte](/svelte-event-handling/)
