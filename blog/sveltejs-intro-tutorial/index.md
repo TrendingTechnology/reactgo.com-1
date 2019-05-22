@@ -84,3 +84,7 @@ style: In style tag, we need to write CSS code related to that component(styles 
 To interpolate the JavaScript in markup we need to use single curly brace `{name}` in svelte.
 
 We can also write JavaScript methods inside curly brace like `{name.toUpperCase()}`
+
+---
+
+1. [Attribute Binding in Svelte](/attribute-binding-vuejs/)
